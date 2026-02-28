@@ -1,0 +1,127 @@
+{
+  "doc-a149e8a923d92f6e23bd59e44524fceb": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb",
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "content_summary": "# CPP and EI Contribution Rates and Thresholds\nSource: CRA Publication T4127 — Payroll Deductions Tables, CRA CPP/EI Rate Sheets\nLast Updated: 2025 Tax Year\n\n## Canada Pension Plan (CPP) — Employee Contributions\n\n### How CPP Contributions Are Calcula...",
+    "content_length": 3883,
+    "created_at": "2026-02-26T10:18:40.171480+00:00",
+    "updated_at": "2026-02-26T10:19:19.314657+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_154840_aaad95ee",
+    "metadata": {
+      "processing_start_time": 1772101120,
+      "processing_end_time": 1772101159
+    }
+  },
+  "doc-a406c8274e861630c5b5ac4a656283e1": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d",
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "content_summary": "# Employment Income and T4 Box Guide\nSource: CRA T4 — Statement of Remuneration Paid, Employers' Guide T4001\nLast Updated: 2024 Tax Year\n\n## What is a T4 Slip?\nThe T4 — Statement of Remuneration Paid is issued by employers to report employment income...",
+    "content_length": 5748,
+    "created_at": "2026-02-26T10:19:19.363151+00:00",
+    "updated_at": "2026-02-26T10:20:03.807211+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_154919_f610bf7c",
+    "metadata": {
+      "processing_start_time": 1772101159,
+      "processing_end_time": 1772101203
+    }
+  },
+  "doc-eea01675a0c4d861476a6a5508771f21": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423",
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "content_summary": "# Federal Income Tax Brackets and Credits\nSource: CRA T1 General Income Tax and Benefit Return, Income Tax Act sections 117, 118\nLast Updated: 2025 Tax Year\n\n## Federal Tax Brackets\nFederal income tax is calculated using a progressive bracket system....",
+    "content_length": 4391,
+    "created_at": "2026-02-26T10:20:03.877839+00:00",
+    "updated_at": "2026-02-26T10:21:00.793957+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_155003_a8a1397a",
+    "metadata": {
+      "processing_start_time": 1772101203,
+      "processing_end_time": 1772101260
+    }
+  },
+  "doc-37df8f8ea266f547ef8d2a2517d9dc26": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183",
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "content_summary": "# Ontario Provincial Income Tax\nSource: Ontario Tax (ON428), Ontario Credits (ON479), Ontario Tax Guide\nLast Updated: 2024 Tax Year\n\n## Ontario Tax Brackets\nOntario uses a progressive bracket system similar to the federal system.\n\n### 2024 Tax Year\n|...",
+    "content_length": 4413,
+    "created_at": "2026-02-26T10:21:00.839219+00:00",
+    "updated_at": "2026-02-26T10:21:36.593012+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_155100_f79032cb",
+    "metadata": {
+      "processing_start_time": 1772101260,
+      "processing_end_time": 1772101296
+    }
+  },
+  "doc-1afc6ed5f12ab7e451d8683302f7ea11": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64",
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "content_summary": "# Registered Retirement Savings Plan (RRSP) Rules\nSource: CRA Publication T4040 — RRSPs and Other Registered Plans for Retirement\nLast Updated: 2024 Tax Year\n\n## What is an RRSP?\nA Registered Retirement Savings Plan (RRSP) is a savings plan registere...",
+    "content_length": 5388,
+    "created_at": "2026-02-26T10:21:36.644929+00:00",
+    "updated_at": "2026-02-26T10:22:22.501534+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_155136_cf938541",
+    "metadata": {
+      "processing_start_time": 1772101296,
+      "processing_end_time": 1772101342
+    }
+  },
+  "doc-ff775894bc921a01d0ae7b97dd51a153": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c",
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "content_summary": "# Canadian Tax Planning Strategies\nSource: Multiple CRA publications, Income Tax Act provisions\nLast Updated: 2024 Tax Year\n\n## RRSP Optimization Strategies\n\n### Maximize RRSP Deduction Value\n- Contribute when in a higher marginal tax bracket (e.g., ...",
+    "content_length": 6549,
+    "created_at": "2026-02-26T10:22:22.561609+00:00",
+    "updated_at": "2026-02-26T10:22:51.402083+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_155222_4f82cca8",
+    "metadata": {
+      "processing_start_time": 1772101342,
+      "processing_end_time": 1772101371
+    }
+  },
+  "doc-4efa231cfe20987fec08d6db7e701fb2": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "content_summary": "# Tax-Free Savings Account (TFSA) Rules\nSource: CRA Publication RC4466 — Tax-Free Savings Account (TFSA) Guide for Individuals\nLast Updated: 2024 Tax Year\n\n## What is a TFSA?\nA Tax-Free Savings Account (TFSA) is a registered account that allows Canad...",
+    "content_length": 4526,
+    "created_at": "2026-02-26T10:22:51.489677+00:00",
+    "updated_at": "2026-02-26T10:23:32.315937+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260226_155251_4f095a18",
+    "metadata": {
+      "processing_start_time": 1772101371,
+      "processing_end_time": 1772101412
+    }
+  }
+}

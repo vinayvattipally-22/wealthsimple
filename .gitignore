@@ -1,0 +1,42 @@
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# Python
+backend/.venv/
+backend/venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+*.egg
+
+# SQLite (optional: remove if you want to track empty DB)
+*.db
+*.db-journal
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Sample / test assets (moved from root)
+sample_docs/
+test_data/

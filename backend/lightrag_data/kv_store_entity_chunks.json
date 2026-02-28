@@ -1,0 +1,1410 @@
+{
+  "CRA Publication T4127": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101146,
+    "update_time": 1772101146,
+    "_id": "CRA Publication T4127"
+  },
+  "Canada Pension Plan (CPP)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101146,
+    "update_time": 1772101146,
+    "_id": "Canada Pension Plan (CPP)"
+  },
+  "Quebec Pension Plan (QPP)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101146,
+    "update_time": 1772101146,
+    "_id": "Quebec Pension Plan (QPP)"
+  },
+  "Employment Insurance (EI)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101146,
+    "update_time": 1772101146,
+    "_id": "Employment Insurance (EI)"
+  },
+  "Carbon-Fiber Spikes": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101146,
+    "update_time": 1772101146,
+    "_id": "Carbon-Fiber Spikes"
+  },
+  "T4 Box References": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101146,
+    "update_time": 1772101146,
+    "_id": "T4 Box References"
+  },
+  "2025 Tax Year": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb",
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 2,
+    "update_time": 1772101247,
+    "_id": "2025 Tax Year"
+  },
+  "Max Insurable Earnings": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101147,
+    "update_time": 1772101147,
+    "_id": "Max Insurable Earnings"
+  },
+  "Year's Maximum Pensionable Earnings (YMPE)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101148,
+    "update_time": 1772101148,
+    "_id": "Year's Maximum Pensionable Earnings (YMPE)"
+  },
+  "Contribution Rate": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101148,
+    "update_time": 1772101148,
+    "_id": "Contribution Rate"
+  },
+  "Basic Exemption": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101148,
+    "update_time": 1772101148,
+    "_id": "Basic Exemption"
+  },
+  "Maximum Employee Contribution": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101148,
+    "update_time": 1772101148,
+    "_id": "Maximum Employee Contribution"
+  },
+  "Second Earnings Ceiling (YAMPE)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101149,
+    "update_time": 1772101149,
+    "_id": "Second Earnings Ceiling (YAMPE)"
+  },
+  "Box 14": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e",
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 2,
+    "update_time": 1772101192,
+    "_id": "Box 14"
+  },
+  "Box 24": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e",
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 2,
+    "update_time": 1772101192,
+    "_id": "Box 24"
+  },
+  "Box 26": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e",
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 2,
+    "update_time": 1772101192,
+    "_id": "Box 26"
+  },
+  "CPP": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101151,
+    "update_time": 1772101151,
+    "_id": "CPP"
+  },
+  "EI": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101151,
+    "update_time": 1772101151,
+    "_id": "EI"
+  },
+  "Federal Tax Rate": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101151,
+    "update_time": 1772101151,
+    "_id": "Federal Tax Rate"
+  },
+  "CPP/EI Credit": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101151,
+    "update_time": 1772101151,
+    "_id": "CPP/EI Credit"
+  },
+  "Tax Credits": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e",
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 2,
+    "update_time": 1772101190,
+    "_id": "Tax Credits"
+  },
+  "CRA T4": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "CRA T4"
+  },
+  "T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "T4 Slip"
+  },
+  "T4 Box Reference Guide": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "T4 Box Reference Guide"
+  },
+  "Employment Income": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "Employment Income"
+  },
+  "CPP Contributions": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "CPP Contributions"
+  },
+  "QPP Contributions": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "QPP Contributions"
+  },
+  "EI Premiums": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "EI Premiums"
+  },
+  "RPP Contributions": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101186,
+    "update_time": 1772101186,
+    "_id": "RPP Contributions"
+  },
+  "Taxable Allowances": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101188,
+    "update_time": 1772101188,
+    "_id": "Taxable Allowances"
+  },
+  "Union Dues": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101188,
+    "update_time": 1772101188,
+    "_id": "Union Dues"
+  },
+  "Charitable Donations": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101188,
+    "update_time": 1772101188,
+    "_id": "Charitable Donations"
+  },
+  "Multiple T4 Slips": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101188,
+    "update_time": 1772101188,
+    "_id": "Multiple T4 Slips"
+  },
+  "T4001": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101188,
+    "update_time": 1772101188,
+    "_id": "T4001"
+  },
+  "Tax Year 2024": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d",
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 2,
+    "update_time": 1772101331,
+    "_id": "Tax Year 2024"
+  },
+  "RRSP Deductions": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101188,
+    "update_time": 1772101188,
+    "_id": "RRSP Deductions"
+  },
+  "Federal Tax": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101189,
+    "update_time": 1772101189,
+    "_id": "Federal Tax"
+  },
+  "Provincial Tax": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101190,
+    "update_time": 1772101190,
+    "_id": "Provincial Tax"
+  },
+  "Box 22": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101191,
+    "update_time": 1772101191,
+    "_id": "Box 22"
+  },
+  "Common T4 Scenarios": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101191,
+    "update_time": 1772101191,
+    "_id": "Common T4 Scenarios"
+  },
+  "Employee with Income Below CPP/EI Caps": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101191,
+    "update_time": 1772101191,
+    "_id": "Employee with Income Below CPP/EI Caps"
+  },
+  "Employee with Income Above CPP/EI Caps": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101192,
+    "update_time": 1772101192,
+    "_id": "Employee with Income Above CPP/EI Caps"
+  },
+  "Employee Starting Mid-Year": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101193,
+    "update_time": 1772101193,
+    "_id": "Employee Starting Mid-Year"
+  },
+  "Tax Payable": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101193,
+    "update_time": 1772101193,
+    "_id": "Tax Payable"
+  },
+  "Maximum Contribution for the Year": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101193,
+    "update_time": 1772101193,
+    "_id": "Maximum Contribution for the Year"
+  },
+  "Maximum Premium for the Year": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101193,
+    "update_time": 1772101193,
+    "_id": "Maximum Premium for the Year"
+  },
+  "T1 Return": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101196,
+    "update_time": 1772101196,
+    "_id": "T1 Return"
+  },
+  "CRA T1 General Income Tax and Benefit Return": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101247,
+    "update_time": 1772101247,
+    "_id": "CRA T1 General Income Tax and Benefit Return"
+  },
+  "Income Tax Act": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423",
+      "chunk-1590b8716306682b296c39fb8f8a1c64",
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 3,
+    "update_time": 1772101362,
+    "_id": "Income Tax Act"
+  },
+  "Federal Income Tax": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101247,
+    "update_time": 1772101247,
+    "_id": "Federal Income Tax"
+  },
+  "Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101247,
+    "update_time": 1772101247,
+    "_id": "Basic Personal Amount"
+  },
+  "2024 Tax Year": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101247,
+    "update_time": 1772101247,
+    "_id": "2024 Tax Year"
+  },
+  "2023 Tax Year": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101247,
+    "update_time": 1772101247,
+    "_id": "2023 Tax Year"
+  },
+  "2022 Tax Year": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101247,
+    "update_time": 1772101247,
+    "_id": "2022 Tax Year"
+  },
+  "2021 Tax Year": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "2021 Tax Year"
+  },
+  "Non-Refundable Tax Credits": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "Non-Refundable Tax Credits"
+  },
+  "Income Tax Brackets": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "Income Tax Brackets"
+  },
+  "Common Non-Refundable Tax Credits": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "Common Non-Refundable Tax Credits"
+  },
+  "Common Deductions from Income": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "Common Deductions from Income"
+  },
+  "RRSP Contributions": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "RRSP Contributions"
+  },
+  "Union/Professional Dues": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "Union/Professional Dues"
+  },
+  "Child Care Expenses": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101249,
+    "update_time": 1772101249,
+    "_id": "Child Care Expenses"
+  },
+  "Moving Expenses": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101251,
+    "update_time": 1772101251,
+    "_id": "Moving Expenses"
+  },
+  "Employment Expenses": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101251,
+    "update_time": 1772101251,
+    "_id": "Employment Expenses"
+  },
+  "Capital Gains Deduction": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101252,
+    "update_time": 1772101252,
+    "_id": "Capital Gains Deduction"
+  },
+  "Northern Residents Deduction": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101252,
+    "update_time": 1772101252,
+    "_id": "Northern Residents Deduction"
+  },
+  "Federal Tax Calculation": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101252,
+    "update_time": 1772101252,
+    "_id": "Federal Tax Calculation"
+  },
+  "Marginal Tax Rate": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101252,
+    "update_time": 1772101252,
+    "_id": "Marginal Tax Rate"
+  },
+  "Total Income": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101252,
+    "update_time": 1772101252,
+    "_id": "Total Income"
+  },
+  "Net Income": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101252,
+    "update_time": 1772101252,
+    "_id": "Net Income"
+  },
+  "Taxable Income": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249",
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 2,
+    "update_time": 1772101289,
+    "_id": "Taxable Income"
+  },
+  "Ontario Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Ontario Provincial Income Tax"
+  },
+  "Ontario Tax Brackets": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Ontario Tax Brackets"
+  },
+  "Taxable Income Range": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Taxable Income Range"
+  },
+  "Ontario Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Ontario Basic Personal Amount"
+  },
+  "Ontario Surtax": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Ontario Surtax"
+  },
+  "Combined Ontario Marginal Rates": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Combined Ontario Marginal Rates"
+  },
+  "Ontario Tax Credits": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101284,
+    "update_time": 1772101284,
+    "_id": "Ontario Tax Credits"
+  },
+  "Ontario Trillium Benefit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101285,
+    "update_time": 1772101285,
+    "_id": "Ontario Trillium Benefit"
+  },
+  "Ontario Energy and Property Tax Credit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101286,
+    "update_time": 1772101286,
+    "_id": "Ontario Energy and Property Tax Credit"
+  },
+  "Northern Ontario Energy Credit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183",
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 2,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Northern Ontario Energy Credit"
+  },
+  "Ontario Sales Tax Credit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183",
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 2,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Ontario Sales Tax Credit"
+  },
+  "Ontario Low-Income Individuals and Families Tax (LIFT) Credit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183",
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 2,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+  },
+  "Ontario Credits (ON479)": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Ontario Credits (ON479)"
+  },
+  "Ontario Tax Guide": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Ontario Tax Guide"
+  },
+  "Ontario Childcare Access and Relief from Expenses (CARE) Credit": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Ontario Childcare Access and Relief from Expenses (CARE) Credit"
+  },
+  "Ontario Health Premium": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101287,
+    "update_time": 1772101287,
+    "_id": "Ontario Health Premium"
+  },
+  "Ontario Sales Tax Credit (OSTC)": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101289,
+    "update_time": 1772101289,
+    "_id": "Ontario Sales Tax Credit (OSTC)"
+  },
+  "Qualifying Rollover Recipients": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "Qualifying Rollover Recipients"
+  },
+  "Spousal RRSPs": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "Spousal RRSPs"
+  },
+  "HBP": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "HBP"
+  },
+  "Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "Tax Planning Strategies"
+  },
+  "Tax Bracket": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "Tax Bracket"
+  },
+  "RRSP": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4",
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 2,
+    "update_time": 1772101362,
+    "_id": "RRSP"
+  },
+  "Higher Tax Bracket": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "Higher Tax Bracket"
+  },
+  "Income Splitting": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101327,
+    "update_time": 1772101327,
+    "_id": "Income Splitting"
+  },
+  "Tax-Deferred Growth": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "Tax-Deferred Growth"
+  },
+  "Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "Registered Retirement Savings Plan"
+  },
+  "Canada Revenue Agency": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "Canada Revenue Agency"
+  },
+  "RRSP Deduction Limit": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "RRSP Deduction Limit"
+  },
+  "Tax Year 2020": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "Tax Year 2020"
+  },
+  "Tax Year 2021": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "Tax Year 2021"
+  },
+  "Tax Year 2022": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101329,
+    "update_time": 1772101329,
+    "_id": "Tax Year 2022"
+  },
+  "Tax Year 2023": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101331,
+    "update_time": 1772101331,
+    "_id": "Tax Year 2023"
+  },
+  "Overcontribution Penalty": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64",
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 2,
+    "update_time": 1772101400,
+    "_id": "Overcontribution Penalty"
+  },
+  "Form T1-OVP": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101331,
+    "update_time": 1772101331,
+    "_id": "Form T1-OVP"
+  },
+  "Spousal RRSP": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64",
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 2,
+    "update_time": 1772101362,
+    "_id": "Spousal RRSP"
+  },
+  "Home Buyers' Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101332,
+    "update_time": 1772101332,
+    "_id": "Home Buyers' Plan"
+  },
+  "Lifelong Learning Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101332,
+    "update_time": 1772101332,
+    "_id": "Lifelong Learning Plan"
+  },
+  "RRSP Withdrawals": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101332,
+    "update_time": 1772101332,
+    "_id": "RRSP Withdrawals"
+  },
+  "RRSP at Death": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101333,
+    "update_time": 1772101333,
+    "_id": "RRSP at Death"
+  },
+  "Key Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101333,
+    "update_time": 1772101333,
+    "_id": "Key Tax Planning Strategies"
+  },
+  "RRSP Contribution Limits": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101333,
+    "update_time": 1772101333,
+    "_id": "RRSP Contribution Limits"
+  },
+  "Annual RRSP Dollar Limits": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101334,
+    "update_time": 1772101334,
+    "_id": "Annual RRSP Dollar Limits"
+  },
+  "Charitable Donation Tax Credit": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Charitable Donation Tax Credit"
+  },
+  "Work from Home Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Work from Home Expenses"
+  },
+  "Employment Deductions": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Employment Deductions"
+  },
+  "Vehicle Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Vehicle Expenses"
+  },
+  "Medical Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Medical Expenses"
+  },
+  "Form T2200": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Form T2200"
+  },
+  "Unused Donation Credits": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "Unused Donation Credits"
+  },
+  "29%/33% Federal Credit Rate": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101360,
+    "update_time": 1772101360,
+    "_id": "29%/33% Federal Credit Rate"
+  },
+  "Canadian Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101362,
+    "update_time": 1772101362,
+    "_id": "Canadian Tax Planning Strategies"
+  },
+  "TFSA": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101362,
+    "update_time": 1772101362,
+    "_id": "TFSA"
+  },
+  "Capital Gains": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101362,
+    "update_time": 1772101362,
+    "_id": "Capital Gains"
+  },
+  "Pension Income Splitting": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101362,
+    "update_time": 1772101362,
+    "_id": "Pension Income Splitting"
+  },
+  "Canada Child Benefit": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c",
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 2,
+    "update_time": 1772101402,
+    "_id": "Canada Child Benefit"
+  },
+  "Charitable Donation": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101364,
+    "update_time": 1772101364,
+    "_id": "Charitable Donation"
+  },
+  "RRIF": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101364,
+    "update_time": 1772101364,
+    "_id": "RRIF"
+  },
+  "OAS Clawback": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101364,
+    "update_time": 1772101364,
+    "_id": "OAS Clawback"
+  },
+  "Capital Gains Reserve": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101365,
+    "update_time": 1772101365,
+    "_id": "Capital Gains Reserve"
+  },
+  "securities": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101366,
+    "update_time": 1772101366,
+    "_id": "securities"
+  },
+  "Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "Tax-Free Savings Account (TFSA)"
+  },
+  "CRA": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "CRA"
+  },
+  "Canadian Residents": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "Canadian Residents"
+  },
+  "Social Insurance Number (SIN)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "Social Insurance Number (SIN)"
+  },
+  "2009–2012 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "2009–2012 Contribution Limit"
+  },
+  "2013–2014 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "2013–2014 Contribution Limit"
+  },
+  "2015 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "2015 Contribution Limit"
+  },
+  "2016–2018 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101398,
+    "update_time": 1772101398,
+    "_id": "2016–2018 Contribution Limit"
+  },
+  "2019–2022 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "2019–2022 Contribution Limit"
+  },
+  "2023 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "2023 Contribution Limit"
+  },
+  "2024 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "2024 Contribution Limit"
+  },
+  "2025 Contribution Limit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "2025 Contribution Limit"
+  },
+  "Cumulative Contribution Room": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "Cumulative Contribution Room"
+  },
+  "Withdrawal and Recontribution Rules": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "Withdrawal and Recontribution Rules"
+  },
+  "Qualifying Investments": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101400,
+    "update_time": 1772101400,
+    "_id": "Qualifying Investments"
+  },
+  "TFSA on Death": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101402,
+    "update_time": 1772101402,
+    "_id": "TFSA on Death"
+  },
+  "TFSA vs RRSP": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101402,
+    "update_time": 1772101402,
+    "_id": "TFSA vs RRSP"
+  },
+  "CRA Publication RC4466": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101402,
+    "update_time": 1772101402,
+    "_id": "CRA Publication RC4466"
+  },
+  "OAS": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101402,
+    "update_time": 1772101402,
+    "_id": "OAS"
+  },
+  "GIS": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101402,
+    "update_time": 1772101402,
+    "_id": "GIS"
+  },
+  "GST/HST Credit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101402,
+    "update_time": 1772101402,
+    "_id": "GST/HST Credit"
+  },
+  "Old Age Security (OAS)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101408,
+    "update_time": 1772101408,
+    "_id": "Old Age Security (OAS)"
+  },
+  "Guaranteed Income Supplement (GIS)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101409,
+    "update_time": 1772101409,
+    "_id": "Guaranteed Income Supplement (GIS)"
+  },
+  "Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101410,
+    "update_time": 1772101410,
+    "_id": "Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit"
+  }
+}

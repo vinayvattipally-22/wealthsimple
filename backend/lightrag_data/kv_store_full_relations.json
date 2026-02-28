@@ -1,0 +1,542 @@
+{
+  "doc-a149e8a923d92f6e23bd59e44524fceb": {
+    "relation_pairs": [
+      [
+        "EI",
+        "Tax Credits"
+      ],
+      [
+        "Canada Pension Plan (CPP)",
+        "Contribution Rate"
+      ],
+      [
+        "CPP",
+        "CPP/EI Credit"
+      ],
+      [
+        "CPP/EI Credit",
+        "Federal Tax Rate"
+      ],
+      [
+        "CPP/EI Credit",
+        "EI"
+      ],
+      [
+        "T4 Box References",
+        "Year's Maximum Pensionable Earnings (YMPE)"
+      ],
+      [
+        "Employment Insurance (EI)",
+        "Max Insurable Earnings"
+      ],
+      [
+        "Box 14",
+        "Box 24"
+      ],
+      [
+        "Employment Insurance (EI)",
+        "Maximum Employee Contribution"
+      ],
+      [
+        "Canada Pension Plan (CPP)",
+        "Quebec Pension Plan (QPP)"
+      ],
+      [
+        "Box 14",
+        "Box 26"
+      ],
+      [
+        "CPP",
+        "Tax Credits"
+      ],
+      [
+        "Canada Pension Plan (CPP)",
+        "Second Earnings Ceiling (YAMPE)"
+      ],
+      [
+        "Basic Exemption",
+        "Canada Pension Plan (CPP)"
+      ],
+      [
+        "CRA Publication T4127",
+        "Canada Pension Plan (CPP)"
+      ],
+      [
+        "Canada Pension Plan (CPP)",
+        "T4 Box References"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1772101159,
+    "update_time": 1772101159,
+    "_id": "doc-a149e8a923d92f6e23bd59e44524fceb"
+  },
+  "doc-a406c8274e861630c5b5ac4a656283e1": {
+    "relation_pairs": [
+      [
+        "T4 Box Reference Guide",
+        "T4 Slip"
+      ],
+      [
+        "T4 Slip",
+        "Taxable Allowances"
+      ],
+      [
+        "CRA T4",
+        "T4 Slip"
+      ],
+      [
+        "Tax Credits",
+        "Tax Payable"
+      ],
+      [
+        "Box 24",
+        "Employee with Income Below CPP/EI Caps"
+      ],
+      [
+        "T4 Slip",
+        "Tax Year 2024"
+      ],
+      [
+        "Employee with Income Above CPP/EI Caps",
+        "Maximum Premium for the Year"
+      ],
+      [
+        "T4 Slip",
+        "T4001"
+      ],
+      [
+        "Box 14",
+        "Employee Starting Mid-Year"
+      ],
+      [
+        "Employee with Income Above CPP/EI Caps",
+        "Maximum Contribution for the Year"
+      ],
+      [
+        "RPP Contributions",
+        "T4 Slip"
+      ],
+      [
+        "Charitable Donations",
+        "T4 Slip"
+      ],
+      [
+        "EI Premiums",
+        "T4 Slip"
+      ],
+      [
+        "QPP Contributions",
+        "T4 Slip"
+      ],
+      [
+        "Provincial Tax",
+        "Tax Credits"
+      ],
+      [
+        "CPP Contributions",
+        "T4 Slip"
+      ],
+      [
+        "Employment Income",
+        "T4 Slip"
+      ],
+      [
+        "Box 14",
+        "Employee with Income Above CPP/EI Caps"
+      ],
+      [
+        "Multiple T4 Slips",
+        "T1 Return"
+      ],
+      [
+        "T4 Slip",
+        "Union Dues"
+      ],
+      [
+        "Federal Tax",
+        "Tax Credits"
+      ],
+      [
+        "RRSP Deductions",
+        "Tax Credits"
+      ],
+      [
+        "Box 14",
+        "Employee with Income Below CPP/EI Caps"
+      ]
+    ],
+    "count": 23,
+    "create_time": 1772101203,
+    "update_time": 1772101203,
+    "_id": "doc-a406c8274e861630c5b5ac4a656283e1"
+  },
+  "doc-eea01675a0c4d861476a6a5508771f21": {
+    "relation_pairs": [
+      [
+        "Child Care Expenses",
+        "Federal Tax Calculation"
+      ],
+      [
+        "2024 Tax Year",
+        "Federal Income Tax"
+      ],
+      [
+        "Common Deductions from Income",
+        "Federal Income Tax"
+      ],
+      [
+        "Net Income",
+        "Total Income"
+      ],
+      [
+        "Federal Tax Calculation",
+        "Marginal Tax Rate"
+      ],
+      [
+        "Federal Tax Calculation",
+        "Union/Professional Dues"
+      ],
+      [
+        "Federal Tax Calculation",
+        "Northern Residents Deduction"
+      ],
+      [
+        "Employment Expenses",
+        "Federal Tax Calculation"
+      ],
+      [
+        "Federal Tax Calculation",
+        "RRSP Contributions"
+      ],
+      [
+        "Basic Personal Amount",
+        "Federal Income Tax"
+      ],
+      [
+        "Net Income",
+        "Taxable Income"
+      ],
+      [
+        "Federal Income Tax",
+        "Non-Refundable Tax Credits"
+      ],
+      [
+        "Capital Gains Deduction",
+        "Federal Tax Calculation"
+      ],
+      [
+        "2023 Tax Year",
+        "Federal Income Tax"
+      ],
+      [
+        "Common Non-Refundable Tax Credits",
+        "Federal Income Tax"
+      ],
+      [
+        "CRA T1 General Income Tax and Benefit Return",
+        "Income Tax Act"
+      ],
+      [
+        "Federal Tax Calculation",
+        "Moving Expenses"
+      ]
+    ],
+    "count": 17,
+    "create_time": 1772101260,
+    "update_time": 1772101260,
+    "_id": "doc-eea01675a0c4d861476a6a5508771f21"
+  },
+  "doc-37df8f8ea266f547ef8d2a2517d9dc26": {
+    "relation_pairs": [
+      [
+        "Ontario Childcare Access and Relief from Expenses (CARE) Credit",
+        "Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+      ],
+      [
+        "Ontario Low-Income Individuals and Families Tax (LIFT) Credit",
+        "Ontario Sales Tax Credit"
+      ],
+      [
+        "Ontario Tax Credits",
+        "Ontario Trillium Benefit"
+      ],
+      [
+        "Northern Ontario Energy Credit",
+        "Ontario Sales Tax Credit"
+      ],
+      [
+        "Ontario Sales Tax Credit",
+        "Ontario Trillium Benefit"
+      ],
+      [
+        "Ontario Energy and Property Tax Credit",
+        "Ontario Trillium Benefit"
+      ],
+      [
+        "Ontario Provincial Income Tax",
+        "Ontario Surtax"
+      ],
+      [
+        "Ontario Provincial Income Tax",
+        "Ontario Tax Brackets"
+      ],
+      [
+        "Ontario Health Premium",
+        "Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+      ],
+      [
+        "Ontario Basic Personal Amount",
+        "Ontario Provincial Income Tax"
+      ],
+      [
+        "Northern Ontario Energy Credit",
+        "Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+      ],
+      [
+        "Ontario Health Premium",
+        "Ontario Sales Tax Credit (OSTC)"
+      ],
+      [
+        "Combined Ontario Marginal Rates",
+        "Ontario Provincial Income Tax"
+      ],
+      [
+        "Northern Ontario Energy Credit",
+        "Ontario Trillium Benefit"
+      ],
+      [
+        "Ontario Credits (ON479)",
+        "Ontario Tax Credits"
+      ],
+      [
+        "Ontario Provincial Income Tax",
+        "Ontario Tax Guide"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1772101296,
+    "update_time": 1772101296,
+    "_id": "doc-37df8f8ea266f547ef8d2a2517d9dc26"
+  },
+  "doc-1afc6ed5f12ab7e451d8683302f7ea11": {
+    "relation_pairs": [
+      [
+        "Home Buyers' Plan",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "Income Splitting",
+        "Tax Planning Strategies"
+      ],
+      [
+        "HBP",
+        "Tax Planning Strategies"
+      ],
+      [
+        "RRSP Deduction Limit",
+        "Tax Year 2022"
+      ],
+      [
+        "Lifelong Learning Plan",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "RRSP Withdrawals",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "Annual RRSP Dollar Limits",
+        "RRSP Contribution Limits"
+      ],
+      [
+        "RRSP Deduction Limit",
+        "Tax Year 2023"
+      ],
+      [
+        "RRSP Deduction Limit",
+        "Tax Year 2020"
+      ],
+      [
+        "Income Tax Act",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "RRSP",
+        "Tax Planning Strategies"
+      ],
+      [
+        "RRSP at Death",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "Spousal RRSPs",
+        "Tax Planning Strategies"
+      ],
+      [
+        "Canada Revenue Agency",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "Tax Bracket",
+        "Tax Planning Strategies"
+      ],
+      [
+        "Tax Planning Strategies",
+        "Tax-Deferred Growth"
+      ],
+      [
+        "Higher Tax Bracket",
+        "Spousal RRSPs"
+      ],
+      [
+        "Qualifying Rollover Recipients",
+        "Spousal RRSPs"
+      ],
+      [
+        "RRSP Deduction Limit",
+        "Tax Year 2021"
+      ],
+      [
+        "RRSP Deduction Limit",
+        "Tax Year 2024"
+      ],
+      [
+        "Overcontribution Penalty",
+        "Registered Retirement Savings Plan"
+      ],
+      [
+        "Registered Retirement Savings Plan",
+        "Spousal RRSP"
+      ]
+    ],
+    "count": 22,
+    "create_time": 1772101342,
+    "update_time": 1772101342,
+    "_id": "doc-1afc6ed5f12ab7e451d8683302f7ea11"
+  },
+  "doc-ff775894bc921a01d0ae7b97dd51a153": {
+    "relation_pairs": [
+      [
+        "RRSP",
+        "Spousal RRSP"
+      ],
+      [
+        "Charitable Donation Tax Credit",
+        "securities"
+      ],
+      [
+        "Canadian Tax Planning Strategies",
+        "Income Tax Act"
+      ],
+      [
+        "Capital Gains",
+        "Capital Gains Reserve"
+      ],
+      [
+        "Canada Child Benefit",
+        "TFSA"
+      ],
+      [
+        "29%/33% Federal Credit Rate",
+        "Charitable Donation Tax Credit"
+      ],
+      [
+        "Employment Deductions",
+        "Medical Expenses"
+      ],
+      [
+        "RRIF",
+        "RRSP"
+      ],
+      [
+        "Employment Deductions",
+        "Vehicle Expenses"
+      ],
+      [
+        "Employment Deductions",
+        "Work from Home Expenses"
+      ],
+      [
+        "Canadian Tax Planning Strategies",
+        "Pension Income Splitting"
+      ],
+      [
+        "Capital Gains",
+        "Charitable Donation"
+      ],
+      [
+        "Charitable Donation Tax Credit",
+        "Unused Donation Credits"
+      ],
+      [
+        "OAS Clawback",
+        "RRIF"
+      ],
+      [
+        "Form T2200",
+        "Work from Home Expenses"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1772101371,
+    "update_time": 1772101371,
+    "_id": "doc-ff775894bc921a01d0ae7b97dd51a153"
+  },
+  "doc-4efa231cfe20987fec08d6db7e701fb2": {
+    "relation_pairs": [
+      [
+        "Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Canadian Residents",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "TFSA on Death",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Social Insurance Number (SIN)",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "TFSA vs RRSP",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Old Age Security (OAS)",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Canada Child Benefit",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Guaranteed Income Supplement (GIS)",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Tax-Free Savings Account (TFSA)",
+        "Withdrawal and Recontribution Rules"
+      ],
+      [
+        "Qualifying Investments",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "Overcontribution Penalty",
+        "Tax-Free Savings Account (TFSA)"
+      ],
+      [
+        "CRA",
+        "Tax-Free Savings Account (TFSA)"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1772101412,
+    "update_time": 1772101412,
+    "_id": "doc-4efa231cfe20987fec08d6db7e701fb2"
+  }
+}

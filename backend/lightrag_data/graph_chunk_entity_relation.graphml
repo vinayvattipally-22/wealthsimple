@@ -1,0 +1,2512 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="truncate" attr.type="string" />
+  <key id="d12" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d11" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d8" for="edge" attr.name="description" attr.type="string" />
+  <key id="d7" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d6" for="node" attr.name="truncate" attr.type="string" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="CRA Publication T4127">
+      <data key="d0">CRA Publication T4127</data>
+      <data key="d1">content</data>
+      <data key="d2">CRA Publication T4127 is a publication that contains payroll deductions tables and rates associated with CPP and EI in Canada.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101146</data>
+      <data key="d6" />
+    </node>
+    <node id="Canada Pension Plan (CPP)">
+      <data key="d0">Canada Pension Plan (CPP)</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Canada Pension Plan (CPP) is a social insurance program in Canada that provides retirement pensions and benefits to contributors.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101146</data>
+      <data key="d6" />
+    </node>
+    <node id="Quebec Pension Plan (QPP)">
+      <data key="d0">Quebec Pension Plan (QPP)</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Quebec Pension Plan (QPP) is a pension plan available to Quebec residents that offers retirement benefits, with slightly higher rates than CPP.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101146</data>
+      <data key="d6" />
+    </node>
+    <node id="Employment Insurance (EI)">
+      <data key="d0">Employment Insurance (EI)</data>
+      <data key="d1">concept</data>
+      <data key="d2">Employment Insurance (EI) provides temporary financial assistance to unemployed individuals in Canada.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101147</data>
+      <data key="d6" />
+    </node>
+    <node id="Carbon-Fiber Spikes">
+      <data key="d0">Carbon-Fiber Spikes</data>
+      <data key="d1">artifact</data>
+      <data key="d2">Carbon-fiber spikes are advanced sprinting shoes designed to provide enhanced performance for sprinters.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101147</data>
+      <data key="d6" />
+    </node>
+    <node id="T4 Box References">
+      <data key="d0">T4 Box References</data>
+      <data key="d1">concept</data>
+      <data key="d2">T4 Box References include various boxes on the T4 slip that report employee contributions and earnings for tax purposes.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101147</data>
+      <data key="d6" />
+    </node>
+    <node id="2025 Tax Year">
+      <data key="d0">2025 Tax Year</data>
+      <data key="d1">event</data>
+      <data key="d2">The 2025 Tax Year refers to the period for tax accounting in Canada, detailed in the CRA Payroll Deductions Tables.&lt;SEP&gt;The 2025 Tax Year outlines future tax rates and brackets that will be applicable for federal income taxation.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb&lt;SEP&gt;chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101248</data>
+      <data key="d6" />
+    </node>
+    <node id="Max Insurable Earnings">
+      <data key="d0">Max Insurable Earnings</data>
+      <data key="d1">concept</data>
+      <data key="d2">Max Insurable Earnings represent the highest amount on which employment insurance premiums are calculated.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101147</data>
+      <data key="d6" />
+    </node>
+    <node id="Year's Maximum Pensionable Earnings (YMPE)">
+      <data key="d0">Year's Maximum Pensionable Earnings (YMPE)</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Year's Maximum Pensionable Earnings (YMPE) is the maximum amount of earnings on which Canada Pension Plan contributions are based.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101148</data>
+      <data key="d6" />
+    </node>
+    <node id="Contribution Rate">
+      <data key="d0">Contribution Rate</data>
+      <data key="d1">concept</data>
+      <data key="d2">Contribution rate refers to the percentage of earnings that employees contribute to the Canada Pension Plan (CPP) and Employment Insurance (EI).</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101148</data>
+      <data key="d6" />
+    </node>
+    <node id="Basic Exemption">
+      <data key="d0">Basic Exemption</data>
+      <data key="d1">concept</data>
+      <data key="d2">The basic exemption is the minimum amount of earnings that is excluded from calculation for CPP contributions, set at $3,500 per year.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101148</data>
+      <data key="d6" />
+    </node>
+    <node id="Maximum Employee Contribution">
+      <data key="d0">Maximum Employee Contribution</data>
+      <data key="d1">concept</data>
+      <data key="d2">Maximum employee contribution represents the highest amount an employee can contribute to the Canada Pension Plan (CPP) or Employment Insurance (EI) in a given year.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101148</data>
+      <data key="d6" />
+    </node>
+    <node id="Second Earnings Ceiling (YAMPE)">
+      <data key="d0">Second Earnings Ceiling (YAMPE)</data>
+      <data key="d1">concept</data>
+      <data key="d2">The second earnings ceiling, referred to as YAMPE, is the maximum threshold for contributions for enhanced CPP starting in 2024.</data>
+      <data key="d3">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101149</data>
+      <data key="d6" />
+    </node>
+    <node id="Box 14">
+      <data key="d0">Box 14</data>
+      <data key="d1">data</data>
+      <data key="d2">Box 14 refers to a specific box mentioned in a financial context that is capped at maximums.&lt;SEP&gt;Box 14 is used to report total employment income on T4 slips.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e&lt;SEP&gt;chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101192</data>
+      <data key="d6" />
+    </node>
+    <node id="Box 24">
+      <data key="d0">Box 24</data>
+      <data key="d1">data</data>
+      <data key="d2">Box 24 is referenced alongside Box 14 and is subject to caps in the financial context.&lt;SEP&gt;Box 24 is utilized for reporting EI contributions on T4 slips.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e&lt;SEP&gt;chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101192</data>
+      <data key="d6" />
+    </node>
+    <node id="Box 26">
+      <data key="d0">Box 26</data>
+      <data key="d1">data</data>
+      <data key="d2">Box 26 is mentioned in relation to financial caps and contributes to calculations involving CPP and EI.&lt;SEP&gt;Box 26 is used for reporting additional deductions or earnings on T4 slips.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e&lt;SEP&gt;chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101192</data>
+      <data key="d6" />
+    </node>
+    <node id="CPP">
+      <data key="d0">CPP</data>
+      <data key="d1">concept</data>
+      <data key="d2">CPP refers to Canada Pension Plan contributions which generate non-refundable tax credits.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101151</data>
+      <data key="d6" />
+    </node>
+    <node id="EI">
+      <data key="d0">EI</data>
+      <data key="d1">concept</data>
+      <data key="d2">EI refers to Employment Insurance premiums that also generate non-refundable tax credits.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101151</data>
+      <data key="d6" />
+    </node>
+    <node id="Federal Tax Rate">
+      <data key="d0">Federal Tax Rate</data>
+      <data key="d1">concept</data>
+      <data key="d2">The federal tax rate is defined as 15%, applied to calculate non-refundable tax credits.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101151</data>
+      <data key="d6" />
+    </node>
+    <node id="CPP/EI Credit">
+      <data key="d0">CPP/EI Credit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The CPP/EI credit is calculated based on contributions and premiums, providing a reduction in federal tax payable.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101151</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Credits">
+      <data key="d0">Tax Credits</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tax credits reduce the amount of tax payable and can be generated by CPP and EI contributions.&lt;SEP&gt;Tax credits, including BPA, CPP, and EI, reduce the amount of tax payable.</data>
+      <data key="d3">chunk-be3c8254ac3b81df856eab05e2babc4e&lt;SEP&gt;chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101190</data>
+      <data key="d6" />
+    </node>
+    <node id="CRA T4">
+      <data key="d0">CRA T4</data>
+      <data key="d1">content</data>
+      <data key="d2">CRA T4 is a Statement of Remuneration Paid issued by employers to report employment income and deductions for the tax year.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="T4 Slip">
+      <data key="d0">T4 Slip</data>
+      <data key="d1">content</data>
+      <data key="d2">The T4 Slip is a document issued by employers to detail employment income and deductions for employees.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="T4 Box Reference Guide">
+      <data key="d0">T4 Box Reference Guide</data>
+      <data key="d1">content</data>
+      <data key="d2">The T4 Box Reference Guide provides detailed information about various T4 boxes, including descriptions and tax treatments.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="Employment Income">
+      <data key="d0">Employment Income</data>
+      <data key="d1">concept</data>
+      <data key="d2">Employment Income refers to money received by employees in exchange for their work, reported on the T4 Slip.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="CPP Contributions">
+      <data key="d0">CPP Contributions</data>
+      <data key="d1">concept</data>
+      <data key="d2">CPP Contributions are employee contributions to the Canada Pension Plan, reported on T4 slips for tax purposes.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="QPP Contributions">
+      <data key="d0">QPP Contributions</data>
+      <data key="d1">concept</data>
+      <data key="d2">QPP Contributions are contributions to the Quebec Pension Plan, specifically for Quebec residents, included in T4 reporting.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="EI Premiums">
+      <data key="d0">EI Premiums</data>
+      <data key="d1">concept</data>
+      <data key="d2">EI Premiums are amounts deducted from an employee's salary for Employment Insurance and reported on the T4 Slip.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101186</data>
+      <data key="d6" />
+    </node>
+    <node id="RPP Contributions">
+      <data key="d0">RPP Contributions</data>
+      <data key="d1">concept</data>
+      <data key="d2">RPP Contributions are amounts employees contribute to Registered Pension Plans and can be deducted from taxable income.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101187</data>
+      <data key="d6" />
+    </node>
+    <node id="Taxable Allowances">
+      <data key="d0">Taxable Allowances</data>
+      <data key="d1">concept</data>
+      <data key="d2">Taxable Allowances are benefits provided by employers that must be reported as income on the T4 Slip.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101188</data>
+      <data key="d6" />
+    </node>
+    <node id="Union Dues">
+      <data key="d0">Union Dues</data>
+      <data key="d1">concept</data>
+      <data key="d2">Union Dues are fees paid by employees to their unions, which can be deducted from gross income.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101188</data>
+      <data key="d6" />
+    </node>
+    <node id="Charitable Donations">
+      <data key="d0">Charitable Donations</data>
+      <data key="d1">concept</data>
+      <data key="d2">Charitable Donations are contributions made to registered charities, eligible for tax credits.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101188</data>
+      <data key="d6" />
+    </node>
+    <node id="Multiple T4 Slips">
+      <data key="d0">Multiple T4 Slips</data>
+      <data key="d1">concept</data>
+      <data key="d2">Multiple T4 Slips occur when an employee has worked for multiple employers in a tax year, requiring consolidation on the T1 return.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101188</data>
+      <data key="d6" />
+    </node>
+    <node id="T4001">
+      <data key="d0">T4001</data>
+      <data key="d1">content</data>
+      <data key="d2">The T4001 is the Employers' Guide providing information on how to complete T4 slips and report employment income.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101189</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Year 2024">
+      <data key="d0">Tax Year 2024</data>
+      <data key="d1">event</data>
+      <data key="d2">The Tax Year 2024 refers to the fiscal year for which the reported income and deductions are calculated and filed.&lt;SEP&gt;Tax Year 2024 refers to the year for which the RRSP maximum new room limit was set at $31,560.</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d&lt;SEP&gt;chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101331</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP Deductions">
+      <data key="d0">RRSP Deductions</data>
+      <data key="d1">concept</data>
+      <data key="d2">RRSP deductions are contributions made to Registered Retirement Savings Plans used to reduce taxable income.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101189</data>
+      <data key="d6" />
+    </node>
+    <node id="Federal Tax">
+      <data key="d0">Federal Tax</data>
+      <data key="d1">concept</data>
+      <data key="d2">Federal tax is the tax calculated based on taxable income at the national level.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101189</data>
+      <data key="d6" />
+    </node>
+    <node id="Provincial Tax">
+      <data key="d0">Provincial Tax</data>
+      <data key="d1">concept</data>
+      <data key="d2">Provincial tax is the tax calculated based on taxable income at the provincial level.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101190</data>
+      <data key="d6" />
+    </node>
+    <node id="Box 22">
+      <data key="d0">Box 22</data>
+      <data key="d1">data</data>
+      <data key="d2">Box 22 refers to the tax deducted at source, which can be applied as a credit on tax returns.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101191</data>
+      <data key="d6" />
+    </node>
+    <node id="Common T4 Scenarios">
+      <data key="d0">Common T4 Scenarios</data>
+      <data key="d1">concept</data>
+      <data key="d2">Common T4 scenarios describe typical situations that impact how employment income is reported and taxed.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101191</data>
+      <data key="d6" />
+    </node>
+    <node id="Employee with Income Below CPP/EI Caps">
+      <data key="d0">Employee with Income Below CPP/EI Caps</data>
+      <data key="d1">event</data>
+      <data key="d2">This scenario outlines the tax calculations for employees earning below the CPP and EI thresholds.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101191</data>
+      <data key="d6" />
+    </node>
+    <node id="Employee with Income Above CPP/EI Caps">
+      <data key="d0">Employee with Income Above CPP/EI Caps</data>
+      <data key="d1">event</data>
+      <data key="d2">This scenario describes tax implications for employees whose earnings exceed CPP and EI limits.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101192</data>
+      <data key="d6" />
+    </node>
+    <node id="Employee Starting Mid-Year">
+      <data key="d0">Employee Starting Mid-Year</data>
+      <data key="d1">event</data>
+      <data key="d2">This scenario details the handling of employment income and deductions for employees who begin working mid-year.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101193</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Payable">
+      <data key="d0">Tax Payable</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tax payable refers to the amount of tax that an individual or entity owes to the government after applying deductions and credits.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101193</data>
+      <data key="d6" />
+    </node>
+    <node id="Maximum Contribution for the Year">
+      <data key="d0">Maximum Contribution for the Year</data>
+      <data key="d1">concept</data>
+      <data key="d2">The maximum contribution refers to the highest allowable amount for CPP contributions within a given year.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101193</data>
+      <data key="d6" />
+    </node>
+    <node id="Maximum Premium for the Year">
+      <data key="d0">Maximum Premium for the Year</data>
+      <data key="d1">concept</data>
+      <data key="d2">The maximum premium refers to the upper limit for EI contributions that can be paid in a given year.</data>
+      <data key="d3">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101193</data>
+      <data key="d6" />
+    </node>
+    <node id="T1 Return">
+      <data key="d0">T1 Return</data>
+      <data key="d3">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d2">Multiple T4 Slips are combined on the T1 return to report total income for tax purposes.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101196</data>
+      <data key="d6" />
+    </node>
+    <node id="CRA T1 General Income Tax and Benefit Return">
+      <data key="d0">CRA T1 General Income Tax and Benefit Return</data>
+      <data key="d1">document</data>
+      <data key="d2">CRA T1 General Income Tax and Benefit Return is a tax form used for filing federal income tax returns in Canada.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101247</data>
+      <data key="d6" />
+    </node>
+    <node id="Income Tax Act">
+      <data key="d0">Income Tax Act</data>
+      <data key="d1">document</data>
+      <data key="d2">The Income Tax Act is the legislative framework governing income tax in Canada, including tax brackets and credits.&lt;SEP&gt;The Income Tax Act is the legislation that outlines tax obligations and regulations for individuals and corporations in Canada, including rules for RRSPs.&lt;SEP&gt;The Income Tax Act is a set of laws governing taxation in Canada, providing the framework for tax planning strategies.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423&lt;SEP&gt;chunk-1590b8716306682b296c39fb8f8a1c64&lt;SEP&gt;chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101362</data>
+      <data key="d6" />
+    </node>
+    <node id="Federal Income Tax">
+      <data key="d0">Federal Income Tax</data>
+      <data key="d1">concept</data>
+      <data key="d2">Federal Income Tax refers to taxes levied by the federal government on individual earnings, calculated through a progressive bracket system.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101247</data>
+      <data key="d6" />
+    </node>
+    <node id="Basic Personal Amount">
+      <data key="d0">Basic Personal Amount</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Basic Personal Amount is a non-refundable tax credit that reduces federal tax owed by individuals.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101247</data>
+      <data key="d6" />
+    </node>
+    <node id="2024 Tax Year">
+      <data key="d0">2024 Tax Year</data>
+      <data key="d1">event</data>
+      <data key="d2">The 2024 Tax Year is a period during which tax rates and brackets apply for calculating federal income tax in Canada.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101247</data>
+      <data key="d6" />
+    </node>
+    <node id="2023 Tax Year">
+      <data key="d0">2023 Tax Year</data>
+      <data key="d1">event</data>
+      <data key="d2">The 2023 Tax Year reflects the applicable tax rates and brackets for calculating federal income tax during that year.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101247</data>
+      <data key="d6" />
+    </node>
+    <node id="2022 Tax Year">
+      <data key="d0">2022 Tax Year</data>
+      <data key="d1">event</data>
+      <data key="d2">The 2022 Tax Year details the income tax rates and brackets relevant for taxation processes of that fiscal year.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101248</data>
+      <data key="d6" />
+    </node>
+    <node id="2021 Tax Year">
+      <data key="d0">2021 Tax Year</data>
+      <data key="d1">event</data>
+      <data key="d2">The 2021 Tax Year specifies the income tax rates and applicable brackets for the federal income tax calculation.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101249</data>
+      <data key="d6" />
+    </node>
+    <node id="Non-Refundable Tax Credits">
+      <data key="d0">Non-Refundable Tax Credits</data>
+      <data key="d1">concept</data>
+      <data key="d2">Non-Refundable Tax Credits are credits that reduce the taxpayer's liability but cannot result in a refund if they exceed the tax owed.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101249</data>
+      <data key="d6" />
+    </node>
+    <node id="Income Tax Brackets">
+      <data key="d0">Income Tax Brackets</data>
+      <data key="d1">concept</data>
+      <data key="d2">Income Tax Brackets refer to the ranges of taxable income that determine the applicable tax rates for federal income tax in Canada.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101249</data>
+      <data key="d6" />
+    </node>
+    <node id="Common Non-Refundable Tax Credits">
+      <data key="d0">Common Non-Refundable Tax Credits</data>
+      <data key="d1">concept</data>
+      <data key="d2">Common Non-Refundable Tax Credits are widely applicable tax credits that individuals can claim to reduce their overall tax liability.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101249</data>
+      <data key="d6" />
+    </node>
+    <node id="Common Deductions from Income">
+      <data key="d0">Common Deductions from Income</data>
+      <data key="d1">concept</data>
+      <data key="d2">Common Deductions from Income represent various allowable deductions that lower taxable income prior to tax calculation.</data>
+      <data key="d3">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101250</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP Contributions">
+      <data key="d0">RRSP Contributions</data>
+      <data key="d1">concept</data>
+      <data key="d2">RRSP contributions are retirement savings contributions that reduce taxable income up to a deduction limit before tax is calculated.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101250</data>
+      <data key="d6" />
+    </node>
+    <node id="Union/Professional Dues">
+      <data key="d0">Union/Professional Dues</data>
+      <data key="d1">concept</data>
+      <data key="d2">Union and professional dues are expenses that can be deducted from taxable income, typically reported in Box 44 on T4.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101250</data>
+      <data key="d6" />
+    </node>
+    <node id="Child Care Expenses">
+      <data key="d0">Child Care Expenses</data>
+      <data key="d1">concept</data>
+      <data key="d2">Child care expenses are costs incurred for the care of children that can reduce taxable income.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101250</data>
+      <data key="d6" />
+    </node>
+    <node id="Moving Expenses">
+      <data key="d0">Moving Expenses</data>
+      <data key="d1">concept</data>
+      <data key="d2">Moving expenses can be deducted if an individual moves 40 or more kilometers closer to work or school.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101251</data>
+      <data key="d6" />
+    </node>
+    <node id="Employment Expenses">
+      <data key="d0">Employment Expenses</data>
+      <data key="d1">concept</data>
+      <data key="d2">Employment expenses are costs required by an employer that can be deducted from taxable income, typically supported by Form T2200.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101251</data>
+      <data key="d6" />
+    </node>
+    <node id="Capital Gains Deduction">
+      <data key="d0">Capital Gains Deduction</data>
+      <data key="d1">concept</data>
+      <data key="d2">The capital gains deduction applies to qualifying small business shares and farm/fishing property, allowing for tax reductions on capital gains.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101252</data>
+      <data key="d6" />
+    </node>
+    <node id="Northern Residents Deduction">
+      <data key="d0">Northern Residents Deduction</data>
+      <data key="d1">concept</data>
+      <data key="d2">Northern residents deduction is a tax benefit that assists residents living in prescribed northern zones, documented using Form T2222.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101252</data>
+      <data key="d6" />
+    </node>
+    <node id="Federal Tax Calculation">
+      <data key="d0">Federal Tax Calculation</data>
+      <data key="d1">concept</data>
+      <data key="d2">Federal tax calculation is a process involving the computation of tax owed based on total income and applicable deductions.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101252</data>
+      <data key="d6" />
+    </node>
+    <node id="Marginal Tax Rate">
+      <data key="d0">Marginal Tax Rate</data>
+      <data key="d1">concept</data>
+      <data key="d2">The marginal tax rate represents the rate imposed on the next dollar of income and influences tax savings derived from deductions.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101252</data>
+      <data key="d6" />
+    </node>
+    <node id="Total Income">
+      <data key="d0">Total Income</data>
+      <data key="d1">concept</data>
+      <data key="d2">Total income refers to all earnings received before any deductions are applied, noted on Line 15000 in tax calculations.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101252</data>
+      <data key="d6" />
+    </node>
+    <node id="Net Income">
+      <data key="d0">Net Income</data>
+      <data key="d1">concept</data>
+      <data key="d2">Net income is the amount remaining after deductions are subtracted from total income, as indicated on Line 23600.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101252</data>
+      <data key="d6" />
+    </node>
+    <node id="Taxable Income">
+      <data key="d0">Taxable Income</data>
+      <data key="d1">concept</data>
+      <data key="d2">Taxable income is calculated after additional deductions are applied to net income, referenced on Line 26000 in tax documentation.&lt;SEP&gt;Taxable income refers to the amount of income that is subject to tax, which is relevant for calculating the Ontario Health Premium.</data>
+      <data key="d3">chunk-37cf12753edb4a0b44312876883ae249&lt;SEP&gt;chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101289</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Provincial Income Tax">
+      <data key="d0">Ontario Provincial Income Tax</data>
+      <data key="d1">concept</data>
+      <data key="d2">Ontario Provincial Income Tax outlines the taxation system for the province of Ontario, Canada, including tax brackets and credits.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101284</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Tax Brackets">
+      <data key="d0">Ontario Tax Brackets</data>
+      <data key="d1">concept</data>
+      <data key="d2">Ontario Tax Brackets illustrate the progressive taxation system used in Ontario, specifying income ranges and corresponding tax rates for different years.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101284</data>
+      <data key="d6" />
+    </node>
+    <node id="Taxable Income Range">
+      <data key="d0">Taxable Income Range</data>
+      <data key="d1">data</data>
+      <data key="d2">Taxable Income Range is a classification of income amounts that determine the tax rates applicable to taxpayers in Ontario, changing each year.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101284</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Basic Personal Amount">
+      <data key="d0">Ontario Basic Personal Amount</data>
+      <data key="d1">data</data>
+      <data key="d2">The Ontario Basic Personal Amount is a non-refundable tax credit that varies by year and impacts provincial income tax calculations.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101285</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Surtax">
+      <data key="d0">Ontario Surtax</data>
+      <data key="d1">concept</data>
+      <data key="d2">Ontario Surtax is an additional tax levied on provincial tax that exceeds specified thresholds, affecting high-income earners.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101285</data>
+      <data key="d6" />
+    </node>
+    <node id="Combined Ontario Marginal Rates">
+      <data key="d0">Combined Ontario Marginal Rates</data>
+      <data key="d1">data</data>
+      <data key="d2">Combined Ontario Marginal Rates represent the total tax rates applicable to different income ranges combining both federal and provincial rates for the 2024 tax year.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101285</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Tax Credits">
+      <data key="d0">Ontario Tax Credits</data>
+      <data key="d1">concept</data>
+      <data key="d2">Ontario Tax Credits provide financial relief to residents through various credits based on specific criteria, aiming to reduce tax burdens.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101285</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Trillium Benefit">
+      <data key="d0">Ontario Trillium Benefit</data>
+      <data key="d1">concept</data>
+      <data key="d2">Ontario Trillium Benefit is a combined tax credit offered in Ontario that includes multiple credits into a single monthly payment.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101285</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Energy and Property Tax Credit">
+      <data key="d0">Ontario Energy and Property Tax Credit</data>
+      <data key="d1">category</data>
+      <data key="d2">Ontario Energy and Property Tax Credit provides financial assistance for property tax or rent expenses, subject to income adjustment.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101286</data>
+      <data key="d6" />
+    </node>
+    <node id="Northern Ontario Energy Credit">
+      <data key="d0">Northern Ontario Energy Credit</data>
+      <data key="d1">category</data>
+      <data key="d2">The Northern Ontario Energy Credit provides financial relief to northern residents, offering amounts up to $180 for singles and $277 for families.&lt;SEP&gt;Northern Ontario Energy Credit is a financial benefit aimed at residents in Northern Ontario, differentiating between singles and families.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183&lt;SEP&gt;chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Sales Tax Credit">
+      <data key="d0">Ontario Sales Tax Credit</data>
+      <data key="d1">category</data>
+      <data key="d2">The Ontario Sales Tax Credit helps families with tax relief, allowing up to $345 per adult and per child, subject to income adjustments.&lt;SEP&gt;Ontario Sales Tax Credit offers reimbursement for sales tax, adjusted based on family income and number of children.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183&lt;SEP&gt;chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Low-Income Individuals and Families Tax (LIFT) Credit">
+      <data key="d0">Ontario Low-Income Individuals and Families Tax (LIFT) Credit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Ontario LIFT Credit offers tax relief of up to $875 for low-income workers, contingent upon certain income thresholds.&lt;SEP&gt;Ontario Low-Income Individuals and Families Tax (LIFT) Credit is designed to support low-income residents, reducing their provincial tax liabilities.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183&lt;SEP&gt;chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Credits (ON479)">
+      <data key="d0">Ontario Credits (ON479)</data>
+      <data key="d1">document</data>
+      <data key="d2">Ontario Credits (ON479) is a document that details the various tax credits available in Ontario, including specifications for eligibility and amounts.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Tax Guide">
+      <data key="d0">Ontario Tax Guide</data>
+      <data key="d1">document</data>
+      <data key="d2">The Ontario Tax Guide provides comprehensive information about tax obligations, rates, and credits applicable to residents of Ontario.</data>
+      <data key="d3">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Childcare Access and Relief from Expenses (CARE) Credit">
+      <data key="d0">Ontario Childcare Access and Relief from Expenses (CARE) Credit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Ontario CARE Credit is a refundable credit designed to cover childcare expenses, with eligibility based on family income.</data>
+      <data key="d3">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Health Premium">
+      <data key="d0">Ontario Health Premium</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Ontario Health Premium is a levy based on taxable income collected alongside income tax, varying by income brackets.</data>
+      <data key="d3">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101287</data>
+      <data key="d6" />
+    </node>
+    <node id="Ontario Sales Tax Credit (OSTC)">
+      <data key="d0">Ontario Sales Tax Credit (OSTC)</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Ontario Sales Tax Credit (OSTC) provides financial assistance up to $345 per adult and child, adjusted by family income.</data>
+      <data key="d3">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101289</data>
+      <data key="d6" />
+    </node>
+    <node id="Qualifying Rollover Recipients">
+      <data key="d0">Qualifying Rollover Recipients</data>
+      <data key="d1">concept</data>
+      <data key="d2">Qualifying rollover recipients include specific individuals such as a spouse, common-law partner, and financially dependent children or grandchildren.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101327</data>
+      <data key="d6" />
+    </node>
+    <node id="Spousal RRSPs">
+      <data key="d0">Spousal RRSPs</data>
+      <data key="d1">concept</data>
+      <data key="d2">Spousal RRSPs are retirement savings plans used for income splitting between partners.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101327</data>
+      <data key="d6" />
+    </node>
+    <node id="HBP">
+      <data key="d0">HBP</data>
+      <data key="d1">concept</data>
+      <data key="d2">HBP stands for Home Buyers' Plan, a tax strategy allowing first-time home purchases through an interest-free loan from personal savings.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101327</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Planning Strategies">
+      <data key="d0">Tax Planning Strategies</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tax planning strategies, specifically related to RRSPs, aim to optimize tax benefits and savings for individuals.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101327</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Bracket">
+      <data key="d0">Tax Bracket</data>
+      <data key="d1">concept</data>
+      <data key="d2">A tax bracket refers to a range of income that is taxed at a specific rate, affecting the value of deductions.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101328</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP">
+      <data key="d0">RRSP</data>
+      <data key="d1">concept</data>
+      <data key="d2">RRSP stands for Registered Retirement Savings Plan, a tax-advantaged savings account for retirement in Canada.&lt;SEP&gt;Registered Retirement Savings Plan (RRSP) is a retirement savings plan that provides tax advantages for Canadians saving for retirement.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4&lt;SEP&gt;chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101362</data>
+      <data key="d6" />
+    </node>
+    <node id="Higher Tax Bracket">
+      <data key="d0">Higher Tax Bracket</data>
+      <data key="d1">concept</data>
+      <data key="d2">Being in a higher tax bracket refers to a status where individuals have higher income levels and therefore pay taxes at a greater rate.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101328</data>
+      <data key="d6" />
+    </node>
+    <node id="Income Splitting">
+      <data key="d0">Income Splitting</data>
+      <data key="d1">concept</data>
+      <data key="d2">Income splitting is a tax strategy that allows couples to reduce their overall tax burden by distributing income between partners.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101328</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax-Deferred Growth">
+      <data key="d0">Tax-Deferred Growth</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tax-deferred growth is the increase in value of an investment that grows without being taxed until withdrawals are made.</data>
+      <data key="d3">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101329</data>
+      <data key="d6" />
+    </node>
+    <node id="Registered Retirement Savings Plan">
+      <data key="d0">Registered Retirement Savings Plan</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Registered Retirement Savings Plan (RRSP) is a tax-advantaged savings plan registered with the Canada Revenue Agency, allowing for tax-deductible contributions and tax-deferred investment growth.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101329</data>
+      <data key="d6" />
+    </node>
+    <node id="Canada Revenue Agency">
+      <data key="d0">Canada Revenue Agency</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Canada Revenue Agency (CRA) is the governmental body responsible for tax collection and administration in Canada, overseeing Registered Retirement Savings Plans.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101329</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP Deduction Limit">
+      <data key="d0">RRSP Deduction Limit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The RRSP deduction limit defines the maximum amount an individual can deduct for RRSP contributions in a tax year.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101330</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Year 2020">
+      <data key="d0">Tax Year 2020</data>
+      <data key="d1">event</data>
+      <data key="d2">Tax Year 2020 refers to the year for which the RRSP maximum new room limit was set at $27,230.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101330</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Year 2021">
+      <data key="d0">Tax Year 2021</data>
+      <data key="d1">event</data>
+      <data key="d2">Tax Year 2021 refers to the year for which the RRSP maximum new room limit was set at $27,830.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101330</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Year 2022">
+      <data key="d0">Tax Year 2022</data>
+      <data key="d1">event</data>
+      <data key="d2">Tax Year 2022 refers to the year for which the RRSP maximum new room limit was set at $29,210.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101330</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax Year 2023">
+      <data key="d0">Tax Year 2023</data>
+      <data key="d1">event</data>
+      <data key="d2">Tax Year 2023 refers to the year for which the RRSP maximum new room limit was set at $30,780.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101331</data>
+      <data key="d6" />
+    </node>
+    <node id="Overcontribution Penalty">
+      <data key="d0">Overcontribution Penalty</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Overcontribution Penalty is a tax applied to contributions exceeding the RRSP deduction limit by more than $2,000, accrues monthly until corrected.&lt;SEP&gt;The overcontribution penalty applies when contributions exceed the allowed TFSA limit, resulting in a 1% tax per month on the excess amount.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64&lt;SEP&gt;chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101401</data>
+      <data key="d6" />
+    </node>
+    <node id="Form T1-OVP">
+      <data key="d0">Form T1-OVP</data>
+      <data key="d1">document</data>
+      <data key="d2">Form T1-OVP is the Individual Tax Return for RRSP, PRPP, and SPP Excess Contributions, which must be filed when overcontributions occur.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101331</data>
+      <data key="d6" />
+    </node>
+    <node id="Spousal RRSP">
+      <data key="d0">Spousal RRSP</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Spousal RRSP allows an individual to contribute to their spouse's or common-law partner's RRSP, providing tax deductions while the spouse owns the plan.&lt;SEP&gt;Spousal RRSP is a type of RRSP that allows one spouse to contribute to the other's retirement savings to equalize tax burdens during retirement.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64&lt;SEP&gt;chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101362</data>
+      <data key="d6" />
+    </node>
+    <node id="Home Buyers' Plan">
+      <data key="d0">Home Buyers' Plan</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Home Buyers' Plan (HBP) permits first-time home buyers to withdraw certain funds from their RRSP tax-free to purchase or build a qualifying home.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101332</data>
+      <data key="d6" />
+    </node>
+    <node id="Lifelong Learning Plan">
+      <data key="d0">Lifelong Learning Plan</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Lifelong Learning Plan (LLP) allows for RRSP withdrawals for education or training expenses, subject to repayment requirements.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101332</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP Withdrawals">
+      <data key="d0">RRSP Withdrawals</data>
+      <data key="d1">concept</data>
+      <data key="d2">RRSP Withdrawals are amounts taken from an RRSP, which are generally taxed as income when received.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101332</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP at Death">
+      <data key="d0">RRSP at Death</data>
+      <data key="d1">concept</data>
+      <data key="d2">The RRSP at Death refers to the treatment of an RRSP following the account holder's death, potentially rolling over to a qualifying survivor.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101333</data>
+      <data key="d6" />
+    </node>
+    <node id="Key Tax Planning Strategies">
+      <data key="d0">Key Tax Planning Strategies</data>
+      <data key="d1">concept</data>
+      <data key="d2">Key Tax Planning Strategies with RRSPs include maximizing deductions by contributing in higher tax brackets and utilizing spousal RRSPs for income splitting.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101333</data>
+      <data key="d6" />
+    </node>
+    <node id="RRSP Contribution Limits">
+      <data key="d0">RRSP Contribution Limits</data>
+      <data key="d1">concept</data>
+      <data key="d2">RRSP Contribution Limits describe the calculations for the maximum deductible amount for contributions made to a Registered Retirement Savings Plan in a given year.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101333</data>
+      <data key="d6" />
+    </node>
+    <node id="Annual RRSP Dollar Limits">
+      <data key="d0">Annual RRSP Dollar Limits</data>
+      <data key="d1">data</data>
+      <data key="d2">Annual RRSP Dollar Limits represent the specific maximum contribution amounts set for each tax year from 2020 to 2025.</data>
+      <data key="d3">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101334</data>
+      <data key="d6" />
+    </node>
+    <node id="Charitable Donation Tax Credit">
+      <data key="d0">Charitable Donation Tax Credit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Charitable Donation Tax Credit is a tax incentive based on the fair market value of securities at the time of donation, promoting efficient giving strategies.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101360</data>
+      <data key="d6" />
+    </node>
+    <node id="Work from Home Expenses">
+      <data key="d0">Work from Home Expenses</data>
+      <data key="d1">concept</data>
+      <data key="d2">Work from Home Expenses refer to the costs employees can deduct when required to work from home, including home office expenses.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101360</data>
+      <data key="d6" />
+    </node>
+    <node id="Employment Deductions">
+      <data key="d0">Employment Deductions</data>
+      <data key="d1">concept</data>
+      <data key="d2">Employment Deductions encompass various allowable expenses that employees can claim on their taxes based on their job requirements.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101360</data>
+      <data key="d6" />
+    </node>
+    <node id="Vehicle Expenses">
+      <data key="d0">Vehicle Expenses</data>
+      <data key="d1">concept</data>
+      <data key="d2">Vehicle Expenses are deductions available to employees using personal vehicles for work-related tasks, including fuel and maintenance costs.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101360</data>
+      <data key="d6" />
+    </node>
+    <node id="Medical Expenses">
+      <data key="d0">Medical Expenses</data>
+      <data key="d1">concept</data>
+      <data key="d2">Medical Expenses are costs that can be claimed for tax credits, specifically for expenses exceeding certain thresholds within a 12-month period.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101361</data>
+      <data key="d6" />
+    </node>
+    <node id="Form T2200">
+      <data key="d0">Form T2200</data>
+      <data key="d1">method</data>
+      <data key="d2">Form T2200 is a tax form that certifies an employee's eligibility for claiming various work-related expenses, including those for work from home and vehicle usage.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101361</data>
+      <data key="d6" />
+    </node>
+    <node id="Unused Donation Credits">
+      <data key="d0">Unused Donation Credits</data>
+      <data key="d1">concept</data>
+      <data key="d2">Unused Donation Credits refer to charitable donation tax credits that can be carried forward up to 5 years for tax purposes.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101361</data>
+      <data key="d6" />
+    </node>
+    <node id="29%/33% Federal Credit Rate">
+      <data key="d0">29%/33% Federal Credit Rate</data>
+      <data key="d1">concept</data>
+      <data key="d2">The 29%/33% Federal Credit Rate indicates the federal tax credit rates applicable under certain income conditions for charitable donations.</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101361</data>
+      <data key="d6" />
+    </node>
+    <node id="Canadian Tax Planning Strategies">
+      <data key="d0">Canadian Tax Planning Strategies</data>
+      <data key="d1">concept</data>
+      <data key="d2">Canadian Tax Planning Strategies refer to various methods and approaches for optimizing tax liabilities in Canada, as outlined in CRA publications and the Income Tax Act.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101362</data>
+      <data key="d6" />
+    </node>
+    <node id="TFSA">
+      <data key="d0">TFSA</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tax-Free Savings Account (TFSA) is a savings account that allows Canadians to earn tax-free investment income and withdrawals.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101363</data>
+      <data key="d6" />
+    </node>
+    <node id="Capital Gains">
+      <data key="d0">Capital Gains</data>
+      <data key="d1">concept</data>
+      <data key="d2">Capital gains are the profits made from selling an asset for more than its purchase price, which is subject to tax regulations.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101363</data>
+      <data key="d6" />
+    </node>
+    <node id="Pension Income Splitting">
+      <data key="d0">Pension Income Splitting</data>
+      <data key="d1">concept</data>
+      <data key="d2">Pension income splitting allows individuals receiving qualifying pension income to allocate part of their income to their spouse for tax benefits.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101363</data>
+      <data key="d6" />
+    </node>
+    <node id="Canada Child Benefit">
+      <data key="d0">Canada Child Benefit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Canada Child Benefit (CCB) is a government program that provides financial support to families with children based on their family income.&lt;SEP&gt;The Canada Child Benefit is a financial support program for families with children, which is also not affected by TFSA withdrawals.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c&lt;SEP&gt;chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101403</data>
+      <data key="d6" />
+    </node>
+    <node id="Charitable Donation">
+      <data key="d0">Charitable Donation</data>
+      <data key="d1">concept</data>
+      <data key="d2">Charitable donations involve giving to registered charities, which can provide tax credits and other financial benefits to the donor.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101364</data>
+      <data key="d6" />
+    </node>
+    <node id="RRIF">
+      <data key="d0">RRIF</data>
+      <data key="d1">concept</data>
+      <data key="d2">Registered Retirement Income Fund (RRIF) is a type of account that individuals must withdraw from in retirement and is influenced by previous RRSP contributions.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101364</data>
+      <data key="d6" />
+    </node>
+    <node id="OAS Clawback">
+      <data key="d0">OAS Clawback</data>
+      <data key="d1">concept</data>
+      <data key="d2">Old Age Security (OAS) clawback refers to the reduction of OAS payments based on the recipient's income over a certain threshold.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101364</data>
+      <data key="d6" />
+    </node>
+    <node id="Capital Gains Reserve">
+      <data key="d0">Capital Gains Reserve</data>
+      <data key="d1">concept</data>
+      <data key="d2">Capital Gains Reserve allows individuals to claim a capital gain over several years for property sold with deferred payments, subject to specific time limits.</data>
+      <data key="d3">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101365</data>
+      <data key="d6" />
+    </node>
+    <node id="securities">
+      <data key="d0">securities</data>
+      <data key="d3">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d2">The Charitable Donation Tax Credit is determined by the fair market value of the securities at the time of donation.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101366</data>
+      <data key="d6" />
+    </node>
+    <node id="Tax-Free Savings Account (TFSA)">
+      <data key="d0">Tax-Free Savings Account (TFSA)</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Tax-Free Savings Account (TFSA) is a registered savings account for Canadian residents, allowing tax-free income from investments, with specific rules for contributions and withdrawals.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="CRA">
+      <data key="d0">CRA</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Canada Revenue Agency (CRA) is the governmental body responsible for tax collection and administration in Canada, providing guidelines for the TFSA.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="Canadian Residents">
+      <data key="d0">Canadian Residents</data>
+      <data key="d1">concept</data>
+      <data key="d2">Canadian residents are individuals who live in Canada and are eligible to open a Tax-Free Savings Account (TFSA) if they meet certain criteria.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="Social Insurance Number (SIN)">
+      <data key="d0">Social Insurance Number (SIN)</data>
+      <data key="d1">data</data>
+      <data key="d2">The Social Insurance Number (SIN) is a unique identifier for individuals in Canada, necessary for opening a TFSA and other official purposes.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="2009–2012 Contribution Limit">
+      <data key="d0">2009–2012 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA from 2009 to 2012 was set at $5,000 per year.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="2013–2014 Contribution Limit">
+      <data key="d0">2013–2014 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA for the years 2013 and 2014 was set at $5,500 per year.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="2015 Contribution Limit">
+      <data key="d0">2015 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA for the year 2015 was set at $10,000.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="2016–2018 Contribution Limit">
+      <data key="d0">2016–2018 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA from 2016 to 2018 was set at $5,500 per year.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101398</data>
+      <data key="d6" />
+    </node>
+    <node id="2019–2022 Contribution Limit">
+      <data key="d0">2019–2022 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA from 2019 to 2022 was set at $6,000 per year.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101400</data>
+      <data key="d6" />
+    </node>
+    <node id="2023 Contribution Limit">
+      <data key="d0">2023 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA for the year 2023 was set at $6,500.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101400</data>
+      <data key="d6" />
+    </node>
+    <node id="2024 Contribution Limit">
+      <data key="d0">2024 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA for the year 2024 is set at $7,000.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101400</data>
+      <data key="d6" />
+    </node>
+    <node id="2025 Contribution Limit">
+      <data key="d0">2025 Contribution Limit</data>
+      <data key="d1">data</data>
+      <data key="d2">The contribution limit for the TFSA for the year 2025 is also set at $7,000.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101400</data>
+      <data key="d6" />
+    </node>
+    <node id="Cumulative Contribution Room">
+      <data key="d0">Cumulative Contribution Room</data>
+      <data key="d1">concept</data>
+      <data key="d2">Cumulative contribution room represents the total amount a Canadian resident can contribute to their TFSA, which accumulates annually.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101401</data>
+      <data key="d6" />
+    </node>
+    <node id="Withdrawal and Recontribution Rules">
+      <data key="d0">Withdrawal and Recontribution Rules</data>
+      <data key="d1">concept</data>
+      <data key="d2">Withdrawal and recontribution rules govern how TFSA withdrawals are treated regarding tax and future contributions.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101401</data>
+      <data key="d6" />
+    </node>
+    <node id="Qualifying Investments">
+      <data key="d0">Qualifying Investments</data>
+      <data key="d1">concept</data>
+      <data key="d2">Qualifying investments for a TFSA include a wide range of financial instruments that can be held within the account, similar to an RRSP.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101401</data>
+      <data key="d6" />
+    </node>
+    <node id="TFSA on Death">
+      <data key="d0">TFSA on Death</data>
+      <data key="d1">concept</data>
+      <data key="d2">The TFSA on death provision determines how the account's value is handled when the holder passes away, impacting tax obligations for designated successors or beneficiaries.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101402</data>
+      <data key="d6" />
+    </node>
+    <node id="TFSA vs RRSP">
+      <data key="d0">TFSA vs RRSP</data>
+      <data key="d1">concept</data>
+      <data key="d2">The TFSA versus RRSP comparison discusses the advantages and considerations for choosing between these two types of registered savings accounts.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101402</data>
+      <data key="d6" />
+    </node>
+    <node id="CRA Publication RC4466">
+      <data key="d0">CRA Publication RC4466</data>
+      <data key="d1">content</data>
+      <data key="d2">CRA Publication RC4466 is the guide for individuals on Tax-Free Savings Accounts (TFSAs), providing essential information about its rules and regulations.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101402</data>
+      <data key="d6" />
+    </node>
+    <node id="OAS">
+      <data key="d0">OAS</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Old Age Security (OAS) is a financial assistance program in Canada that provides benefits to seniors, impacting eligibility considerations for TFSAs.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101402</data>
+      <data key="d6" />
+    </node>
+    <node id="GIS">
+      <data key="d0">GIS</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Guaranteed Income Supplement (GIS) is a financial aid program in Canada designed to support low-income seniors, which can be influenced by TFSA withdrawals.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101403</data>
+      <data key="d6" />
+    </node>
+    <node id="GST/HST Credit">
+      <data key="d0">GST/HST Credit</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Goods and Services Tax/Harmonized Sales Tax (GST/HST) credit is a payment to help individuals with low or modest incomes; TFSA withdrawals do not affect eligibility for this credit.</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101403</data>
+      <data key="d6" />
+    </node>
+    <node id="Old Age Security (OAS)">
+      <data key="d0">Old Age Security (OAS)</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d2">The rules of the Tax-Free Savings Account impact beneficiaries' eligibility for Old Age Security benefits.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101408</data>
+      <data key="d6" />
+    </node>
+    <node id="Guaranteed Income Supplement (GIS)">
+      <data key="d0">Guaranteed Income Supplement (GIS)</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d2">Withdrawals from a Tax-Free Savings Account have implications for eligibility for the Guaranteed Income Supplement.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101409</data>
+      <data key="d6" />
+    </node>
+    <node id="Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit">
+      <data key="d0">Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit</data>
+      <data key="d3">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d2">TFSA withdrawals do not impact eligibility for the Goods and Services Tax/Harmonized Sales Tax credit.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1772101410</data>
+      <data key="d6" />
+    </node>
+    <edge source="CRA Publication T4127" target="Canada Pension Plan (CPP)">
+      <data key="d7">1.0</data>
+      <data key="d8">CRA Publication T4127 provides detailed information on the Canada Pension Plan (CPP) contributions and calculations.</data>
+      <data key="d9">governance,source of information</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101152</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canada Pension Plan (CPP)" target="Quebec Pension Plan (QPP)">
+      <data key="d7">1.0</data>
+      <data key="d8">Individuals in Quebec contribute to the Quebec Pension Plan (QPP) instead of the Canada Pension Plan (CPP) for pension coverage.</data>
+      <data key="d9">alternative plans,regional differences</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101153</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canada Pension Plan (CPP)" target="T4 Box References">
+      <data key="d7">1.0</data>
+      <data key="d8">T4 Box References provide details on employee contributions to the Canada Pension Plan (CPP) for tax purposes.</data>
+      <data key="d9">contribution tracking,tax reporting</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101155</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canada Pension Plan (CPP)" target="Contribution Rate">
+      <data key="d7">1.0</data>
+      <data key="d8">The contribution rate determines the percentage deducted from employees' earnings for contributions to the Canada Pension Plan (CPP).</data>
+      <data key="d9">employee contributions,financial calculation</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101156</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canada Pension Plan (CPP)" target="Basic Exemption">
+      <data key="d7">1.0</data>
+      <data key="d8">The basic exemption is a threshold amount under which employees are not required to contribute to the Canada Pension Plan (CPP).</data>
+      <data key="d9">contributory threshold,employee deductions</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101157</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canada Pension Plan (CPP)" target="Second Earnings Ceiling (YAMPE)">
+      <data key="d7">1.0</data>
+      <data key="d8">The introduction of the second earnings ceiling (YAMPE) allows for enhanced contributions to the Canada Pension Plan (CPP) starting in 2024.</data>
+      <data key="d9">enhanced contributions,pension ceiling</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101158</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employment Insurance (EI)" target="Max Insurable Earnings">
+      <data key="d7">1.0</data>
+      <data key="d8">Employment Insurance (EI) premiums are calculated based on max insurable earnings, affecting unemployment assistance eligibility.</data>
+      <data key="d9">employment support,premium calculation</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101152</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employment Insurance (EI)" target="Maximum Employee Contribution">
+      <data key="d7">1.0</data>
+      <data key="d8">Maximum employee contributions signify the cap on how much an employee can pay into Employment Insurance (EI) in a fiscal year.</data>
+      <data key="d9">financial limit,insurance contribution</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101154</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Box References" target="Year's Maximum Pensionable Earnings (YMPE)">
+      <data key="d7">1.0</data>
+      <data key="d8">The Year's Maximum Pensionable Earnings (YMPE) influences the reporting on T4 Box References for CPP contributions.</data>
+      <data key="d9">reporting guidelines,taxation</data>
+      <data key="d10">chunk-a149e8a923d92f6e23bd59e44524fceb</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101152</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Box 14" target="Box 24">
+      <data key="d7">1.0</data>
+      <data key="d8">Box 14 is subject to maximum caps that also apply to Box 24.</data>
+      <data key="d9">financial regulation,limits</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101154</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Box 14" target="Box 26">
+      <data key="d7">1.0</data>
+      <data key="d8">Box 14 is subject to maximum caps that also apply to Box 26.</data>
+      <data key="d9">financial regulation,limits</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101155</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Box 14" target="Employee with Income Below CPP/EI Caps">
+      <data key="d7">1.0</data>
+      <data key="d8">Box 14 reports the total income for employees earning below the CPP/EI caps.</data>
+      <data key="d9">income reporting,taxation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101199</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Box 14" target="Employee with Income Above CPP/EI Caps">
+      <data key="d7">1.0</data>
+      <data key="d8">Box 14 indicates total income exceeding the CPP/EI caps.</data>
+      <data key="d9">income reporting,taxation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101200</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Box 14" target="Employee Starting Mid-Year">
+      <data key="d7">1.0</data>
+      <data key="d8">Box 14 reflects only the earnings that occurred during the employment period for mid-year starters.</data>
+      <data key="d9">employment period,income reporting</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101201</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Box 24" target="Employee with Income Below CPP/EI Caps">
+      <data key="d7">1.0</data>
+      <data key="d8">Box 24 reflects EI contributions for employees earning below the caps.</data>
+      <data key="d9">income reporting,taxation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101200</data>
+      <data key="d13" />
+    </edge>
+    <edge source="CPP" target="CPP/EI Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">CPP contributions are used to calculate the CPP/EI credit, which is non-refundable.</data>
+      <data key="d9">non-refundable,tax calculation</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101155</data>
+      <data key="d13" />
+    </edge>
+    <edge source="CPP" target="Tax Credits">
+      <data key="d7">1.0</data>
+      <data key="d8">CPP contributions generate non-refundable tax credits that reduce federal tax payable.</data>
+      <data key="d9">financial benefit,government policy</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101156</data>
+      <data key="d13" />
+    </edge>
+    <edge source="EI" target="CPP/EI Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">EI premiums are included in calculating the CPP/EI credit which reduces federal tax payable.</data>
+      <data key="d9">non-refundable,tax calculation</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101156</data>
+      <data key="d13" />
+    </edge>
+    <edge source="EI" target="Tax Credits">
+      <data key="d7">1.0</data>
+      <data key="d8">EI premiums contribute to generating non-refundable tax credits that offset federal tax payable.</data>
+      <data key="d9">financial benefit,government policy</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101157</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Tax Rate" target="CPP/EI Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">The CPP/EI credit is calculated at the federal tax rate of 15%.</data>
+      <data key="d9">percentage,tax regulation</data>
+      <data key="d10">chunk-be3c8254ac3b81df856eab05e2babc4e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101157</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Credits" target="RRSP Deductions">
+      <data key="d7">1.0</data>
+      <data key="d8">RRSP deductions help in reducing the taxable income, thus potentially increasing the tax credits received.</data>
+      <data key="d9">income statement,tax reduction</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101197</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Credits" target="Federal Tax">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax credits reduce the total federal tax payable.</data>
+      <data key="d9">financial relief,tax calculation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101198</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Credits" target="Provincial Tax">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax credits also lower the provincial tax obligations.</data>
+      <data key="d9">financial relief,tax calculation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101199</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Credits" target="Tax Payable">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax credits reduce the total tax payable, impacting an individual’s financial obligation to the government.</data>
+      <data key="d9">financial obligation,tax reduction</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101200</data>
+      <data key="d13" />
+    </edge>
+    <edge source="CRA T4" target="T4 Slip">
+      <data key="d7">1.0</data>
+      <data key="d8">CRA T4 is used to report employment income and deductions for tax purposes in the T4 Slip.</data>
+      <data key="d9">reporting,tax documentation</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101194</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="T4 Box Reference Guide">
+      <data key="d7">1.0</data>
+      <data key="d8">The T4 Box Reference Guide provides necessary information on how to fill out the T4 Slip accurately.</data>
+      <data key="d9">guidance,tax reporting</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101195</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="Employment Income">
+      <data key="d7">1.0</data>
+      <data key="d8">Employment Income is reported in Box 14 of the T4 Slip for tax calculations.</data>
+      <data key="d9">income reporting,tax return</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101195</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="CPP Contributions">
+      <data key="d7">1.0</data>
+      <data key="d8">CPP Contributions are reported on the T4 Slip to document employee contributions for tax purposes.</data>
+      <data key="d9">employee contribution,tax deduction</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101196</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="QPP Contributions">
+      <data key="d7">1.0</data>
+      <data key="d8">QPP Contributions are specifically for Quebec residents and are included on the T4 Slip.</data>
+      <data key="d9">Quebec residents,tax deduction</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101197</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="EI Premiums">
+      <data key="d7">1.0</data>
+      <data key="d8">EI Premiums are recorded on the T4 Slip representing employee contributions towards Employment Insurance.</data>
+      <data key="d9">employee contribution,tax deduction</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101197</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="RPP Contributions">
+      <data key="d7">1.0</data>
+      <data key="d8">RPP Contributions are indicated on the T4 Slip to adjust taxable income for retirement planning.</data>
+      <data key="d9">retirement savings,tax deduction</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101198</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="Taxable Allowances">
+      <data key="d7">1.0</data>
+      <data key="d8">Taxable Allowances given by employers must be reported as part of income on the T4 Slip.</data>
+      <data key="d9">employer benefits,income reporting</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101199</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="Union Dues">
+      <data key="d7">1.0</data>
+      <data key="d8">Union Dues are recorded on the T4 Slip and can be used to reduce taxable income.</data>
+      <data key="d9">labor union,tax deduction</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101200</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="Charitable Donations">
+      <data key="d7">1.0</data>
+      <data key="d8">Charitable Donations reported on the T4 Slip are eligible for tax credits.</data>
+      <data key="d9">charitable giving,tax credit</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101201</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="T4001">
+      <data key="d7">1.0</data>
+      <data key="d8">The T4001 serves as a guide on how to properly fill out T4 Slips for income reporting.</data>
+      <data key="d9">guidance source,tax documentation</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101202</data>
+      <data key="d13" />
+    </edge>
+    <edge source="T4 Slip" target="Tax Year 2024">
+      <data key="d7">1.0</data>
+      <data key="d8">The Tax Year 2024 is the period for which the T4 Slip is issued to report income and deductions.</data>
+      <data key="d9">fiscal year,reporting period</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101203</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Multiple T4 Slips" target="T1 Return">
+      <data key="d7">1.0</data>
+      <data key="d8">Multiple T4 Slips are combined on the T1 return to report total income for tax purposes.</data>
+      <data key="d9">income consolidation,tax reporting</data>
+      <data key="d10">chunk-f7c5cf2323ead79ef1bb328c9701238d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101196</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Year 2024" target="RRSP Deduction Limit">
+      <data key="d7">1.0</data>
+      <data key="d8">The RRSP deduction limit for Tax Year 2024 allows contributions based on a percentage of earned income, contributing to lifetime tax benefits.</data>
+      <data key="d9">annual limit,financial regulation</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101340</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employee with Income Above CPP/EI Caps" target="Maximum Contribution for the Year">
+      <data key="d7">1.0</data>
+      <data key="d8">In this scenario, the employee's CPP contribution is capped at the maximum contribution for the year.</data>
+      <data key="d9">contribution limit,tax calculation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101201</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employee with Income Above CPP/EI Caps" target="Maximum Premium for the Year">
+      <data key="d7">1.0</data>
+      <data key="d8">The EI contribution for employees with income above the caps is limited to the maximum premium for the year.</data>
+      <data key="d9">contribution limit,tax calculation</data>
+      <data key="d10">chunk-041dc2e0b32226e0b7c758a7359523f3</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101202</data>
+      <data key="d13" />
+    </edge>
+    <edge source="CRA T1 General Income Tax and Benefit Return" target="Income Tax Act">
+      <data key="d7">1.0</data>
+      <data key="d8">The CRA T1 General Income Tax and Benefit Return is based on the provisions laid out in the Income Tax Act.</data>
+      <data key="d9">document source</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101254</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Income Tax Act" target="Registered Retirement Savings Plan">
+      <data key="d7">1.0</data>
+      <data key="d8">The Income Tax Act provides the legal framework governing the rules and regulations for Registered Retirement Savings Plans.</data>
+      <data key="d9">legal framework,tax regulations</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101336</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Income Tax Act" target="Canadian Tax Planning Strategies">
+      <data key="d7">1.0</data>
+      <data key="d8">Canadian Tax Planning Strategies are based on the provisions outlined in the Income Tax Act that govern taxation in Canada.</data>
+      <data key="d9">framework,tax laws</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101366</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Income Tax" target="Basic Personal Amount">
+      <data key="d7">1.0</data>
+      <data key="d8">The Basic Personal Amount reduces the amount owed for Federal Income Tax for individuals.</data>
+      <data key="d9">tax reduction</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101254</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Income Tax" target="2024 Tax Year">
+      <data key="d7">1.0</data>
+      <data key="d8">The Federal Income Tax for the 2024 Tax Year is calculated according to the specified tax brackets.</data>
+      <data key="d9">tax applicability</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101255</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Income Tax" target="2023 Tax Year">
+      <data key="d7">1.0</data>
+      <data key="d8">The Federal Income Tax for the 2023 Tax Year follows the established tax brackets outlined.</data>
+      <data key="d9">tax applicability</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101255</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Income Tax" target="Non-Refundable Tax Credits">
+      <data key="d7">1.0</data>
+      <data key="d8">Non-Refundable Tax Credits are applicable deductions that affect the calculation of Federal Income Tax owed.</data>
+      <data key="d9">credit application</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101256</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Income Tax" target="Common Non-Refundable Tax Credits">
+      <data key="d7">1.0</data>
+      <data key="d8">Common Non-Refundable Tax Credits affect the overall calculation of Federal Income Tax liabilities.</data>
+      <data key="d9">credit impact</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101257</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Income Tax" target="Common Deductions from Income">
+      <data key="d7">1.0</data>
+      <data key="d8">Common Deductions from Income decrease the taxable earning amount for Federal Income Tax calculation.</data>
+      <data key="d9">tax reduction</data>
+      <data key="d10">chunk-9ca78b2360336d6f6222a6f4c95eb423</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101258</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP Contributions" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">RRSP contributions reduce taxable income, impacting the overall federal tax calculation.</data>
+      <data key="d9">retirement savings,tax deduction</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101255</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Union/Professional Dues" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">Union and professional dues are included in the expenses deducted during federal tax calculation.</data>
+      <data key="d9">income expense,tax deduction</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101256</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Child Care Expenses" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">Child care expenses affect the federal tax calculation by reducing taxable income for families.</data>
+      <data key="d9">family expense,tax deduction</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101256</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Moving Expenses" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">Moving expenses can reduce taxable income, influencing the federal tax owed.</data>
+      <data key="d9">relocation cost,tax deduction</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101257</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employment Expenses" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">Employment expenses are deducted in the federal tax calculation process, impacting taxable income.</data>
+      <data key="d9">tax deduction,work-related cost</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101258</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Capital Gains Deduction" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">The capital gains deduction is utilized in the federal tax calculation to lower tax liability on certain investments.</data>
+      <data key="d9">investment income,tax deduction</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101259</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Northern Residents Deduction" target="Federal Tax Calculation">
+      <data key="d7">1.0</data>
+      <data key="d8">Northern residents deduction is factored into the federal tax calculation for qualifying individuals in northern areas.</data>
+      <data key="d9">residency benefit,tax deduction</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101260</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Federal Tax Calculation" target="Marginal Tax Rate">
+      <data key="d7">1.0</data>
+      <data key="d8">The federal tax calculation process incorporates the marginal tax rate to determine tax owed based on income.</data>
+      <data key="d9">income level,tax calculation</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101254</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Total Income" target="Net Income">
+      <data key="d7">1.0</data>
+      <data key="d8">Net income is derived from total income after subtracting deductions.</data>
+      <data key="d9">deduction,income calculation</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101257</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Net Income" target="Taxable Income">
+      <data key="d7">1.0</data>
+      <data key="d8">Taxable income is calculated by subtracting additional deductions from net income.</data>
+      <data key="d9">deduction,income calculation</data>
+      <data key="d10">chunk-37cf12753edb4a0b44312876883ae249</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101258</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Provincial Income Tax" target="Ontario Tax Brackets">
+      <data key="d7">1.0</data>
+      <data key="d8">Ontario Provincial Income Tax describes the systematic structure of tax brackets in the province of Ontario.</data>
+      <data key="d9">provincial system,taxation structure</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101289</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Provincial Income Tax" target="Ontario Basic Personal Amount">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Basic Personal Amount is factored into the Ontario Provincial Income Tax, reducing the taxable income for residents.</data>
+      <data key="d9">tax calculation,tax credit</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101291</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Provincial Income Tax" target="Ontario Surtax">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Surtax is an additional fee applied within the context of the Ontario Provincial Income Tax for higher income earners exceeding thresholds.</data>
+      <data key="d9">additional tax,income threshold</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101292</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Provincial Income Tax" target="Combined Ontario Marginal Rates">
+      <data key="d7">1.0</data>
+      <data key="d8">Combined Ontario Marginal Rates are derived from the Ontario Provincial Income Tax, detailing the total tax liability across various income levels.</data>
+      <data key="d9">income range,overall taxation</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101292</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Provincial Income Tax" target="Ontario Tax Guide">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Tax Guide serves as an informational resource explaining the details of the Ontario Provincial Income Tax system.</data>
+      <data key="d9">informational resource,tax guidance</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101293</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Tax Credits" target="Ontario Trillium Benefit">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Trillium Benefit is part of the Ontario Tax Credits aimed at providing monthly financial support to eligible residents.</data>
+      <data key="d9">financial support,tax relief</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101289</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Tax Credits" target="Ontario Credits (ON479)">
+      <data key="d7">1.0</data>
+      <data key="d8">Ontario Credits (ON479) documents the financial assistance available through various tax credits in Ontario.</data>
+      <data key="d9">documentation,financial assistance</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101291</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Trillium Benefit" target="Ontario Energy and Property Tax Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Energy and Property Tax Credit is one component of the Ontario Trillium Benefit, offering assistance for property-related expenses.</data>
+      <data key="d9">individual assistance,property tax</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101290</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Trillium Benefit" target="Northern Ontario Energy Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">The Northern Ontario Energy Credit is part of the Ontario Trillium Benefit aimed at providing financial assistance to residents in Northern Ontario.</data>
+      <data key="d9">regional support,tax credit</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101291</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Trillium Benefit" target="Ontario Sales Tax Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Sales Tax Credit complements the Ontario Trillium Benefit by offering financial relief based on sales tax for families.</data>
+      <data key="d9">family assistance,sales tax reimbursement</data>
+      <data key="d10">chunk-af3ccb564fd9b7b3591223bd47140183</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101292</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Northern Ontario Energy Credit" target="Ontario Sales Tax Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">Both the Northern Ontario Energy Credit and the Ontario Sales Tax Credit provide financial assistance and tax relief to residents in Ontario.</data>
+      <data key="d9">financial assistance,tax relief</data>
+      <data key="d10">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101294</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Northern Ontario Energy Credit" target="Ontario Low-Income Individuals and Families Tax (LIFT) Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">The Northern Ontario Energy Credit and the LIFT Credit both serve as financial support mechanisms aimed at assisting low-income individuals and families.</data>
+      <data key="d9">financial support,income tax</data>
+      <data key="d10">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101295</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Sales Tax Credit" target="Ontario Low-Income Individuals and Families Tax (LIFT) Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">Both credits aim to provide tax relief for low-income individuals and families.</data>
+      <data key="d9">target demographic,tax relief</data>
+      <data key="d10">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101293</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Low-Income Individuals and Families Tax (LIFT) Credit" target="Ontario Childcare Access and Relief from Expenses (CARE) Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">The CARE Credit provides financial support for childcare expenses, aligning with the LIFT Credit's goal of assisting low-income families.</data>
+      <data key="d9">childcare expenses,financial support</data>
+      <data key="d10">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101294</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Low-Income Individuals and Families Tax (LIFT) Credit" target="Ontario Health Premium">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Health Premium is an income-based levy that can impact the financial obligations of those benefiting from the LIFT Credit.</data>
+      <data key="d9">income-based levy,tax obligation</data>
+      <data key="d10">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101295</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ontario Health Premium" target="Ontario Sales Tax Credit (OSTC)">
+      <data key="d7">1.0</data>
+      <data key="d8">The Ontario Sales Tax Credit (OSTC) provides tax relief that can influence the financial obligations associated with the Ontario Health Premium.</data>
+      <data key="d9">financial obligations,tax relief</data>
+      <data key="d10">chunk-0c7bba92e1e9b7a1972810e69c85c424</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101295</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Qualifying Rollover Recipients" target="Spousal RRSPs">
+      <data key="d7">1.0</data>
+      <data key="d8">Qualifying rollover recipients can use spousal RRSPs as a strategy to manage tax benefits in retirement.</data>
+      <data key="d9">retirement strategy,tax benefits</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101334</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Spousal RRSPs" target="Tax Planning Strategies">
+      <data key="d7">1.0</data>
+      <data key="d8">Spousal RRSPs are a part of tax planning strategies focused on income splitting in retirement.</data>
+      <data key="d9">income splitting,retirement planning</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101339</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Spousal RRSPs" target="Higher Tax Bracket">
+      <data key="d7">1.0</data>
+      <data key="d8">Utilizing spousal RRSPs is a strategy to benefit from income splitting and tax efficiency when one partner is in a higher tax bracket.</data>
+      <data key="d9">income strategy,tax efficiency</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101340</data>
+      <data key="d13" />
+    </edge>
+    <edge source="HBP" target="Tax Planning Strategies">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax planning strategies include the use of HBP to facilitate first-time home purchases.</data>
+      <data key="d9">home purchasing,tax strategies</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101334</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Planning Strategies" target="Tax Bracket">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax planning strategies involve considerations regarding different tax brackets to maximize benefits.</data>
+      <data key="d9">financial planning,tax optimization</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101335</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Planning Strategies" target="RRSP">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax planning strategies include the use of RRSPs as they provide tax advantages for retirement savings.</data>
+      <data key="d9">retirement strategy,tax advantage</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101336</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Planning Strategies" target="Income Splitting">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax planning strategies often involve income splitting to achieve financial benefits for couples.</data>
+      <data key="d9">financial benefit,tax strategy</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101337</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax Planning Strategies" target="Tax-Deferred Growth">
+      <data key="d7">1.0</data>
+      <data key="d8">Tax planning strategies emphasize maximizing returns through tax-deferred growth on investments.</data>
+      <data key="d9">investment growth,savings strategy</data>
+      <data key="d10">chunk-74f42f89274db1c03e3ad487f53119a4</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101338</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP" target="Spousal RRSP">
+      <data key="d7">1.0</data>
+      <data key="d8">The Spousal RRSP is a strategy related to RRSP that helps equalize retirement income between spouses.</data>
+      <data key="d9">income equalization,tax strategy</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101367</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP" target="RRIF">
+      <data key="d7">1.0</data>
+      <data key="d8">RRSP contributions influence the amount that individuals must withdraw from their RRIF during retirement.</data>
+      <data key="d9">mandatory withdrawals,retirement transition</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101369</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="Canada Revenue Agency">
+      <data key="d7">1.0</data>
+      <data key="d8">The Registered Retirement Savings Plan is regulated by the Canada Revenue Agency, which oversees its registration and compliance with tax laws.</data>
+      <data key="d9">oversight,regulation</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101335</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="Overcontribution Penalty">
+      <data key="d7">1.0</data>
+      <data key="d8">The Overcontribution Penalty applies to individuals exceeding their RRSP deduction limit, enforcing compliance with contribution limits.</data>
+      <data key="d9">compliance,penalty</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101337</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="Spousal RRSP">
+      <data key="d7">1.0</data>
+      <data key="d8">The Spousal RRSP is a tax strategy involving the Registered Retirement Savings Plan that allows contributions toward a spouse's account.</data>
+      <data key="d9">income splitting,tax strategy</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101338</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="Home Buyers' Plan">
+      <data key="d7">1.0</data>
+      <data key="d8">The Home Buyers' Plan is leveraged within the Registered Retirement Savings Plan framework to assist first-time home buyers.</data>
+      <data key="d9">home purchase,tax advantage</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101339</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="Lifelong Learning Plan">
+      <data key="d7">1.0</data>
+      <data key="d8">The Lifelong Learning Plan allows for withdrawals from the Registered Retirement Savings Plan to fund educational expenses.</data>
+      <data key="d9">education,tax advantage</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101341</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="RRSP Withdrawals">
+      <data key="d7">1.0</data>
+      <data key="d8">Withdrawals from the Registered Retirement Savings Plan are classified as taxable income in the year they are received.</data>
+      <data key="d9">financial implications,taxable income</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101341</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Registered Retirement Savings Plan" target="RRSP at Death">
+      <data key="d7">1.0</data>
+      <data key="d8">The RRSP at Death discusses how the value of the Registered Retirement Savings Plan is treated for tax purposes after the owner passes away.</data>
+      <data key="d9">inheritance,tax implications</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101342</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP Deduction Limit" target="Tax Year 2020">
+      <data key="d7">1.0</data>
+      <data key="d8">The RRSP deduction limit for Tax Year 2020 allows contributions based on a percentage of earned income, contributing to lifetime tax benefits.</data>
+      <data key="d9">annual limit,financial regulation</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101336</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP Deduction Limit" target="Tax Year 2021">
+      <data key="d7">1.0</data>
+      <data key="d8">The RRSP deduction limit for Tax Year 2021 allows contributions based on a percentage of earned income, contributing to lifetime tax benefits.</data>
+      <data key="d9">annual limit,financial regulation</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101337</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP Deduction Limit" target="Tax Year 2022">
+      <data key="d7">1.0</data>
+      <data key="d8">The RRSP deduction limit for Tax Year 2022 allows contributions based on a percentage of earned income, contributing to lifetime tax benefits.</data>
+      <data key="d9">annual limit,financial regulation</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101337</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP Deduction Limit" target="Tax Year 2023">
+      <data key="d7">1.0</data>
+      <data key="d8">The RRSP deduction limit for Tax Year 2023 allows contributions based on a percentage of earned income, contributing to lifetime tax benefits.</data>
+      <data key="d9">annual limit,financial regulation</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101339</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Overcontribution Penalty" target="Tax-Free Savings Account (TFSA)">
+      <data key="d7">1.0</data>
+      <data key="d8">The overcontribution penalty details the financial consequences for exceeding the TFSA contribution limits.</data>
+      <data key="d9">financial consequence,rules</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101406</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRSP Contribution Limits" target="Annual RRSP Dollar Limits">
+      <data key="d7">1.0</data>
+      <data key="d8">RRSP Contribution Limits set the framework for determining the Annual RRSP Dollar Limits based on earned income and other factors.</data>
+      <data key="d9">financial planning,maximum contributions</data>
+      <data key="d10">chunk-1590b8716306682b296c39fb8f8a1c64</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101340</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Charitable Donation Tax Credit" target="securities">
+      <data key="d7">1.0</data>
+      <data key="d8">The Charitable Donation Tax Credit is determined by the fair market value of the securities at the time of donation.</data>
+      <data key="d9">market valuation,tax benefit</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101367</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Charitable Donation Tax Credit" target="Unused Donation Credits">
+      <data key="d7">1.0</data>
+      <data key="d8">Unused Donation Credits are derived from the Charitable Donation Tax Credit that can be carried forward for future use.</data>
+      <data key="d9">rollover,tax strategy</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101369</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Charitable Donation Tax Credit" target="29%/33% Federal Credit Rate">
+      <data key="d7">1.0</data>
+      <data key="d8">The Charitable Donation Tax Credit offers tax benefits that align with the 29%/33% Federal Credit Rate for higher-income years.</data>
+      <data key="d9">income strategy,tax benefit</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101370</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Work from Home Expenses" target="Employment Deductions">
+      <data key="d7">1.0</data>
+      <data key="d8">Work from Home Expenses are a part of Employment Deductions that employees can claim on their tax returns.</data>
+      <data key="d9">deductible expense,tax benefit</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101366</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Work from Home Expenses" target="Form T2200">
+      <data key="d7">1.0</data>
+      <data key="d8">Form T2200 is required to certify eligibility for claiming Work from Home Expenses on tax returns.</data>
+      <data key="d9">certification,tax deduction</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101367</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employment Deductions" target="Vehicle Expenses">
+      <data key="d7">1.0</data>
+      <data key="d8">Vehicle Expenses are categorized under Employment Deductions, allowing employees to claim costs related to their personal vehicles used for work.</data>
+      <data key="d9">deductible expense,work-related</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101367</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Employment Deductions" target="Medical Expenses">
+      <data key="d7">1.0</data>
+      <data key="d8">Medical Expenses can also be classified as Employment Deductions where employees can claim certain medical costs exceeding set thresholds.</data>
+      <data key="d9">claim threshold,deductible expense</data>
+      <data key="d10">chunk-53761e82537ba7b2a5d7a74c8d5799d8</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101368</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canadian Tax Planning Strategies" target="Pension Income Splitting">
+      <data key="d7">1.0</data>
+      <data key="d8">Pension income splitting is a tax optimization strategy included within Canadian Tax Planning Strategies.</data>
+      <data key="d9">income allocation,tax optimization</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101369</data>
+      <data key="d13" />
+    </edge>
+    <edge source="TFSA" target="Canada Child Benefit">
+      <data key="d7">1.0</data>
+      <data key="d8">Using a TFSA can influence the eligibility for the Canada Child Benefit by allowing tax-free withdrawals.</data>
+      <data key="d9">benefit eligibility,financial strategy</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101368</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Capital Gains" target="Charitable Donation">
+      <data key="d7">1.0</data>
+      <data key="d8">Donating publicly listed securities eliminates capital gains tax, making charitable donations a tax-efficient strategy.</data>
+      <data key="d9">efficient giving,tax benefits</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101368</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Capital Gains" target="Capital Gains Reserve">
+      <data key="d7">1.0</data>
+      <data key="d8">The Capital Gains Reserve allows spreading tax payments on capital gains from the sale of property over multiple years.</data>
+      <data key="d9">deferred payments,tax strategy</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101370</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Canada Child Benefit" target="Tax-Free Savings Account (TFSA)">
+      <data key="d7">1.0</data>
+      <data key="d8">Withdrawals from a Tax-Free Savings Account do not affect a family's eligibility for the Canada Child Benefit.</data>
+      <data key="d9">benefit eligibility,family support</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101411</data>
+      <data key="d13" />
+    </edge>
+    <edge source="RRIF" target="OAS Clawback">
+      <data key="d7">1.0</data>
+      <data key="d8">High withdrawals from a RRIF may trigger OAS clawback, affecting retirees’ government benefit eligibility.</data>
+      <data key="d9">income effects,retirement planning</data>
+      <data key="d10">chunk-443ee4b9b0cd32b4e6c22127239ed83c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101370</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="CRA">
+      <data key="d7">1.0</data>
+      <data key="d8">The Canada Revenue Agency provides guidelines and regulations for the operation of Tax-Free Savings Accounts.</data>
+      <data key="d9">guidelines,regulatory body</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101404</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Canadian Residents">
+      <data key="d7">1.0</data>
+      <data key="d8">Canadian residents are eligible to open a Tax-Free Savings Account if they meet specific criteria including age and residency.</data>
+      <data key="d9">account type,eligibility</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101405</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Social Insurance Number (SIN)">
+      <data key="d7">1.0</data>
+      <data key="d8">A valid Social Insurance Number is required for Canadian residents to open a Tax-Free Savings Account.</data>
+      <data key="d9">account requirement,identification</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101405</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Withdrawal and Recontribution Rules">
+      <data key="d7">1.0</data>
+      <data key="d8">The withdrawal and recontribution rules define how access to funds in a TFSA affects future contribution limits and tax implications.</data>
+      <data key="d9">account feature,guidelines</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101405</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Qualifying Investments">
+      <data key="d7">1.0</data>
+      <data key="d8">Qualifying investments can be held within a Tax-Free Savings Account, broadening the types of assets included.</data>
+      <data key="d9">account feature,investment options</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101406</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="TFSA on Death">
+      <data key="d7">1.0</data>
+      <data key="d8">The regulations regarding TFSA on death determine how the account's value is treated after the holder's death.</data>
+      <data key="d9">account continuation,inheritance</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101407</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="TFSA vs RRSP">
+      <data key="d7">1.0</data>
+      <data key="d8">The discussion around TFSA vs RRSP compares the two account types based on various financial planning factors.</data>
+      <data key="d9">comparison,financial planning</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101407</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Old Age Security (OAS)">
+      <data key="d7">1.0</data>
+      <data key="d8">The rules of the Tax-Free Savings Account impact beneficiaries' eligibility for Old Age Security benefits.</data>
+      <data key="d9">benefit eligibility,financial planning</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101408</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Guaranteed Income Supplement (GIS)">
+      <data key="d7">1.0</data>
+      <data key="d8">Withdrawals from a Tax-Free Savings Account have implications for eligibility for the Guaranteed Income Supplement.</data>
+      <data key="d9">benefit eligibility,financial planning</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101410</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tax-Free Savings Account (TFSA)" target="Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit">
+      <data key="d7">1.0</data>
+      <data key="d8">TFSA withdrawals do not impact eligibility for the Goods and Services Tax/Harmonized Sales Tax credit.</data>
+      <data key="d9">benefit eligibility,financial support</data>
+      <data key="d10">chunk-4efa231cfe20987fec08d6db7e701fb2</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1772101411</data>
+      <data key="d13" />
+    </edge>
+  </graph>
+</graphml>

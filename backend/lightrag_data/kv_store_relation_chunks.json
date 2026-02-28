@@ -1,0 +1,1091 @@
+{
+  "CRA Publication T4127<SEP>Canada Pension Plan (CPP)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101152,
+    "update_time": 1772101152,
+    "_id": "CRA Publication T4127<SEP>Canada Pension Plan (CPP)"
+  },
+  "Employment Insurance (EI)<SEP>Max Insurable Earnings": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101152,
+    "update_time": 1772101152,
+    "_id": "Employment Insurance (EI)<SEP>Max Insurable Earnings"
+  },
+  "T4 Box References<SEP>Year's Maximum Pensionable Earnings (YMPE)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101152,
+    "update_time": 1772101152,
+    "_id": "T4 Box References<SEP>Year's Maximum Pensionable Earnings (YMPE)"
+  },
+  "Canada Pension Plan (CPP)<SEP>Quebec Pension Plan (QPP)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101153,
+    "update_time": 1772101153,
+    "_id": "Canada Pension Plan (CPP)<SEP>Quebec Pension Plan (QPP)"
+  },
+  "Employment Insurance (EI)<SEP>Maximum Employee Contribution": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101154,
+    "update_time": 1772101154,
+    "_id": "Employment Insurance (EI)<SEP>Maximum Employee Contribution"
+  },
+  "Box 14<SEP>Box 24": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101154,
+    "update_time": 1772101154,
+    "_id": "Box 14<SEP>Box 24"
+  },
+  "Canada Pension Plan (CPP)<SEP>T4 Box References": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101155,
+    "update_time": 1772101155,
+    "_id": "Canada Pension Plan (CPP)<SEP>T4 Box References"
+  },
+  "CPP<SEP>CPP/EI Credit": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101155,
+    "update_time": 1772101155,
+    "_id": "CPP<SEP>CPP/EI Credit"
+  },
+  "Box 14<SEP>Box 26": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101155,
+    "update_time": 1772101155,
+    "_id": "Box 14<SEP>Box 26"
+  },
+  "Canada Pension Plan (CPP)<SEP>Contribution Rate": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101156,
+    "update_time": 1772101156,
+    "_id": "Canada Pension Plan (CPP)<SEP>Contribution Rate"
+  },
+  "CPP/EI Credit<SEP>EI": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101156,
+    "update_time": 1772101156,
+    "_id": "CPP/EI Credit<SEP>EI"
+  },
+  "CPP<SEP>Tax Credits": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101156,
+    "update_time": 1772101156,
+    "_id": "CPP<SEP>Tax Credits"
+  },
+  "Basic Exemption<SEP>Canada Pension Plan (CPP)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101157,
+    "update_time": 1772101157,
+    "_id": "Basic Exemption<SEP>Canada Pension Plan (CPP)"
+  },
+  "EI<SEP>Tax Credits": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101157,
+    "update_time": 1772101157,
+    "_id": "EI<SEP>Tax Credits"
+  },
+  "CPP/EI Credit<SEP>Federal Tax Rate": {
+    "chunk_ids": [
+      "chunk-be3c8254ac3b81df856eab05e2babc4e"
+    ],
+    "count": 1,
+    "create_time": 1772101157,
+    "update_time": 1772101157,
+    "_id": "CPP/EI Credit<SEP>Federal Tax Rate"
+  },
+  "Canada Pension Plan (CPP)<SEP>Second Earnings Ceiling (YAMPE)": {
+    "chunk_ids": [
+      "chunk-a149e8a923d92f6e23bd59e44524fceb"
+    ],
+    "count": 1,
+    "create_time": 1772101158,
+    "update_time": 1772101158,
+    "_id": "Canada Pension Plan (CPP)<SEP>Second Earnings Ceiling (YAMPE)"
+  },
+  "CRA T4<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101194,
+    "update_time": 1772101194,
+    "_id": "CRA T4<SEP>T4 Slip"
+  },
+  "T4 Box Reference Guide<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101195,
+    "update_time": 1772101195,
+    "_id": "T4 Box Reference Guide<SEP>T4 Slip"
+  },
+  "Employment Income<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101195,
+    "update_time": 1772101195,
+    "_id": "Employment Income<SEP>T4 Slip"
+  },
+  "CPP Contributions<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101196,
+    "update_time": 1772101196,
+    "_id": "CPP Contributions<SEP>T4 Slip"
+  },
+  "Multiple T4 Slips<SEP>T1 Return": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101196,
+    "update_time": 1772101196,
+    "_id": "Multiple T4 Slips<SEP>T1 Return"
+  },
+  "QPP Contributions<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101197,
+    "update_time": 1772101197,
+    "_id": "QPP Contributions<SEP>T4 Slip"
+  },
+  "EI Premiums<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101197,
+    "update_time": 1772101197,
+    "_id": "EI Premiums<SEP>T4 Slip"
+  },
+  "RRSP Deductions<SEP>Tax Credits": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101197,
+    "update_time": 1772101197,
+    "_id": "RRSP Deductions<SEP>Tax Credits"
+  },
+  "RPP Contributions<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101198,
+    "update_time": 1772101198,
+    "_id": "RPP Contributions<SEP>T4 Slip"
+  },
+  "Federal Tax<SEP>Tax Credits": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101198,
+    "update_time": 1772101198,
+    "_id": "Federal Tax<SEP>Tax Credits"
+  },
+  "Provincial Tax<SEP>Tax Credits": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101199,
+    "update_time": 1772101199,
+    "_id": "Provincial Tax<SEP>Tax Credits"
+  },
+  "Box 14<SEP>Employee with Income Below CPP/EI Caps": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101199,
+    "update_time": 1772101199,
+    "_id": "Box 14<SEP>Employee with Income Below CPP/EI Caps"
+  },
+  "T4 Slip<SEP>Taxable Allowances": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101199,
+    "update_time": 1772101199,
+    "_id": "T4 Slip<SEP>Taxable Allowances"
+  },
+  "T4 Slip<SEP>Union Dues": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101200,
+    "update_time": 1772101200,
+    "_id": "T4 Slip<SEP>Union Dues"
+  },
+  "Box 24<SEP>Employee with Income Below CPP/EI Caps": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101200,
+    "update_time": 1772101200,
+    "_id": "Box 24<SEP>Employee with Income Below CPP/EI Caps"
+  },
+  "Box 14<SEP>Employee with Income Above CPP/EI Caps": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101200,
+    "update_time": 1772101200,
+    "_id": "Box 14<SEP>Employee with Income Above CPP/EI Caps"
+  },
+  "Tax Credits<SEP>Tax Payable": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101200,
+    "update_time": 1772101200,
+    "_id": "Tax Credits<SEP>Tax Payable"
+  },
+  "Charitable Donations<SEP>T4 Slip": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101201,
+    "update_time": 1772101201,
+    "_id": "Charitable Donations<SEP>T4 Slip"
+  },
+  "Employee with Income Above CPP/EI Caps<SEP>Maximum Contribution for the Year": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101201,
+    "update_time": 1772101201,
+    "_id": "Employee with Income Above CPP/EI Caps<SEP>Maximum Contribution for the Year"
+  },
+  "Box 14<SEP>Employee Starting Mid-Year": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101201,
+    "update_time": 1772101201,
+    "_id": "Box 14<SEP>Employee Starting Mid-Year"
+  },
+  "Employee with Income Above CPP/EI Caps<SEP>Maximum Premium for the Year": {
+    "chunk_ids": [
+      "chunk-041dc2e0b32226e0b7c758a7359523f3"
+    ],
+    "count": 1,
+    "create_time": 1772101202,
+    "update_time": 1772101202,
+    "_id": "Employee with Income Above CPP/EI Caps<SEP>Maximum Premium for the Year"
+  },
+  "T4 Slip<SEP>T4001": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101202,
+    "update_time": 1772101202,
+    "_id": "T4 Slip<SEP>T4001"
+  },
+  "T4 Slip<SEP>Tax Year 2024": {
+    "chunk_ids": [
+      "chunk-f7c5cf2323ead79ef1bb328c9701238d"
+    ],
+    "count": 1,
+    "create_time": 1772101203,
+    "update_time": 1772101203,
+    "_id": "T4 Slip<SEP>Tax Year 2024"
+  },
+  "CRA T1 General Income Tax and Benefit Return<SEP>Income Tax Act": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101254,
+    "update_time": 1772101254,
+    "_id": "CRA T1 General Income Tax and Benefit Return<SEP>Income Tax Act"
+  },
+  "Basic Personal Amount<SEP>Federal Income Tax": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101254,
+    "update_time": 1772101254,
+    "_id": "Basic Personal Amount<SEP>Federal Income Tax"
+  },
+  "Federal Tax Calculation<SEP>Marginal Tax Rate": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101254,
+    "update_time": 1772101254,
+    "_id": "Federal Tax Calculation<SEP>Marginal Tax Rate"
+  },
+  "2024 Tax Year<SEP>Federal Income Tax": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101255,
+    "update_time": 1772101255,
+    "_id": "2024 Tax Year<SEP>Federal Income Tax"
+  },
+  "Federal Tax Calculation<SEP>RRSP Contributions": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101255,
+    "update_time": 1772101255,
+    "_id": "Federal Tax Calculation<SEP>RRSP Contributions"
+  },
+  "2023 Tax Year<SEP>Federal Income Tax": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101255,
+    "update_time": 1772101255,
+    "_id": "2023 Tax Year<SEP>Federal Income Tax"
+  },
+  "Federal Tax Calculation<SEP>Union/Professional Dues": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101256,
+    "update_time": 1772101256,
+    "_id": "Federal Tax Calculation<SEP>Union/Professional Dues"
+  },
+  "Federal Income Tax<SEP>Non-Refundable Tax Credits": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101256,
+    "update_time": 1772101256,
+    "_id": "Federal Income Tax<SEP>Non-Refundable Tax Credits"
+  },
+  "Child Care Expenses<SEP>Federal Tax Calculation": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101256,
+    "update_time": 1772101256,
+    "_id": "Child Care Expenses<SEP>Federal Tax Calculation"
+  },
+  "Common Non-Refundable Tax Credits<SEP>Federal Income Tax": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101257,
+    "update_time": 1772101257,
+    "_id": "Common Non-Refundable Tax Credits<SEP>Federal Income Tax"
+  },
+  "Net Income<SEP>Total Income": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101257,
+    "update_time": 1772101257,
+    "_id": "Net Income<SEP>Total Income"
+  },
+  "Federal Tax Calculation<SEP>Moving Expenses": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101257,
+    "update_time": 1772101257,
+    "_id": "Federal Tax Calculation<SEP>Moving Expenses"
+  },
+  "Common Deductions from Income<SEP>Federal Income Tax": {
+    "chunk_ids": [
+      "chunk-9ca78b2360336d6f6222a6f4c95eb423"
+    ],
+    "count": 1,
+    "create_time": 1772101258,
+    "update_time": 1772101258,
+    "_id": "Common Deductions from Income<SEP>Federal Income Tax"
+  },
+  "Employment Expenses<SEP>Federal Tax Calculation": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101258,
+    "update_time": 1772101258,
+    "_id": "Employment Expenses<SEP>Federal Tax Calculation"
+  },
+  "Net Income<SEP>Taxable Income": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101258,
+    "update_time": 1772101258,
+    "_id": "Net Income<SEP>Taxable Income"
+  },
+  "Capital Gains Deduction<SEP>Federal Tax Calculation": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101259,
+    "update_time": 1772101259,
+    "_id": "Capital Gains Deduction<SEP>Federal Tax Calculation"
+  },
+  "Federal Tax Calculation<SEP>Northern Residents Deduction": {
+    "chunk_ids": [
+      "chunk-37cf12753edb4a0b44312876883ae249"
+    ],
+    "count": 1,
+    "create_time": 1772101260,
+    "update_time": 1772101260,
+    "_id": "Federal Tax Calculation<SEP>Northern Residents Deduction"
+  },
+  "Ontario Provincial Income Tax<SEP>Ontario Tax Brackets": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101289,
+    "update_time": 1772101289,
+    "_id": "Ontario Provincial Income Tax<SEP>Ontario Tax Brackets"
+  },
+  "Ontario Tax Credits<SEP>Ontario Trillium Benefit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101289,
+    "update_time": 1772101289,
+    "_id": "Ontario Tax Credits<SEP>Ontario Trillium Benefit"
+  },
+  "Ontario Energy and Property Tax Credit<SEP>Ontario Trillium Benefit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101290,
+    "update_time": 1772101290,
+    "_id": "Ontario Energy and Property Tax Credit<SEP>Ontario Trillium Benefit"
+  },
+  "Ontario Basic Personal Amount<SEP>Ontario Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101291,
+    "update_time": 1772101291,
+    "_id": "Ontario Basic Personal Amount<SEP>Ontario Provincial Income Tax"
+  },
+  "Ontario Credits (ON479)<SEP>Ontario Tax Credits": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101291,
+    "update_time": 1772101291,
+    "_id": "Ontario Credits (ON479)<SEP>Ontario Tax Credits"
+  },
+  "Northern Ontario Energy Credit<SEP>Ontario Trillium Benefit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101291,
+    "update_time": 1772101291,
+    "_id": "Northern Ontario Energy Credit<SEP>Ontario Trillium Benefit"
+  },
+  "Ontario Provincial Income Tax<SEP>Ontario Surtax": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101292,
+    "update_time": 1772101292,
+    "_id": "Ontario Provincial Income Tax<SEP>Ontario Surtax"
+  },
+  "Ontario Sales Tax Credit<SEP>Ontario Trillium Benefit": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101292,
+    "update_time": 1772101292,
+    "_id": "Ontario Sales Tax Credit<SEP>Ontario Trillium Benefit"
+  },
+  "Combined Ontario Marginal Rates<SEP>Ontario Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101292,
+    "update_time": 1772101292,
+    "_id": "Combined Ontario Marginal Rates<SEP>Ontario Provincial Income Tax"
+  },
+  "Ontario Provincial Income Tax<SEP>Ontario Tax Guide": {
+    "chunk_ids": [
+      "chunk-af3ccb564fd9b7b3591223bd47140183"
+    ],
+    "count": 1,
+    "create_time": 1772101293,
+    "update_time": 1772101293,
+    "_id": "Ontario Provincial Income Tax<SEP>Ontario Tax Guide"
+  },
+  "Ontario Low-Income Individuals and Families Tax (LIFT) Credit<SEP>Ontario Sales Tax Credit": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101293,
+    "update_time": 1772101293,
+    "_id": "Ontario Low-Income Individuals and Families Tax (LIFT) Credit<SEP>Ontario Sales Tax Credit"
+  },
+  "Northern Ontario Energy Credit<SEP>Ontario Sales Tax Credit": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101294,
+    "update_time": 1772101294,
+    "_id": "Northern Ontario Energy Credit<SEP>Ontario Sales Tax Credit"
+  },
+  "Ontario Childcare Access and Relief from Expenses (CARE) Credit<SEP>Ontario Low-Income Individuals and Families Tax (LIFT) Credit": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101294,
+    "update_time": 1772101294,
+    "_id": "Ontario Childcare Access and Relief from Expenses (CARE) Credit<SEP>Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+  },
+  "Ontario Health Premium<SEP>Ontario Low-Income Individuals and Families Tax (LIFT) Credit": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101295,
+    "update_time": 1772101295,
+    "_id": "Ontario Health Premium<SEP>Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+  },
+  "Northern Ontario Energy Credit<SEP>Ontario Low-Income Individuals and Families Tax (LIFT) Credit": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101295,
+    "update_time": 1772101295,
+    "_id": "Northern Ontario Energy Credit<SEP>Ontario Low-Income Individuals and Families Tax (LIFT) Credit"
+  },
+  "Ontario Health Premium<SEP>Ontario Sales Tax Credit (OSTC)": {
+    "chunk_ids": [
+      "chunk-0c7bba92e1e9b7a1972810e69c85c424"
+    ],
+    "count": 1,
+    "create_time": 1772101295,
+    "update_time": 1772101295,
+    "_id": "Ontario Health Premium<SEP>Ontario Sales Tax Credit (OSTC)"
+  },
+  "Qualifying Rollover Recipients<SEP>Spousal RRSPs": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101334,
+    "update_time": 1772101334,
+    "_id": "Qualifying Rollover Recipients<SEP>Spousal RRSPs"
+  },
+  "HBP<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101334,
+    "update_time": 1772101334,
+    "_id": "HBP<SEP>Tax Planning Strategies"
+  },
+  "Canada Revenue Agency<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101335,
+    "update_time": 1772101335,
+    "_id": "Canada Revenue Agency<SEP>Registered Retirement Savings Plan"
+  },
+  "Tax Bracket<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101335,
+    "update_time": 1772101335,
+    "_id": "Tax Bracket<SEP>Tax Planning Strategies"
+  },
+  "Income Tax Act<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101336,
+    "update_time": 1772101336,
+    "_id": "Income Tax Act<SEP>Registered Retirement Savings Plan"
+  },
+  "RRSP Deduction Limit<SEP>Tax Year 2020": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101336,
+    "update_time": 1772101336,
+    "_id": "RRSP Deduction Limit<SEP>Tax Year 2020"
+  },
+  "RRSP<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101336,
+    "update_time": 1772101336,
+    "_id": "RRSP<SEP>Tax Planning Strategies"
+  },
+  "RRSP Deduction Limit<SEP>Tax Year 2021": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101337,
+    "update_time": 1772101337,
+    "_id": "RRSP Deduction Limit<SEP>Tax Year 2021"
+  },
+  "Income Splitting<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101337,
+    "update_time": 1772101337,
+    "_id": "Income Splitting<SEP>Tax Planning Strategies"
+  },
+  "RRSP Deduction Limit<SEP>Tax Year 2022": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101337,
+    "update_time": 1772101337,
+    "_id": "RRSP Deduction Limit<SEP>Tax Year 2022"
+  },
+  "Overcontribution Penalty<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101337,
+    "update_time": 1772101337,
+    "_id": "Overcontribution Penalty<SEP>Registered Retirement Savings Plan"
+  },
+  "Tax Planning Strategies<SEP>Tax-Deferred Growth": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101338,
+    "update_time": 1772101338,
+    "_id": "Tax Planning Strategies<SEP>Tax-Deferred Growth"
+  },
+  "Registered Retirement Savings Plan<SEP>Spousal RRSP": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101338,
+    "update_time": 1772101338,
+    "_id": "Registered Retirement Savings Plan<SEP>Spousal RRSP"
+  },
+  "RRSP Deduction Limit<SEP>Tax Year 2023": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101339,
+    "update_time": 1772101339,
+    "_id": "RRSP Deduction Limit<SEP>Tax Year 2023"
+  },
+  "Spousal RRSPs<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101339,
+    "update_time": 1772101339,
+    "_id": "Spousal RRSPs<SEP>Tax Planning Strategies"
+  },
+  "Home Buyers' Plan<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101339,
+    "update_time": 1772101339,
+    "_id": "Home Buyers' Plan<SEP>Registered Retirement Savings Plan"
+  },
+  "RRSP Deduction Limit<SEP>Tax Year 2024": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101340,
+    "update_time": 1772101340,
+    "_id": "RRSP Deduction Limit<SEP>Tax Year 2024"
+  },
+  "Higher Tax Bracket<SEP>Spousal RRSPs": {
+    "chunk_ids": [
+      "chunk-74f42f89274db1c03e3ad487f53119a4"
+    ],
+    "count": 1,
+    "create_time": 1772101340,
+    "update_time": 1772101340,
+    "_id": "Higher Tax Bracket<SEP>Spousal RRSPs"
+  },
+  "Annual RRSP Dollar Limits<SEP>RRSP Contribution Limits": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101340,
+    "update_time": 1772101340,
+    "_id": "Annual RRSP Dollar Limits<SEP>RRSP Contribution Limits"
+  },
+  "Lifelong Learning Plan<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101341,
+    "update_time": 1772101341,
+    "_id": "Lifelong Learning Plan<SEP>Registered Retirement Savings Plan"
+  },
+  "RRSP Withdrawals<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101341,
+    "update_time": 1772101341,
+    "_id": "RRSP Withdrawals<SEP>Registered Retirement Savings Plan"
+  },
+  "RRSP at Death<SEP>Registered Retirement Savings Plan": {
+    "chunk_ids": [
+      "chunk-1590b8716306682b296c39fb8f8a1c64"
+    ],
+    "count": 1,
+    "create_time": 1772101342,
+    "update_time": 1772101342,
+    "_id": "RRSP at Death<SEP>Registered Retirement Savings Plan"
+  },
+  "Charitable Donation Tax Credit<SEP>securities": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101366,
+    "update_time": 1772101366,
+    "_id": "Charitable Donation Tax Credit<SEP>securities"
+  },
+  "Employment Deductions<SEP>Work from Home Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101366,
+    "update_time": 1772101366,
+    "_id": "Employment Deductions<SEP>Work from Home Expenses"
+  },
+  "Canadian Tax Planning Strategies<SEP>Income Tax Act": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101366,
+    "update_time": 1772101366,
+    "_id": "Canadian Tax Planning Strategies<SEP>Income Tax Act"
+  },
+  "Form T2200<SEP>Work from Home Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101367,
+    "update_time": 1772101367,
+    "_id": "Form T2200<SEP>Work from Home Expenses"
+  },
+  "Employment Deductions<SEP>Vehicle Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101367,
+    "update_time": 1772101367,
+    "_id": "Employment Deductions<SEP>Vehicle Expenses"
+  },
+  "RRSP<SEP>Spousal RRSP": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101367,
+    "update_time": 1772101367,
+    "_id": "RRSP<SEP>Spousal RRSP"
+  },
+  "Canada Child Benefit<SEP>TFSA": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101368,
+    "update_time": 1772101368,
+    "_id": "Canada Child Benefit<SEP>TFSA"
+  },
+  "Employment Deductions<SEP>Medical Expenses": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101368,
+    "update_time": 1772101368,
+    "_id": "Employment Deductions<SEP>Medical Expenses"
+  },
+  "Capital Gains<SEP>Charitable Donation": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101368,
+    "update_time": 1772101368,
+    "_id": "Capital Gains<SEP>Charitable Donation"
+  },
+  "Canadian Tax Planning Strategies<SEP>Pension Income Splitting": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101369,
+    "update_time": 1772101369,
+    "_id": "Canadian Tax Planning Strategies<SEP>Pension Income Splitting"
+  },
+  "Charitable Donation Tax Credit<SEP>Unused Donation Credits": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101369,
+    "update_time": 1772101369,
+    "_id": "Charitable Donation Tax Credit<SEP>Unused Donation Credits"
+  },
+  "RRIF<SEP>RRSP": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101369,
+    "update_time": 1772101369,
+    "_id": "RRIF<SEP>RRSP"
+  },
+  "Capital Gains<SEP>Capital Gains Reserve": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101370,
+    "update_time": 1772101370,
+    "_id": "Capital Gains<SEP>Capital Gains Reserve"
+  },
+  "OAS Clawback<SEP>RRIF": {
+    "chunk_ids": [
+      "chunk-443ee4b9b0cd32b4e6c22127239ed83c"
+    ],
+    "count": 1,
+    "create_time": 1772101370,
+    "update_time": 1772101370,
+    "_id": "OAS Clawback<SEP>RRIF"
+  },
+  "29%/33% Federal Credit Rate<SEP>Charitable Donation Tax Credit": {
+    "chunk_ids": [
+      "chunk-53761e82537ba7b2a5d7a74c8d5799d8"
+    ],
+    "count": 1,
+    "create_time": 1772101370,
+    "update_time": 1772101370,
+    "_id": "29%/33% Federal Credit Rate<SEP>Charitable Donation Tax Credit"
+  },
+  "CRA<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101404,
+    "update_time": 1772101404,
+    "_id": "CRA<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Canadian Residents<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101405,
+    "update_time": 1772101405,
+    "_id": "Canadian Residents<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Social Insurance Number (SIN)<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101405,
+    "update_time": 1772101405,
+    "_id": "Social Insurance Number (SIN)<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Tax-Free Savings Account (TFSA)<SEP>Withdrawal and Recontribution Rules": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101405,
+    "update_time": 1772101405,
+    "_id": "Tax-Free Savings Account (TFSA)<SEP>Withdrawal and Recontribution Rules"
+  },
+  "Overcontribution Penalty<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101406,
+    "update_time": 1772101406,
+    "_id": "Overcontribution Penalty<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Qualifying Investments<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101406,
+    "update_time": 1772101406,
+    "_id": "Qualifying Investments<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "TFSA on Death<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101407,
+    "update_time": 1772101407,
+    "_id": "TFSA on Death<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "TFSA vs RRSP<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101407,
+    "update_time": 1772101407,
+    "_id": "TFSA vs RRSP<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Old Age Security (OAS)<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101408,
+    "update_time": 1772101408,
+    "_id": "Old Age Security (OAS)<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Guaranteed Income Supplement (GIS)<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101409,
+    "update_time": 1772101409,
+    "_id": "Guaranteed Income Supplement (GIS)<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101410,
+    "update_time": 1772101410,
+    "_id": "Goods and Services Tax/Harmonized Sales Tax (GST/HST) Credit<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Canada Child Benefit<SEP>Tax-Free Savings Account (TFSA)": {
+    "chunk_ids": [
+      "chunk-4efa231cfe20987fec08d6db7e701fb2"
+    ],
+    "count": 1,
+    "create_time": 1772101411,
+    "update_time": 1772101411,
+    "_id": "Canada Child Benefit<SEP>Tax-Free Savings Account (TFSA)"
+  }
+}
