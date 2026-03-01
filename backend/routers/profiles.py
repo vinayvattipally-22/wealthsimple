@@ -40,6 +40,16 @@ async def create_profile(
         "total_income_tax_withheld": tax_withheld,
         "province_of_employment": province,
     }
+    # Personal details (marital status, dependents, housing costs, etc.)
+    personal = body.get("personal_details") or {}
+    personal_details = {
+        "date_of_birth": personal.get("date_of_birth"),
+        "marital_status": personal.get("marital_status"),
+        "num_children_under_18": personal.get("num_children_under_18", 0),
+        "spouse_income": personal.get("spouse_income"),
+        "rent_paid": personal.get("rent_paid", 0),
+        "property_tax_paid": personal.get("property_tax_paid", 0),
+    }
     profile_data = {
         "tax_year": tax_year,
         "province_code": province,
@@ -47,6 +57,7 @@ async def create_profile(
         "structured_t4": box_values,
         "registered_accounts": body.get("registered_accounts") or {},
         "carryforwards": body.get("carryforwards") or {},
+        "personal_details": personal_details,
         "derived": {},
     }
     profile = FinancialProfile(
@@ -66,4 +77,44 @@ async def create_profile(
         if doc:
             doc.profile_id = profile.id
 
+    await db.commit()
     return {"profile_id": profile.id, "tax_year": tax_year, "province": province}
+
+
+@router.patch("/profiles/{profile_id}")
+async def update_profile(
+    profile_id: int,
+    body: dict = Body(...),
+    user: User | None = Depends(get_current_user_optional),
+    db: AsyncSession = Depends(get_db),
+):
+    """Update a financial profile — primarily for adding personal details after initial creation."""
+    profile = await db.get(FinancialProfile, profile_id)
+    if not profile:
+        raise HTTPException(404, "Profile not found")
+    if user and profile.user_id and profile.user_id != user.id:
+        raise HTTPException(403, "Not your profile")
+
+    data = profile.profile_data or {}
+
+    # Merge personal_details if provided
+    personal = body.get("personal_details")
+    if personal:
+        existing = data.get("personal_details") or {}
+        existing.update({k: v for k, v in personal.items() if v is not None})
+        data["personal_details"] = existing
+
+    # Allow updating registered_accounts too
+    reg = body.get("registered_accounts")
+    if reg:
+        existing_reg = data.get("registered_accounts") or {}
+        existing_reg.update(reg)
+        data["registered_accounts"] = existing_reg
+
+    profile.profile_data = data
+    # Force SQLAlchemy to detect the JSON change
+    from sqlalchemy.orm.attributes import flag_modified
+    flag_modified(profile, "profile_data")
+    await db.commit()
+
+    return {"ok": True, "profile_id": profile_id}

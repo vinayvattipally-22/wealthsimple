@@ -1,13 +1,32 @@
 import { useState, useEffect } from 'react'
-import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
+import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { DollarSign, Receipt, TrendingUp, Percent, LayoutDashboard, AlertTriangle, ChevronDown } from 'lucide-react'
 import { getUserDashboard } from '../services/api'
 import { PageLoading } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
+import ReviewPendingBanner from '../components/ReviewPendingBanner'
+import { usePageData } from '../context/PageDataContext'
 import '../styles/dashboard.css'
 
 const COLORS = ['#dc2626', '#d97706', '#16a34a', '#0d3b66']
 const CATEGORY_COLORS = { ACT_NOW: '#dc2626', THIS_YEAR: '#d97706', LONG_TERM: '#16a34a' }
+
+function VerticalTick({ x, y, payload }) {
+  return (
+    <g transform={`translate(${x},${y + 8})`}>
+      <text
+        x={0}
+        y={0}
+        textAnchor="end"
+        fill="#737373"
+        fontSize={11}
+        transform="rotate(-90)"
+      >
+        {payload.value}
+      </text>
+    </g>
+  )
+}
 
 function CustomTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
@@ -29,15 +48,19 @@ export default function Dashboard() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const { setPageData } = usePageData()
 
   useEffect(() => {
     setLoading(true)
     setError(null)
     getUserDashboard(selectedId)
-      .then(setData)
+      .then((res) => {
+        setData(res)
+        setPageData({ page: 'dashboard', data: res })
+      })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false))
-  }, [selectedId])
+  }, [selectedId, setPageData])
 
   if (loading) return <PageLoading />
 
@@ -90,7 +113,7 @@ export default function Dashboard() {
           <p className="page-subtitle">
             {isCumulative
               ? `All reports${data.tax_year ? ` · ${data.tax_year}` : ''}`
-              : `${data.tax_year || ''}${data.province ? ` · ${data.province}` : ''}`
+              : `${data.tax_year || ''}`
             }
           </p>
         </div>
@@ -111,6 +134,10 @@ export default function Dashboard() {
         )}
       </div>
 
+      {data.review_pending && (
+        <ReviewPendingBanner message="Your AI-generated insights are under advisor review. Savings and chart data will update once insights are approved." />
+      )}
+
       <div className="summary-cards">
         <div className="summary-card">
           <div className="summary-card-icon blue"><DollarSign size={20} /></div>
@@ -124,7 +151,7 @@ export default function Dashboard() {
         </div>
         <div className="summary-card">
           <div className="summary-card-icon green"><TrendingUp size={20} /></div>
-          <div className="label">Total Savings Found</div>
+          <div className="label">Total Savings Found{data.review_pending ? ' (under review)' : ''}</div>
           <div className="value green">${(data.total_savings || 0).toLocaleString('en-CA', { minimumFractionDigits: 2 })}</div>
         </div>
         <div className="summary-card">
@@ -158,9 +185,9 @@ export default function Dashboard() {
         <div className="chart-card">
           <h3>Savings by Insight</h3>
           {barData.length > 0 ? (
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={barData}>
-                <XAxis dataKey="name" angle={-45} textAnchor="end" height={80} fontSize={11} tick={{ fill: '#737373' }} />
+            <ResponsiveContainer width="100%" height={350}>
+              <BarChart data={barData} margin={{ bottom: 10 }}>
+                <XAxis dataKey="name" tick={<VerticalTick />} height={140} interval={0} />
                 <YAxis fontSize={11} tick={{ fill: '#737373' }} />
                 <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(0,0,0,0.04)' }} />
                 <Bar dataKey="value" radius={[4, 4, 0, 0]}>
@@ -180,15 +207,21 @@ export default function Dashboard() {
                   data={pieData}
                   cx="50%"
                   cy="50%"
-                  outerRadius={100}
-                  innerRadius={60}
+                  outerRadius={90}
+                  innerRadius={55}
                   paddingAngle={3}
-                  label={({ name, value }) => `${name}: $${value.toFixed(0)}`}
                   dataKey="value"
                 >
                   {pieData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
                 </Pie>
                 <Tooltip content={<CustomTooltip />} />
+                <Legend
+                  verticalAlign="bottom"
+                  formatter={(value, entry) => {
+                    const item = pieData.find(d => d.name === value)
+                    return `${value}: $${item ? item.value.toLocaleString('en-CA', { minimumFractionDigits: 0 }) : '0'}`
+                  }}
+                />
               </PieChart>
             </ResponsiveContainer>
           ) : <p className="text-muted">No category data available</p>}

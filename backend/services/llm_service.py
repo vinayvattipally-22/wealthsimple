@@ -1,6 +1,7 @@
 """
-GPT-4o integration: extraction verification, financial analysis, vision OCR.
+LLM integration: extraction verification, financial analysis, vision OCR.
 Uses structured prompts from prompts/*. Prompt builder, response parsing, retries, settings from settingsJson.
+Supports any OpenAI-compatible API (Ollama, LM Studio, vLLM, OpenAI, etc.) via env vars.
 """
 import json
 import os
@@ -11,11 +12,17 @@ from prompts.extraction_prompt import EXTRACTION_PROMPT
 from prompts.analysis_prompt import ANALYSIS_PROMPT
 from prompts.vision_prompt import VISION_PROMPT
 
+
 def _client():
-    key = os.getenv("OPENAI_API_KEY")
-    if not key:
+    """Create an OpenAI-compatible client. Uses OPENAI_API_KEY and optional OPENAI_BASE_URL."""
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
         raise ValueError("OPENAI_API_KEY must be set for LLM calls")
-    return OpenAI(api_key=key)
+    kwargs = {"api_key": api_key}
+    base_url = os.getenv("OPENAI_BASE_URL")
+    if base_url:
+        kwargs["base_url"] = base_url
+    return OpenAI(**kwargs)
 
 
 def _build_system_message(prompt_config: dict) -> str:
@@ -64,8 +71,9 @@ def _call_chat(
     if image_url:
         content.insert(0, {"type": "image_url", "image_url": {"url": image_url}})
 
+    model = os.getenv("LLM_MODEL", "gpt-4o")
     api_kwargs = {
-        "model": "gpt-4o",
+        "model": model,
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": content},

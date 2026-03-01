@@ -4,6 +4,7 @@ import { PageLoading, LoadingSpinner } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 import FormattedText from '../components/FormattedText'
 import { getUserDocuments, runScenario } from '../services/api'
+import { usePageData } from '../context/PageDataContext'
 import '../styles/dashboard.css'
 
 const SCENARIOS = [
@@ -14,11 +15,12 @@ const SCENARIOS = [
   { type: 'province_change', label: 'Province Move', desc: 'Compare taxes by province', unit: 'province', provinces: ['ON', 'BC', 'AB', 'QC', 'MB', 'SK', 'NS', 'NB', 'NL', 'PE', 'NT', 'NU', 'YT'] },
 ]
 
-function CompareCard({ label, current, projected, isCurrency, isPercent }) {
+function CompareCard({ label, current, projected, isCurrency, isPercent, invertColor }) {
   const currentVal = current || 0
   const projectedVal = projected || 0
   const delta = projectedVal - currentVal
-  const improved = isCurrency ? delta < 0 : delta < 0
+  // invertColor: for metrics where increase is good (green), e.g. RRSP room, credits
+  const improved = invertColor ? delta > 0 : (isCurrency ? delta < 0 : delta < 0)
 
   const formatValue = (v) => {
     if (isPercent) return `${(v * 100).toFixed(1)}%`
@@ -32,13 +34,13 @@ function CompareCard({ label, current, projected, isCurrency, isPercent }) {
       <div className="compare-card-row">
         <div className="compare-card-value">{formatValue(currentVal)}</div>
         <ArrowRight size={16} className="compare-card-arrow" />
-        <div className={`compare-card-value ${improved ? 'text-green' : delta > 0 ? 'text-red' : ''}`}>
+        <div className={`compare-card-value ${improved ? 'text-green' : delta !== 0 ? 'text-red' : ''}`}>
           {formatValue(projectedVal)}
         </div>
       </div>
       {delta !== 0 && (
         <div className={`compare-card-delta ${improved ? 'text-green' : 'text-red'}`}>
-          {improved ? <TrendingDown size={12} /> : <TrendingUp size={12} />}
+          {improved ? (invertColor ? <TrendingUp size={12} /> : <TrendingDown size={12} />) : (invertColor ? <TrendingDown size={12} /> : <TrendingUp size={12} />)}
           {isCurrency && (delta < 0 ? '-' : '+')}{formatValue(Math.abs(delta))}
         </div>
       )}
@@ -56,6 +58,7 @@ export default function Simulator() {
   const [result, setResult] = useState(null)
   const [running, setRunning] = useState(false)
   const [error, setError] = useState(null)
+  const { setPageData } = usePageData()
 
   // Load profiles
   useEffect(() => {
@@ -85,6 +88,7 @@ export default function Simulator() {
       const scenarioValue = selectedScenario.unit === 'province' ? provinceValue : value
       const res = await runScenario(selectedId, selectedScenario.type, scenarioValue)
       setResult(res)
+      setPageData({ page: 'simulator', data: { scenario: selectedScenario.type, value: scenarioValue, result: res } })
     } catch (e) {
       setError(e.message)
     } finally {
@@ -124,7 +128,7 @@ export default function Simulator() {
             >
               {profiles.map((p) => (
                 <option key={p.profile_id} value={p.profile_id}>
-                  {p.tax_year || 'N/A'} · {p.province || 'N/A'}{p.file_name ? ` — ${p.file_name}` : ''}
+                  {p.tax_year || 'N/A'}{p.doc_type ? ` — ${p.doc_type}` : ''}
                 </option>
               ))}
             </select>
@@ -253,6 +257,12 @@ export default function Simulator() {
                   ${Number(result.impact.tax_free_growth_20yr || 0).toLocaleString('en-CA', { minimumFractionDigits: 2 })}
                 </div>
               </div>
+              <div className="summary-card">
+                <div className="summary-card-label">Tax Saved vs Taxable (20yr)</div>
+                <div className="summary-card-value text-green">
+                  ${Number(result.impact.tax_saved_vs_taxable_20yr || 0).toLocaleString('en-CA', { minimumFractionDigits: 2 })}
+                </div>
+              </div>
             </div>
           )}
 
@@ -260,8 +270,22 @@ export default function Simulator() {
           {result.current && result.projected && result.scenario_type !== 'tfsa_contribution' && (
             <div className="compare-grid">
               <CompareCard label="Taxable Income" current={result.current.income} projected={result.projected.income} isCurrency />
-              <CompareCard label="Tax Liability" current={result.current.tax_liability} projected={result.projected.tax_liability} isCurrency />
+              <CompareCard label="Total Tax" current={result.current.tax_liability} projected={result.projected.tax_liability} isCurrency />
+              <CompareCard label="Federal Tax" current={result.current.federal_tax} projected={result.projected.federal_tax} isCurrency />
+              <CompareCard label="Provincial Tax" current={result.current.provincial_tax} projected={result.projected.provincial_tax} isCurrency />
+              <CompareCard label="Effective Rate" current={result.current.effective_rate} projected={result.projected.effective_rate} isPercent />
               <CompareCard label="Marginal Rate" current={result.current.marginal_rate} projected={result.projected.marginal_rate} isPercent />
+              {result.current?.rrsp_room !== undefined && (
+                <>
+                  <CompareCard label="RRSP Room" current={result.current.rrsp_room} projected={result.projected.rrsp_room} isCurrency invertColor />
+                  <CompareCard label="RRSP Max Tax Savings" current={result.current.rrsp_max_savings} projected={result.projected.rrsp_max_savings} isCurrency invertColor />
+                  <CompareCard label="FHSA Tax Savings" current={result.current.fhsa_max_savings} projected={result.projected.fhsa_max_savings} isCurrency invertColor />
+                  <CompareCard label="GST/HST Credit" current={result.current.gst_hst_credit} projected={result.projected.gst_hst_credit} isCurrency invertColor />
+                  {(result.current.cwb > 0 || result.projected.cwb > 0) && (
+                    <CompareCard label="Canada Workers Benefit" current={result.current.cwb} projected={result.projected.cwb} isCurrency invertColor />
+                  )}
+                </>
+              )}
             </div>
           )}
 

@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom'
-import { BarChart3, LayoutDashboard, Lightbulb, TrendingUp, Shield, Menu, X, LogOut, User, FileText, ListChecks, FlaskConical, BrainCircuit } from 'lucide-react'
+import { Routes, Route, Link, Navigate } from 'react-router-dom'
+import { LogOut, User } from 'lucide-react'
 import { AuthProvider, useAuth } from './context/AuthContext'
+import { PageDataProvider } from './context/PageDataContext'
+import Home from './pages/Home'
 import MyDocuments from './pages/MyDocuments'
 import Analysis from './pages/Analysis'
 import Insights from './pages/Insights'
@@ -11,9 +12,13 @@ import ActionItems from './pages/ActionItems'
 import Simulator from './pages/Simulator'
 import FinancialAdvisor from './pages/FinancialAdvisor'
 import AdvisorDashboard from './pages/AdvisorDashboard'
+import StockResearch from './pages/StockResearch'
+import StockAdvisorReview from './pages/StockAdvisorReview'
 import Login from './pages/Login'
 import Register from './pages/Register'
-import ChatWidget from './components/ChatWidget'
+import TaxLayout from './layouts/TaxLayout'
+import StocksLayout from './layouts/StocksLayout'
+// import ChatWidget from './components/ChatWidget'
 import { LoadingSpinner } from './components/LoadingState'
 import './styles/dashboard.css'
 
@@ -24,36 +29,8 @@ function ProtectedRoute({ children }) {
   return children
 }
 
-function NavLink({ to, label, icon: Icon, onClick }) {
-  const location = useLocation()
-  const active = location.pathname === to
-  return (
-    <Link
-      to={to}
-      className={`nav-link ${active ? 'nav-link-active' : ''}`}
-      onClick={onClick}
-    >
-      <Icon size={16} />
-      <span>{label}</span>
-    </Link>
-  )
-}
-
 function AppContent() {
-  const [mobileOpen, setMobileOpen] = useState(false)
-  const { isAuthenticated, isAdvisor, user, logout } = useAuth()
-
-  const NAV_ITEMS = [
-    { to: '/', label: 'My Docs', icon: FileText },
-    { to: '/analysis', label: 'Analysis', icon: BarChart3 },
-    { to: '/ai-advisor', label: 'AI Advisor', icon: BrainCircuit },
-    { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/insights', label: 'Insights', icon: Lightbulb },
-    { to: '/actions', label: 'Actions', icon: ListChecks },
-    { to: '/simulator', label: 'Simulator', icon: FlaskConical },
-    { to: '/trends', label: 'Trends', icon: TrendingUp },
-    ...(isAdvisor ? [{ to: '/advisor', label: 'Advisor', icon: Shield }] : []),
-  ]
+  const { isAuthenticated, user, logout } = useAuth()
 
   return (
     <>
@@ -61,19 +38,8 @@ function AppContent() {
         <div className="nav-inner">
           <Link to="/" className="nav-brand">
             <span className="nav-logo">W</span>
-            <span className="nav-brand-text">Tax Analyzer</span>
+            <span className="nav-brand-text">Wealthsimple</span>
           </Link>
-          {isAuthenticated && (
-            <div className={`nav-links ${mobileOpen ? 'nav-links-open' : ''}`}>
-              {NAV_ITEMS.map(item => (
-                <NavLink
-                  key={item.to}
-                  {...item}
-                  onClick={() => setMobileOpen(false)}
-                />
-              ))}
-            </div>
-          )}
           {isAuthenticated && (
             <div className="nav-user">
               <span className="nav-user-name">
@@ -85,33 +51,36 @@ function AppContent() {
               </button>
             </div>
           )}
-          {isAuthenticated && (
-            <button
-              className="nav-mobile-toggle"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          )}
         </div>
       </nav>
       <main className="main-content">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/" element={<ProtectedRoute><MyDocuments /></ProtectedRoute>} />
-          <Route path="/analysis" element={<ProtectedRoute><Analysis /></ProtectedRoute>} />
-          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-          <Route path="/insights" element={<ProtectedRoute><Insights /></ProtectedRoute>} />
-          <Route path="/actions" element={<ProtectedRoute><ActionItems /></ProtectedRoute>} />
-          <Route path="/simulator" element={<ProtectedRoute><Simulator /></ProtectedRoute>} />
-          <Route path="/ai-advisor" element={<ProtectedRoute><FinancialAdvisor /></ProtectedRoute>} />
-          <Route path="/trends" element={<ProtectedRoute><Trends /></ProtectedRoute>} />
-          <Route path="/advisor" element={<ProtectedRoute><AdvisorDashboard /></ProtectedRoute>} />
+          <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+
+          {/* Tax section */}
+          <Route path="/tax" element={<ProtectedRoute><TaxLayout /></ProtectedRoute>}>
+            <Route path="documents" element={<MyDocuments />} />
+            <Route path="analysis" element={<Analysis />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="insights" element={<Insights />} />
+            <Route path="actions" element={<ActionItems />} />
+            <Route path="simulator" element={<Simulator />} />
+            <Route path="ai-advisor" element={<FinancialAdvisor />} />
+            <Route path="trends" element={<Trends />} />
+            <Route path="advisor" element={<AdvisorDashboard />} />
+            <Route index element={<Navigate to="documents" replace />} />
+          </Route>
+
+          {/* Stocks section */}
+          <Route path="/stocks" element={<ProtectedRoute><StocksLayout /></ProtectedRoute>}>
+            <Route index element={<StockResearch />} />
+            <Route path="review" element={<StockAdvisorReview />} />
+          </Route>
         </Routes>
       </main>
-      <ChatWidget />
+      {/* <ChatWidget /> */}
     </>
   )
 }
@@ -119,7 +88,9 @@ function AppContent() {
 function App() {
   return (
     <AuthProvider>
-      <AppContent />
+      <PageDataProvider>
+        <AppContent />
+      </PageDataProvider>
     </AuthProvider>
   )
 }

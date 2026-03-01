@@ -41,9 +41,10 @@ async def list_action_items(
     else:
         target_ids = user_profile_ids
 
+    from database.queries import approved_action_items_query
+
     result = await db.execute(
-        select(ActionItem)
-        .where(ActionItem.profile_id.in_(target_ids))
+        approved_action_items_query(target_ids)
         .order_by(ActionItem.deadline.asc().nullslast(), ActionItem.priority.asc())
     )
     items = result.scalars().all()

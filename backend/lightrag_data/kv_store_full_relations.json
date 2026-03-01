@@ -538,5 +538,1225 @@
     "create_time": 1772101412,
     "update_time": 1772101412,
     "_id": "doc-4efa231cfe20987fec08d6db7e701fb2"
+  },
+  "doc-c3432d5247af3c6cc7b4c37bd736c10a": {
+    "relation_pairs": [
+      [
+        "Canada",
+        "Death"
+      ],
+      [
+        "Canada",
+        "Gifting Property"
+      ],
+      [
+        "Schedule 3",
+        "T3 Slips"
+      ],
+      [
+        "Capital Gain",
+        "Lifetime Capital Gains Exemption"
+      ],
+      [
+        "Capital Gains Reserves",
+        "Family Farm Corporation"
+      ],
+      [
+        "Adjusted Cost Base",
+        "Tax-Loss Harvesting Strategy"
+      ],
+      [
+        "Schedule 3",
+        "T5008 Slips"
+      ],
+      [
+        "Adjusted Cost Base (ACB)",
+        "T5008 Slips"
+      ],
+      [
+        "Capital Gains Reserves",
+        "TFSA"
+      ],
+      [
+        "Adjusted Cost Base",
+        "Capital Gain"
+      ],
+      [
+        "Charitable Donation Tax Credit",
+        "TFSA"
+      ],
+      [
+        "Schedule 3",
+        "T1 Return"
+      ],
+      [
+        "Death",
+        "Deemed Disposition Events"
+      ],
+      [
+        "Canada",
+        "Departure Tax"
+      ],
+      [
+        "RRSP",
+        "TFSA"
+      ],
+      [
+        "Capital Gain",
+        "Principal Residence Exemption"
+      ],
+      [
+        "Superficial Loss Rule",
+        "Tax-Loss Harvesting Strategy"
+      ],
+      [
+        "Canada",
+        "Change in Use"
+      ],
+      [
+        "Deemed Disposition Events",
+        "Emigrating from Canada"
+      ],
+      [
+        "Budget 2024",
+        "Canadian Entrepreneurs' Incentive"
+      ]
+    ],
+    "count": 20,
+    "create_time": 1772369132,
+    "update_time": 1772369132,
+    "_id": "doc-c3432d5247af3c6cc7b4c37bd736c10a"
+  },
+  "doc-763b1c1e1aaf51a4f6b35169530a488f": {
+    "relation_pairs": [
+      [
+        "Mandatory Ancillary Fees",
+        "Tuition Fees"
+      ],
+      [
+        "Schedule 11",
+        "T2202 Slip"
+      ],
+      [
+        "Alberta",
+        "Provincial Tuition Tax Credit"
+      ],
+      [
+        "Foreign Universities",
+        "Tuition Fees"
+      ],
+      [
+        "Canadian Universities and Colleges",
+        "T2202 Slip"
+      ],
+      [
+        "Federal Tuition Tax Credit",
+        "Tuition Fees"
+      ],
+      [
+        "Ontario",
+        "Provincial Tuition Tax Credit"
+      ],
+      [
+        "Carryforward",
+        "Schedule 11"
+      ],
+      [
+        "Federal Tuition Tax Credit",
+        "Professional Examination Fees"
+      ],
+      [
+        "BC",
+        "Provincial Tuition Tax Credit"
+      ],
+      [
+        "Professional Examination Fees",
+        "T2202 Slip"
+      ],
+      [
+        "Certified Institutions",
+        "Tuition Fees"
+      ],
+      [
+        "Federal Tuition Tax Credit",
+        "T2202 Slip"
+      ],
+      [
+        "CRA Guide P105",
+        "Canada Revenue Agency (CRA)"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1772369239,
+    "update_time": 1772369239,
+    "_id": "doc-763b1c1e1aaf51a4f6b35169530a488f"
+  },
+  "doc-226ec9444959a9b27060e393bc4eb7e0": {
+    "relation_pairs": [
+      [
+        "RRIF",
+        "RRSP Conversion"
+      ],
+      [
+        "Canada Child Benefit",
+        "T1 Individual Tax Return"
+      ],
+      [
+        "Penalty for Late Filing",
+        "Repeat Offenders Penalty"
+      ],
+      [
+        "April 30, 2025",
+        "T1 Individual Tax Return"
+      ],
+      [
+        "Prescribed Interest Rate",
+        "Q1 2025"
+      ],
+      [
+        "Quebec Solidarity Credit",
+        "Revenu Québec"
+      ],
+      [
+        "CRA",
+        "Interest on Unpaid Tax"
+      ],
+      [
+        "Home Buyers' Plan (HBP)",
+        "RRSP"
+      ],
+      [
+        "CRA",
+        "T1 Individual Tax Return"
+      ],
+      [
+        "Lifelong Learning Plan (LLP)",
+        "RRSP"
+      ],
+      [
+        "T4 Slips",
+        "T5 Slips"
+      ],
+      [
+        "CRA",
+        "Instalment Payments"
+      ],
+      [
+        "Notice of Assessment",
+        "Notice of Objection"
+      ],
+      [
+        "RRSP",
+        "T1 Individual Tax Return"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1772369310,
+    "update_time": 1772369310,
+    "_id": "doc-226ec9444959a9b27060e393bc4eb7e0"
+  },
+  "doc-1a79b7840654dd171103f6215d90e54b": {
+    "relation_pairs": [
+      [
+        "CRA Publications",
+        "Canada Revenue Agency"
+      ],
+      [
+        "Disability Tax Credit (DTC)",
+        "Registered Disability Savings Plan (RDSP)"
+      ],
+      [
+        "Child Disability Benefit",
+        "Disability Tax Credit (DTC)"
+      ],
+      [
+        "Canada Workers Benefit (CWB) Disability Supplement",
+        "Disability Tax Credit (DTC)"
+      ],
+      [
+        "Canada Carbon Rebate",
+        "Old Age Security"
+      ],
+      [
+        "Canada Disability Savings Grant (CDSG)",
+        "Registered Disability Savings Plan (RDSP)"
+      ],
+      [
+        "Canada Workers Benefit",
+        "GST/HST Credit"
+      ],
+      [
+        "Canada Disability Savings Bond (CDSB)",
+        "Registered Disability Savings Plan (RDSP)"
+      ],
+      [
+        "Guaranteed Income Supplement",
+        "Old Age Security"
+      ],
+      [
+        "Charitable Donation Tax Credit",
+        "Donating publicly listed securities in-kind"
+      ],
+      [
+        "EI clawback",
+        "Employment Insurance (EI) Benefits"
+      ],
+      [
+        "Canada Child Benefit",
+        "Disability Tax Credit"
+      ],
+      [
+        "Canada Carbon Rebate",
+        "Federal Carbon Pricing"
+      ],
+      [
+        "2024 CPP Maximum Increase",
+        "Canada Pension Plan (CPP) Benefits"
+      ],
+      [
+        "Federal Benefits",
+        "Income Tax Act"
+      ],
+      [
+        "Pension Income Splitting",
+        "Registered Retirement Income Fund (RRIF)"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1772369362,
+    "update_time": 1772369362,
+    "_id": "doc-1a79b7840654dd171103f6215d90e54b"
+  },
+  "doc-2b63e9f386df072fa44d9d07188cfe2b": {
+    "relation_pairs": [
+      [
+        "Capital Gains Dividends",
+        "Schedule 3 of T1 Return"
+      ],
+      [
+        "Canadian Sources",
+        "T5 Slip"
+      ],
+      [
+        "Federal Dividend Tax Credit",
+        "Other Than Eligible Dividends"
+      ],
+      [
+        "Interest Income",
+        "Registered Accounts (RRSP/TFSA)"
+      ],
+      [
+        "Eligible Dividends",
+        "Federal Dividend Tax Credit"
+      ],
+      [
+        "Canadian-Controlled Private Corporations (CCPCs)",
+        "Other Than Eligible Dividends"
+      ],
+      [
+        "Interest Income",
+        "Marginal Tax Rate"
+      ],
+      [
+        "Capital Gains Dividends",
+        "Mutual Fund Corporations"
+      ],
+      [
+        "Eligible Dividends",
+        "Public Corporations"
+      ],
+      [
+        "Financial Institutions",
+        "T5 Slip"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1772369484,
+    "update_time": 1772369484,
+    "_id": "doc-2b63e9f386df072fa44d9d07188cfe2b"
+  },
+  "doc-b2a8d147e76a4374e343873554cbd6e1": {
+    "relation_pairs": [
+      [
+        "First Home Savings Account (FHSA)",
+        "Overcontribution Penalty"
+      ],
+      [
+        "First Home Savings Account (FHSA)",
+        "TFSA"
+      ],
+      [
+        "Form RC725",
+        "Overcontribution Penalty"
+      ],
+      [
+        "FHSA Contribution Limits",
+        "First Home Savings Account (FHSA)"
+      ],
+      [
+        "First Home Savings Account (FHSA)",
+        "RRSP"
+      ],
+      [
+        "Canada",
+        "First Home Savings Account (FHSA)"
+      ],
+      [
+        "FHSA",
+        "Surviving Spouse"
+      ],
+      [
+        "Common-Law Partner",
+        "FHSA"
+      ],
+      [
+        "Couples",
+        "Tax Planning Strategies"
+      ],
+      [
+        "First Home Savings Account (FHSA)",
+        "Home Buyers' Plan (HBP)"
+      ],
+      [
+        "FHSA",
+        "HBP"
+      ],
+      [
+        "FHSA",
+        "RRSP"
+      ],
+      [
+        "FHSA",
+        "Form RC725"
+      ],
+      [
+        "First Home Savings Account (FHSA)",
+        "Non-Qualifying Withdrawals"
+      ],
+      [
+        "CRA Publication RC725",
+        "First Home Savings Account (FHSA)"
+      ],
+      [
+        "First Home Savings Account (FHSA)",
+        "Qualifying Withdrawals"
+      ],
+      [
+        "First Home Savings Account (FHSA)",
+        "Social Insurance Number (SIN)"
+      ],
+      [
+        "Combined Strategy",
+        "Tax Planning Strategies"
+      ]
+    ],
+    "count": 18,
+    "create_time": 1772369650,
+    "update_time": 1772369650,
+    "_id": "doc-b2a8d147e76a4374e343873554cbd6e1"
+  },
+  "doc-a231233644c2d23abb0d05035f6627e1": {
+    "relation_pairs": [
+      [
+        "2022 Tax Year",
+        "Canadian Tax Policy Changes"
+      ],
+      [
+        "2022 Tax Year",
+        "Multigenerational Home Renovation Tax Credit (MHRTC)"
+      ],
+      [
+        "2022 Tax Year",
+        "Basic Personal Amount"
+      ],
+      [
+        "2024 Tax Year Changes",
+        "Basic Personal Amount"
+      ],
+      [
+        "2023 Tax Year",
+        "Basic Personal Amount"
+      ],
+      [
+        "2023 Tax Year",
+        "Canadian Tax Policy Changes"
+      ],
+      [
+        "Capital Gains Inclusion Rate",
+        "Corporations and Trusts"
+      ],
+      [
+        "Capital Gains Inclusion Rate",
+        "Individuals"
+      ],
+      [
+        "2021 Tax Year",
+        "Basic Personal Amount"
+      ],
+      [
+        "Manitoba",
+        "Provincial Reforms"
+      ],
+      [
+        "2021 Tax Year",
+        "Canadian Tax Policy Changes"
+      ],
+      [
+        "NL",
+        "Provincial Reforms"
+      ],
+      [
+        "Provincial Reforms",
+        "QC"
+      ],
+      [
+        "2021 Tax Year",
+        "Canada Recovery Benefit (CRB)"
+      ],
+      [
+        "First Home Savings Account",
+        "First-Time Home Buyers"
+      ],
+      [
+        "2025 Tax Year Changes",
+        "Basic Personal Amount"
+      ],
+      [
+        "2021 Tax Year",
+        "Home Office Deduction"
+      ],
+      [
+        "CRA Announcements",
+        "Canadian Tax Policy Changes"
+      ],
+      [
+        "2023 Tax Year",
+        "Employee Stock Option Deduction"
+      ],
+      [
+        "Canadian Tax Policy Changes",
+        "Federal Budgets"
+      ],
+      [
+        "2023 Tax Year",
+        "FHSA Launched"
+      ],
+      [
+        "BC Renter's Tax Credit",
+        "British Columbia"
+      ],
+      [
+        "2021 Tax Year",
+        "COVID-19 Benefits"
+      ],
+      [
+        "2022 Tax Year",
+        "Underused Housing Tax (UHT)"
+      ],
+      [
+        "Basic Personal Amount",
+        "Federal BPA Phase-In"
+      ],
+      [
+        "NB",
+        "Provincial Reforms"
+      ],
+      [
+        "Canadian Tax Policy Changes",
+        "Fall Economic Statements"
+      ],
+      [
+        "CPP2",
+        "YAMPE"
+      ],
+      [
+        "Disability Tax Credit",
+        "Mental Health Conditions"
+      ],
+      [
+        "2024 Tax Year",
+        "Canadian Tax Policy Changes"
+      ],
+      [
+        "2023 Tax Year",
+        "Anti-Flipping Rule"
+      ],
+      [
+        "2024 Tax Year",
+        "Basic Personal Amount"
+      ],
+      [
+        "AMT Modernization",
+        "CPP Enhancement"
+      ]
+    ],
+    "count": 33,
+    "create_time": 1772369806,
+    "update_time": 1772369806,
+    "_id": "doc-a231233644c2d23abb0d05035f6627e1"
+  },
+  "doc-59dd1ab2e92259b216c4f87314232a37": {
+    "relation_pairs": [
+      [
+        "ACFB",
+        "Alberta"
+      ],
+      [
+        "Alberta",
+        "Canada Carbon Rebate"
+      ],
+      [
+        "Alberta Credits",
+        "Alberta Provincial Income Tax"
+      ],
+      [
+        "2024 Tax Year",
+        "Alberta Tax Brackets"
+      ],
+      [
+        "Alberta Climate Leadership Adjustment Rebate",
+        "Canada Carbon Rebate"
+      ],
+      [
+        "Alberta Provincial Income Tax",
+        "Alberta Tax Guide"
+      ],
+      [
+        "Alberta Child and Family Benefit",
+        "Alberta Provincial Income Tax"
+      ],
+      [
+        "2025 Tax Year",
+        "Alberta Tax Brackets"
+      ],
+      [
+        "Alberta Provincial Income Tax",
+        "Alberta Seniors Benefit"
+      ],
+      [
+        "Alberta Provincial Income Tax",
+        "Alberta Tax Brackets"
+      ],
+      [
+        "Alberta",
+        "BPA"
+      ],
+      [
+        "Alberta Basic Personal Amount",
+        "Combined Alberta Marginal Rates"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1772369910,
+    "update_time": 1772369910,
+    "_id": "doc-59dd1ab2e92259b216c4f87314232a37"
+  },
+  "doc-638bbfe3e48c8504b7828ea157b78e26": {
+    "relation_pairs": [
+      [
+        "New Brunswick Provincial Income Tax",
+        "Tax Brackets"
+      ],
+      [
+        "$154,244.01 – $215,943",
+        "Newfoundland"
+      ],
+      [
+        "$264,750.01 – $529,500",
+        "Newfoundland"
+      ],
+      [
+        "$38,081.01 – $76,161",
+        "Newfoundland"
+      ],
+      [
+        "NS Affordable Living Tax Credit",
+        "Nova Scotia Basic Personal Amount"
+      ],
+      [
+        "$215,943.01 – $275,870",
+        "Newfoundland"
+      ],
+      [
+        "$86,395.01 – $154,244",
+        "Newfoundland"
+      ],
+      [
+        "NL Tax Brackets",
+        "Newfoundland and Labrador Provincial Income Tax"
+      ],
+      [
+        "$195,693.01 – $250,000",
+        "Newfoundland"
+      ],
+      [
+        "$39,147.01 – $78,294",
+        "Newfoundland"
+      ],
+      [
+        "$135,973.01 – $190,363",
+        "Newfoundland"
+      ],
+      [
+        "Newfoundland",
+        "Over $551,739"
+      ],
+      [
+        "Newfoundland",
+        "Over $529,500"
+      ],
+      [
+        "Nova Scotia",
+        "Tax Brackets"
+      ],
+      [
+        "2024 Tax Year",
+        "Newfoundland"
+      ],
+      [
+        "PEI Volunteer Firefighter Tax Credit",
+        "Prince Edward Island Provincial Income Tax"
+      ],
+      [
+        "$41,457.01 – $82,913",
+        "Newfoundland"
+      ],
+      [
+        "PEI Basic Personal Amount",
+        "PEI Tax Rate Table"
+      ],
+      [
+        "$0 – $39,147",
+        "Newfoundland"
+      ],
+      [
+        "$250,000.01 – $500,000",
+        "Newfoundland"
+      ],
+      [
+        "2024 Tax Year",
+        "NL Seniors' Benefit"
+      ],
+      [
+        "PEI Basic Personal Amount",
+        "Prince Edward Island Provincial Income Tax"
+      ],
+      [
+        "$76,161.01 – $135,973",
+        "Newfoundland"
+      ],
+      [
+        "Nova Scotia Basic Personal Amount",
+        "Nova Scotia Tax Rate Table"
+      ],
+      [
+        "Atlantic Provinces Income Tax",
+        "Newfoundland and Labrador"
+      ],
+      [
+        "$139,780.01 – $195,693",
+        "Newfoundland"
+      ],
+      [
+        "Highest Top Combined Marginal Rate",
+        "Newfoundland"
+      ],
+      [
+        "NS Volunteer Firefighter/SAR Tax Credit",
+        "Nova Scotia Basic Personal Amount"
+      ],
+      [
+        "$0 – $43,198",
+        "Newfoundland"
+      ],
+      [
+        "Basic Personal Amount",
+        "New Brunswick"
+      ],
+      [
+        "Nova Scotia Provincial Income Tax",
+        "Tax Brackets"
+      ],
+      [
+        "$43,198.01 – $86,395",
+        "Newfoundland"
+      ],
+      [
+        "$148,027.01 – $207,239",
+        "Newfoundland"
+      ],
+      [
+        "Newfoundland",
+        "Over $190,363"
+      ],
+      [
+        "$78,294.01 – $139,780",
+        "Newfoundland"
+      ],
+      [
+        "NB Low-Income Tax Reduction",
+        "New Brunswick"
+      ],
+      [
+        "PEI Sales Tax Credit",
+        "Prince Edward Island Provincial Income Tax"
+      ],
+      [
+        "Atlantic Provinces Income Tax",
+        "Prince Edward Island"
+      ],
+      [
+        "$0 – $38,081",
+        "Newfoundland"
+      ],
+      [
+        "NB Child Tax Benefit",
+        "New Brunswick"
+      ],
+      [
+        "$275,870.01 – $551,739",
+        "Newfoundland"
+      ],
+      [
+        "$207,239.01 – $264,750",
+        "Newfoundland"
+      ],
+      [
+        "Newfoundland and Labrador Provincial Income Tax",
+        "Nova Scotia Basic Personal Amount"
+      ],
+      [
+        "$0 – $41,457",
+        "Newfoundland"
+      ],
+      [
+        "$82,913.01 – $148,027",
+        "Newfoundland"
+      ],
+      [
+        "NS Poverty Reduction Credit",
+        "Nova Scotia Basic Personal Amount"
+      ],
+      [
+        "2024 Tax Year",
+        "NL Low-Income Tax Reduction"
+      ],
+      [
+        "New Brunswick",
+        "Tax Brackets"
+      ],
+      [
+        "Newfoundland",
+        "Over $500,000"
+      ],
+      [
+        "NL Basic Personal Amount",
+        "Newfoundland"
+      ]
+    ],
+    "count": 50,
+    "create_time": 1772370026,
+    "update_time": 1772370026,
+    "_id": "doc-638bbfe3e48c8504b7828ea157b78e26"
+  },
+  "doc-27a32621620d728dbab62a17b4cc388f": {
+    "relation_pairs": [
+      [
+        "BC Tax Brackets",
+        "British Columbia Provincial Income Tax"
+      ],
+      [
+        "BC Tax Guide",
+        "British Columbia Provincial Income Tax"
+      ],
+      [
+        "$1,045",
+        "BC Home Owner Grant"
+      ],
+      [
+        "BC Medical Services Plan",
+        "healthcare premium elimination"
+      ],
+      [
+        "$35,000",
+        "BC Home Owner Grant"
+      ],
+      [
+        "BC BPA Credit",
+        "BC Basic Personal Amount"
+      ],
+      [
+        "BC Training Tax Credit",
+        "technical training"
+      ],
+      [
+        "BC Renter's Tax Credit",
+        "BC Tax Credits and Benefits"
+      ],
+      [
+        "$2,500",
+        "BC Training Tax Credit"
+      ],
+      [
+        "$400",
+        "BC Renter's Tax Credit"
+      ],
+      [
+        "BC Renter's Tax Credit",
+        "income eligibility"
+      ],
+      [
+        "BC Home Owner Grant",
+        "property tax reduction"
+      ],
+      [
+        "BC Sales Tax Credit",
+        "Climate Action Tax Credit"
+      ],
+      [
+        "$770",
+        "BC Home Owner Grant"
+      ],
+      [
+        "BC Basic Personal Amount",
+        "BC Tax Brackets"
+      ],
+      [
+        "$60,000",
+        "BC Renter's Tax Credit"
+      ],
+      [
+        "BC Climate Action Tax Credit",
+        "BC Sales Tax Credit"
+      ],
+      [
+        "BC Tax Brackets",
+        "Combined BC Marginal Rates"
+      ],
+      [
+        "$80,000",
+        "BC Renter's Tax Credit"
+      ],
+      [
+        "$1,000",
+        "BC Training Tax Credit"
+      ]
+    ],
+    "count": 20,
+    "create_time": 1772370087,
+    "update_time": 1772370087,
+    "_id": "doc-27a32621620d728dbab62a17b4cc388f"
+  },
+  "doc-bd9529dd008d6d7420d991488086a78b": {
+    "relation_pairs": [
+      [
+        "Canada Carbon Rebate - Nova Scotia",
+        "Nova Scotia"
+      ],
+      [
+        "Ontario",
+        "Ontario Trillium Benefit"
+      ],
+      [
+        "CRA Provincial Tax Guides",
+        "Provincial Government Websites"
+      ],
+      [
+        "NS Poverty Reduction Credit",
+        "Nova Scotia"
+      ],
+      [
+        "Canada Carbon Rebate - Saskatchewan",
+        "Saskatchewan"
+      ],
+      [
+        "Canada Carbon Rebate",
+        "PEI Sales Tax Credit"
+      ],
+      [
+        "Manitoba",
+        "Manitoba Education Property Tax Credit"
+      ],
+      [
+        "Canada Carbon Rebate - NL",
+        "Newfoundland and Labrador"
+      ],
+      [
+        "Ontario",
+        "Ontario LIFT Credit"
+      ],
+      [
+        "Canada Carbon Rebate - PEI",
+        "Prince Edward Island"
+      ],
+      [
+        "Ontario",
+        "Ontario Seniors' Public Transit Tax Credit"
+      ],
+      [
+        "Canada Carbon Rebate - Manitoba",
+        "Manitoba"
+      ],
+      [
+        "Canada Carbon Rebate - New Brunswick",
+        "New Brunswick"
+      ],
+      [
+        "NL Income Supplement",
+        "Newfoundland and Labrador"
+      ],
+      [
+        "PEI Sales Tax Credit",
+        "Prince Edward Island"
+      ],
+      [
+        "NS Affordable Living Tax Credit",
+        "Nova Scotia"
+      ],
+      [
+        "Alberta",
+        "Canada Carbon Rebate - Alberta"
+      ],
+      [
+        "Quebec",
+        "Quebec Solidarity Credit"
+      ],
+      [
+        "NL Home Heating Rebate",
+        "Newfoundland and Labrador"
+      ],
+      [
+        "Canada Carbon Rebate",
+        "NL Low-Income Tax Reduction"
+      ],
+      [
+        "BC Climate Action Tax Credit",
+        "British Columbia"
+      ],
+      [
+        "NL Low-Income Tax Reduction",
+        "Newfoundland and Labrador"
+      ],
+      [
+        "Alberta",
+        "Alberta Child and Family Benefit"
+      ],
+      [
+        "NB Low-Income Tax Reduction",
+        "New Brunswick"
+      ],
+      [
+        "BC Training Tax Credit",
+        "British Columbia"
+      ],
+      [
+        "Saskatchewan",
+        "Saskatchewan Low-Income Tax Credit"
+      ],
+      [
+        "NS Graduate Scholarship",
+        "Nova Scotia"
+      ],
+      [
+        "NL Seniors' Benefit",
+        "Newfoundland and Labrador"
+      ],
+      [
+        "Canada",
+        "Cross-Provincial Comparison"
+      ],
+      [
+        "Canada Carbon Rebate",
+        "NS Poverty Reduction Credit"
+      ]
+    ],
+    "count": 30,
+    "create_time": 1772370181,
+    "update_time": 1772370181,
+    "_id": "doc-bd9529dd008d6d7420d991488086a78b"
+  },
+  "doc-3a2ccc925ef86904ca6e8db3ae0b00b4": {
+    "relation_pairs": [
+      [
+        "Quebec",
+        "Revenu Québec"
+      ],
+      [
+        "Quebec Residents",
+        "TP-1 Return"
+      ],
+      [
+        "Revenu Québec",
+        "TP-1"
+      ],
+      [
+        "2025 Tax Year",
+        "Quebec Tax Brackets"
+      ],
+      [
+        "Daycare Subsidy",
+        "Quebec Residents"
+      ],
+      [
+        "Quebec",
+        "Quebec Work Premium"
+      ],
+      [
+        "Quebec",
+        "Quebec Provincial Income Tax"
+      ],
+      [
+        "Quebec Pension Plan",
+        "Quebec Residents"
+      ],
+      [
+        "Quebec",
+        "Quebec Solidarity Credit"
+      ],
+      [
+        "Quebec Residents",
+        "T1 Return"
+      ],
+      [
+        "Combined Quebec Marginal Rates",
+        "Quebec"
+      ],
+      [
+        "Canada Pension Plan",
+        "Quebec Pension Plan"
+      ],
+      [
+        "2023 Tax Rate Reduction",
+        "Quebec Residents"
+      ],
+      [
+        "Childcare Credit",
+        "Income Growth"
+      ],
+      [
+        "Quebec",
+        "Quebec Childcare"
+      ],
+      [
+        "Quebec Basic Personal Amount",
+        "Quebec Provincial Income Tax"
+      ],
+      [
+        "Quebec Parental Insurance Plan",
+        "Quebec Residents"
+      ],
+      [
+        "Quebec",
+        "Quebec Pension Plan"
+      ],
+      [
+        "Quebec",
+        "Quebec Shield Tax Credit"
+      ]
+    ],
+    "count": 19,
+    "create_time": 1772370230,
+    "update_time": 1772370230,
+    "_id": "doc-3a2ccc925ef86904ca6e8db3ae0b00b4"
+  },
+  "doc-1f1f54708a7fb1c97e042b87005a6276": {
+    "relation_pairs": [
+      [
+        "Saskatchewan Provincial Income Tax",
+        "Saskatchewan Tax Brackets"
+      ],
+      [
+        "2024 Tax Year",
+        "Manitoba Education Property Tax Credit"
+      ],
+      [
+        "2024 Tax Year",
+        "Manitoba Primary Caregiver Tax Credit"
+      ],
+      [
+        "Combined Saskatchewan Marginal Rates",
+        "Saskatchewan Provincial Income Tax"
+      ],
+      [
+        "2024 Tax Year for Manitoba",
+        "Manitoba Tax Brackets"
+      ],
+      [
+        "Saskatchewan Low-Income Tax Credit",
+        "Saskatchewan Provincial Income Tax"
+      ],
+      [
+        "2024 Tax Year",
+        "Saskatchewan Basic Personal Amount"
+      ],
+      [
+        "Saskatchewan Graduate Retention Program",
+        "Saskatchewan Provincial Income Tax"
+      ],
+      [
+        "2021 Tax Year",
+        "2024 Tax Year"
+      ],
+      [
+        "2025 Tax Year for Manitoba",
+        "Manitoba Tax Brackets"
+      ],
+      [
+        "Combined Manitoba Marginal Rates",
+        "Income Range"
+      ],
+      [
+        "Saskatchewan Basic Personal Amount",
+        "Saskatchewan Tax Brackets"
+      ],
+      [
+        "2022 Tax Year",
+        "Saskatchewan Basic Personal Amount"
+      ],
+      [
+        "2024 Tax Year",
+        "Manitoba Personal Tax Credit"
+      ],
+      [
+        "2023 Tax Year",
+        "Saskatchewan Basic Personal Amount"
+      ],
+      [
+        "2021 Tax Year",
+        "Saskatchewan Basic Personal Amount"
+      ],
+      [
+        "Manitoba",
+        "Retail Sales Tax (RST)"
+      ],
+      [
+        "Basic Personal Amount (BPA)",
+        "Manitoba"
+      ],
+      [
+        "Canada Carbon Rebate - Saskatchewan",
+        "Saskatchewan Provincial Income Tax"
+      ],
+      [
+        "Canada Carbon Rebate",
+        "Manitoba Child Benefit"
+      ],
+      [
+        "Manitoba Provincial Income Tax",
+        "Manitoba Tax Brackets"
+      ],
+      [
+        "2025 Tax Year",
+        "Saskatchewan Basic Personal Amount"
+      ],
+      [
+        "2024 Tax Year",
+        "Combined Manitoba Marginal Rates"
+      ]
+    ],
+    "count": 23,
+    "create_time": 1772370283,
+    "update_time": 1772370283,
+    "_id": "doc-1f1f54708a7fb1c97e042b87005a6276"
   }
 }

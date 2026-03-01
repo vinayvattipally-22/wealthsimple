@@ -1087,5 +1087,2500 @@
     "create_time": 1772101411,
     "update_time": 1772101411,
     "_id": "Canada Child Benefit<SEP>Tax-Free Savings Account (TFSA)"
+  },
+  "Budget 2024<SEP>Canadian Entrepreneurs' Incentive": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369125,
+    "update_time": 1772369125,
+    "_id": "Budget 2024<SEP>Canadian Entrepreneurs' Incentive"
+  },
+  "Deemed Disposition Events<SEP>Emigrating from Canada": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369125,
+    "update_time": 1772369125,
+    "_id": "Deemed Disposition Events<SEP>Emigrating from Canada"
+  },
+  "Capital Gain<SEP>Principal Residence Exemption": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369125,
+    "update_time": 1772369125,
+    "_id": "Capital Gain<SEP>Principal Residence Exemption"
+  },
+  "Superficial Loss Rule<SEP>Tax-Loss Harvesting Strategy": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369125,
+    "update_time": 1772369125,
+    "_id": "Superficial Loss Rule<SEP>Tax-Loss Harvesting Strategy"
+  },
+  "Capital Gain<SEP>Lifetime Capital Gains Exemption": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369126,
+    "update_time": 1772369126,
+    "_id": "Capital Gain<SEP>Lifetime Capital Gains Exemption"
+  },
+  "Schedule 3<SEP>T5008 Slips": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369126,
+    "update_time": 1772369126,
+    "_id": "Schedule 3<SEP>T5008 Slips"
+  },
+  "Adjusted Cost Base<SEP>Capital Gain": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369127,
+    "update_time": 1772369127,
+    "_id": "Adjusted Cost Base<SEP>Capital Gain"
+  },
+  "RRSP<SEP>TFSA": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369127,
+    "update_time": 1772369127,
+    "_id": "RRSP<SEP>TFSA"
+  },
+  "Schedule 3<SEP>T3 Slips": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369127,
+    "update_time": 1772369127,
+    "_id": "Schedule 3<SEP>T3 Slips"
+  },
+  "Death<SEP>Deemed Disposition Events": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369127,
+    "update_time": 1772369127,
+    "_id": "Death<SEP>Deemed Disposition Events"
+  },
+  "Canada<SEP>Departure Tax": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369127,
+    "update_time": 1772369127,
+    "_id": "Canada<SEP>Departure Tax"
+  },
+  "Adjusted Cost Base<SEP>Tax-Loss Harvesting Strategy": {
+    "chunk_ids": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d"
+    ],
+    "count": 1,
+    "create_time": 1772369128,
+    "update_time": 1772369128,
+    "_id": "Adjusted Cost Base<SEP>Tax-Loss Harvesting Strategy"
+  },
+  "Capital Gains Reserves<SEP>Family Farm Corporation": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369128,
+    "update_time": 1772369128,
+    "_id": "Capital Gains Reserves<SEP>Family Farm Corporation"
+  },
+  "Schedule 3<SEP>T1 Return": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369128,
+    "update_time": 1772369128,
+    "_id": "Schedule 3<SEP>T1 Return"
+  },
+  "Adjusted Cost Base (ACB)<SEP>T5008 Slips": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369128,
+    "update_time": 1772369128,
+    "_id": "Adjusted Cost Base (ACB)<SEP>T5008 Slips"
+  },
+  "Canada<SEP>Death": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369128,
+    "update_time": 1772369128,
+    "_id": "Canada<SEP>Death"
+  },
+  "Charitable Donation Tax Credit<SEP>TFSA": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369130,
+    "update_time": 1772369130,
+    "_id": "Charitable Donation Tax Credit<SEP>TFSA"
+  },
+  "Capital Gains Reserves<SEP>TFSA": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369130,
+    "update_time": 1772369130,
+    "_id": "Capital Gains Reserves<SEP>TFSA"
+  },
+  "Canada<SEP>Change in Use": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369130,
+    "update_time": 1772369130,
+    "_id": "Canada<SEP>Change in Use"
+  },
+  "Canada<SEP>Gifting Property": {
+    "chunk_ids": [
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "count": 1,
+    "create_time": 1772369131,
+    "update_time": 1772369131,
+    "_id": "Canada<SEP>Gifting Property"
+  },
+  "Canadian Universities and Colleges<SEP>T2202 Slip": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369232,
+    "update_time": 1772369232,
+    "_id": "Canadian Universities and Colleges<SEP>T2202 Slip"
+  },
+  "CRA Guide P105<SEP>Canada Revenue Agency (CRA)": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369232,
+    "update_time": 1772369232,
+    "_id": "CRA Guide P105<SEP>Canada Revenue Agency (CRA)"
+  },
+  "Ontario<SEP>Provincial Tuition Tax Credit": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369232,
+    "update_time": 1772369232,
+    "_id": "Ontario<SEP>Provincial Tuition Tax Credit"
+  },
+  "BC<SEP>Provincial Tuition Tax Credit": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369233,
+    "update_time": 1772369233,
+    "_id": "BC<SEP>Provincial Tuition Tax Credit"
+  },
+  "Federal Tuition Tax Credit<SEP>T2202 Slip": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369233,
+    "update_time": 1772369233,
+    "_id": "Federal Tuition Tax Credit<SEP>T2202 Slip"
+  },
+  "Certified Institutions<SEP>Tuition Fees": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369233,
+    "update_time": 1772369233,
+    "_id": "Certified Institutions<SEP>Tuition Fees"
+  },
+  "Schedule 11<SEP>T2202 Slip": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369235,
+    "update_time": 1772369235,
+    "_id": "Schedule 11<SEP>T2202 Slip"
+  },
+  "Alberta<SEP>Provincial Tuition Tax Credit": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369235,
+    "update_time": 1772369235,
+    "_id": "Alberta<SEP>Provincial Tuition Tax Credit"
+  },
+  "Foreign Universities<SEP>Tuition Fees": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369235,
+    "update_time": 1772369235,
+    "_id": "Foreign Universities<SEP>Tuition Fees"
+  },
+  "Professional Examination Fees<SEP>T2202 Slip": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369236,
+    "update_time": 1772369236,
+    "_id": "Professional Examination Fees<SEP>T2202 Slip"
+  },
+  "Carryforward<SEP>Schedule 11": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369236,
+    "update_time": 1772369236,
+    "_id": "Carryforward<SEP>Schedule 11"
+  },
+  "Mandatory Ancillary Fees<SEP>Tuition Fees": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369237,
+    "update_time": 1772369237,
+    "_id": "Mandatory Ancillary Fees<SEP>Tuition Fees"
+  },
+  "Federal Tuition Tax Credit<SEP>Tuition Fees": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369238,
+    "update_time": 1772369238,
+    "_id": "Federal Tuition Tax Credit<SEP>Tuition Fees"
+  },
+  "Federal Tuition Tax Credit<SEP>Professional Examination Fees": {
+    "chunk_ids": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "count": 1,
+    "create_time": 1772369238,
+    "update_time": 1772369238,
+    "_id": "Federal Tuition Tax Credit<SEP>Professional Examination Fees"
+  },
+  "CRA<SEP>T1 Individual Tax Return": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369305,
+    "update_time": 1772369305,
+    "_id": "CRA<SEP>T1 Individual Tax Return"
+  },
+  "Quebec Solidarity Credit<SEP>Revenu Québec": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369305,
+    "update_time": 1772369305,
+    "_id": "Quebec Solidarity Credit<SEP>Revenu Québec"
+  },
+  "T4 Slips<SEP>T5 Slips": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369305,
+    "update_time": 1772369305,
+    "_id": "T4 Slips<SEP>T5 Slips"
+  },
+  "RRSP<SEP>T1 Individual Tax Return": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369306,
+    "update_time": 1772369306,
+    "_id": "RRSP<SEP>T1 Individual Tax Return"
+  },
+  "CRA<SEP>Instalment Payments": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369306,
+    "update_time": 1772369306,
+    "_id": "CRA<SEP>Instalment Payments"
+  },
+  "Notice of Assessment<SEP>Notice of Objection": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369306,
+    "update_time": 1772369306,
+    "_id": "Notice of Assessment<SEP>Notice of Objection"
+  },
+  "RRIF<SEP>RRSP Conversion": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369306,
+    "update_time": 1772369306,
+    "_id": "RRIF<SEP>RRSP Conversion"
+  },
+  "Canada Child Benefit<SEP>T1 Individual Tax Return": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369307,
+    "update_time": 1772369307,
+    "_id": "Canada Child Benefit<SEP>T1 Individual Tax Return"
+  },
+  "Home Buyers' Plan (HBP)<SEP>RRSP": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369307,
+    "update_time": 1772369307,
+    "_id": "Home Buyers' Plan (HBP)<SEP>RRSP"
+  },
+  "Penalty for Late Filing<SEP>Repeat Offenders Penalty": {
+    "chunk_ids": [
+      "chunk-cc0b482656c1fbfddee8368d8616fa29"
+    ],
+    "count": 1,
+    "create_time": 1772369307,
+    "update_time": 1772369307,
+    "_id": "Penalty for Late Filing<SEP>Repeat Offenders Penalty"
+  },
+  "CRA<SEP>Interest on Unpaid Tax": {
+    "chunk_ids": [
+      "chunk-cc0b482656c1fbfddee8368d8616fa29"
+    ],
+    "count": 1,
+    "create_time": 1772369308,
+    "update_time": 1772369308,
+    "_id": "CRA<SEP>Interest on Unpaid Tax"
+  },
+  "Prescribed Interest Rate<SEP>Q1 2025": {
+    "chunk_ids": [
+      "chunk-cc0b482656c1fbfddee8368d8616fa29"
+    ],
+    "count": 1,
+    "create_time": 1772369308,
+    "update_time": 1772369308,
+    "_id": "Prescribed Interest Rate<SEP>Q1 2025"
+  },
+  "April 30, 2025<SEP>T1 Individual Tax Return": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369308,
+    "update_time": 1772369308,
+    "_id": "April 30, 2025<SEP>T1 Individual Tax Return"
+  },
+  "Lifelong Learning Plan (LLP)<SEP>RRSP": {
+    "chunk_ids": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782"
+    ],
+    "count": 1,
+    "create_time": 1772369308,
+    "update_time": 1772369308,
+    "_id": "Lifelong Learning Plan (LLP)<SEP>RRSP"
+  },
+  "Disability Tax Credit (DTC)<SEP>Registered Disability Savings Plan (RDSP)": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369357,
+    "update_time": 1772369357,
+    "_id": "Disability Tax Credit (DTC)<SEP>Registered Disability Savings Plan (RDSP)"
+  },
+  "Pension Income Splitting<SEP>Registered Retirement Income Fund (RRIF)": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369357,
+    "update_time": 1772369357,
+    "_id": "Pension Income Splitting<SEP>Registered Retirement Income Fund (RRIF)"
+  },
+  "Charitable Donation Tax Credit<SEP>Donating publicly listed securities in-kind": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369357,
+    "update_time": 1772369357,
+    "_id": "Charitable Donation Tax Credit<SEP>Donating publicly listed securities in-kind"
+  },
+  "EI clawback<SEP>Employment Insurance (EI) Benefits": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369357,
+    "update_time": 1772369357,
+    "_id": "EI clawback<SEP>Employment Insurance (EI) Benefits"
+  },
+  "Canada Disability Savings Grant (CDSG)<SEP>Registered Disability Savings Plan (RDSP)": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369358,
+    "update_time": 1772369358,
+    "_id": "Canada Disability Savings Grant (CDSG)<SEP>Registered Disability Savings Plan (RDSP)"
+  },
+  "Canada Workers Benefit (CWB) Disability Supplement<SEP>Disability Tax Credit (DTC)": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369358,
+    "update_time": 1772369358,
+    "_id": "Canada Workers Benefit (CWB) Disability Supplement<SEP>Disability Tax Credit (DTC)"
+  },
+  "2024 CPP Maximum Increase<SEP>Canada Pension Plan (CPP) Benefits": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369358,
+    "update_time": 1772369358,
+    "_id": "2024 CPP Maximum Increase<SEP>Canada Pension Plan (CPP) Benefits"
+  },
+  "Canada Workers Benefit<SEP>GST/HST Credit": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369359,
+    "update_time": 1772369359,
+    "_id": "Canada Workers Benefit<SEP>GST/HST Credit"
+  },
+  "Canada Disability Savings Bond (CDSB)<SEP>Registered Disability Savings Plan (RDSP)": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369359,
+    "update_time": 1772369359,
+    "_id": "Canada Disability Savings Bond (CDSB)<SEP>Registered Disability Savings Plan (RDSP)"
+  },
+  "Canada Child Benefit<SEP>Disability Tax Credit": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369359,
+    "update_time": 1772369359,
+    "_id": "Canada Child Benefit<SEP>Disability Tax Credit"
+  },
+  "Child Disability Benefit<SEP>Disability Tax Credit (DTC)": {
+    "chunk_ids": [
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "count": 1,
+    "create_time": 1772369360,
+    "update_time": 1772369360,
+    "_id": "Child Disability Benefit<SEP>Disability Tax Credit (DTC)"
+  },
+  "Canada Carbon Rebate<SEP>Old Age Security": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369360,
+    "update_time": 1772369360,
+    "_id": "Canada Carbon Rebate<SEP>Old Age Security"
+  },
+  "Federal Benefits<SEP>Income Tax Act": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369360,
+    "update_time": 1772369360,
+    "_id": "Federal Benefits<SEP>Income Tax Act"
+  },
+  "CRA Publications<SEP>Canada Revenue Agency": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369360,
+    "update_time": 1772369360,
+    "_id": "CRA Publications<SEP>Canada Revenue Agency"
+  },
+  "Guaranteed Income Supplement<SEP>Old Age Security": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369361,
+    "update_time": 1772369361,
+    "_id": "Guaranteed Income Supplement<SEP>Old Age Security"
+  },
+  "Canada Carbon Rebate<SEP>Federal Carbon Pricing": {
+    "chunk_ids": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004"
+    ],
+    "count": 1,
+    "create_time": 1772369361,
+    "update_time": 1772369361,
+    "_id": "Canada Carbon Rebate<SEP>Federal Carbon Pricing"
+  },
+  "Canadian Sources<SEP>T5 Slip": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369480,
+    "update_time": 1772369480,
+    "_id": "Canadian Sources<SEP>T5 Slip"
+  },
+  "Interest Income<SEP>Marginal Tax Rate": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369480,
+    "update_time": 1772369480,
+    "_id": "Interest Income<SEP>Marginal Tax Rate"
+  },
+  "Eligible Dividends<SEP>Federal Dividend Tax Credit": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369480,
+    "update_time": 1772369480,
+    "_id": "Eligible Dividends<SEP>Federal Dividend Tax Credit"
+  },
+  "Capital Gains Dividends<SEP>Schedule 3 of T1 Return": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369480,
+    "update_time": 1772369480,
+    "_id": "Capital Gains Dividends<SEP>Schedule 3 of T1 Return"
+  },
+  "Capital Gains Dividends<SEP>Mutual Fund Corporations": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369482,
+    "update_time": 1772369482,
+    "_id": "Capital Gains Dividends<SEP>Mutual Fund Corporations"
+  },
+  "Financial Institutions<SEP>T5 Slip": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369482,
+    "update_time": 1772369482,
+    "_id": "Financial Institutions<SEP>T5 Slip"
+  },
+  "Federal Dividend Tax Credit<SEP>Other Than Eligible Dividends": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369482,
+    "update_time": 1772369482,
+    "_id": "Federal Dividend Tax Credit<SEP>Other Than Eligible Dividends"
+  },
+  "Eligible Dividends<SEP>Public Corporations": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369482,
+    "update_time": 1772369482,
+    "_id": "Eligible Dividends<SEP>Public Corporations"
+  },
+  "Interest Income<SEP>Registered Accounts (RRSP/TFSA)": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369482,
+    "update_time": 1772369482,
+    "_id": "Interest Income<SEP>Registered Accounts (RRSP/TFSA)"
+  },
+  "Canadian-Controlled Private Corporations (CCPCs)<SEP>Other Than Eligible Dividends": {
+    "chunk_ids": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "count": 1,
+    "create_time": 1772369484,
+    "update_time": 1772369484,
+    "_id": "Canadian-Controlled Private Corporations (CCPCs)<SEP>Other Than Eligible Dividends"
+  },
+  "First Home Savings Account (FHSA)<SEP>RRSP": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369644,
+    "update_time": 1772369644,
+    "_id": "First Home Savings Account (FHSA)<SEP>RRSP"
+  },
+  "First Home Savings Account (FHSA)<SEP>TFSA": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369644,
+    "update_time": 1772369644,
+    "_id": "First Home Savings Account (FHSA)<SEP>TFSA"
+  },
+  "Canada<SEP>First Home Savings Account (FHSA)": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369645,
+    "update_time": 1772369645,
+    "_id": "Canada<SEP>First Home Savings Account (FHSA)"
+  },
+  "Form RC725<SEP>Overcontribution Penalty": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369645,
+    "update_time": 1772369645,
+    "_id": "Form RC725<SEP>Overcontribution Penalty"
+  },
+  "CRA Publication RC725<SEP>First Home Savings Account (FHSA)": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369645,
+    "update_time": 1772369645,
+    "_id": "CRA Publication RC725<SEP>First Home Savings Account (FHSA)"
+  },
+  "FHSA<SEP>HBP": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369645,
+    "update_time": 1772369645,
+    "_id": "FHSA<SEP>HBP"
+  },
+  "FHSA<SEP>Form RC725": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369646,
+    "update_time": 1772369646,
+    "_id": "FHSA<SEP>Form RC725"
+  },
+  "First Home Savings Account (FHSA)<SEP>Social Insurance Number (SIN)": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369646,
+    "update_time": 1772369646,
+    "_id": "First Home Savings Account (FHSA)<SEP>Social Insurance Number (SIN)"
+  },
+  "FHSA<SEP>RRSP": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369647,
+    "update_time": 1772369647,
+    "_id": "FHSA<SEP>RRSP"
+  },
+  "Combined Strategy<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369647,
+    "update_time": 1772369647,
+    "_id": "Combined Strategy<SEP>Tax Planning Strategies"
+  },
+  "First Home Savings Account (FHSA)<SEP>Qualifying Withdrawals": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369647,
+    "update_time": 1772369647,
+    "_id": "First Home Savings Account (FHSA)<SEP>Qualifying Withdrawals"
+  },
+  "First Home Savings Account (FHSA)<SEP>Non-Qualifying Withdrawals": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369647,
+    "update_time": 1772369647,
+    "_id": "First Home Savings Account (FHSA)<SEP>Non-Qualifying Withdrawals"
+  },
+  "FHSA<SEP>Surviving Spouse": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369648,
+    "update_time": 1772369648,
+    "_id": "FHSA<SEP>Surviving Spouse"
+  },
+  "Couples<SEP>Tax Planning Strategies": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369648,
+    "update_time": 1772369648,
+    "_id": "Couples<SEP>Tax Planning Strategies"
+  },
+  "FHSA Contribution Limits<SEP>First Home Savings Account (FHSA)": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369648,
+    "update_time": 1772369648,
+    "_id": "FHSA Contribution Limits<SEP>First Home Savings Account (FHSA)"
+  },
+  "Common-Law Partner<SEP>FHSA": {
+    "chunk_ids": [
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "count": 1,
+    "create_time": 1772369649,
+    "update_time": 1772369649,
+    "_id": "Common-Law Partner<SEP>FHSA"
+  },
+  "First Home Savings Account (FHSA)<SEP>Overcontribution Penalty": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369649,
+    "update_time": 1772369649,
+    "_id": "First Home Savings Account (FHSA)<SEP>Overcontribution Penalty"
+  },
+  "First Home Savings Account (FHSA)<SEP>Home Buyers' Plan (HBP)": {
+    "chunk_ids": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6"
+    ],
+    "count": 1,
+    "create_time": 1772369650,
+    "update_time": 1772369650,
+    "_id": "First Home Savings Account (FHSA)<SEP>Home Buyers' Plan (HBP)"
+  },
+  "BC Renter's Tax Credit<SEP>British Columbia": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369792,
+    "update_time": 1772369792,
+    "_id": "BC Renter's Tax Credit<SEP>British Columbia"
+  },
+  "Capital Gains Inclusion Rate<SEP>Corporations and Trusts": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369792,
+    "update_time": 1772369792,
+    "_id": "Capital Gains Inclusion Rate<SEP>Corporations and Trusts"
+  },
+  "CPP2<SEP>YAMPE": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369792,
+    "update_time": 1772369792,
+    "_id": "CPP2<SEP>YAMPE"
+  },
+  "Basic Personal Amount<SEP>Federal BPA Phase-In": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369792,
+    "update_time": 1772369792,
+    "_id": "Basic Personal Amount<SEP>Federal BPA Phase-In"
+  },
+  "First Home Savings Account<SEP>First-Time Home Buyers": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369792,
+    "update_time": 1772369792,
+    "_id": "First Home Savings Account<SEP>First-Time Home Buyers"
+  },
+  "Disability Tax Credit<SEP>Mental Health Conditions": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369792,
+    "update_time": 1772369792,
+    "_id": "Disability Tax Credit<SEP>Mental Health Conditions"
+  },
+  "2024 Tax Year Changes<SEP>Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369794,
+    "update_time": 1772369794,
+    "_id": "2024 Tax Year Changes<SEP>Basic Personal Amount"
+  },
+  "2021 Tax Year<SEP>Canadian Tax Policy Changes": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369796,
+    "update_time": 1772369796,
+    "_id": "2021 Tax Year<SEP>Canadian Tax Policy Changes"
+  },
+  "Capital Gains Inclusion Rate<SEP>Individuals": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369796,
+    "update_time": 1772369796,
+    "_id": "Capital Gains Inclusion Rate<SEP>Individuals"
+  },
+  "2022 Tax Year<SEP>Canadian Tax Policy Changes": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369797,
+    "update_time": 1772369797,
+    "_id": "2022 Tax Year<SEP>Canadian Tax Policy Changes"
+  },
+  "2025 Tax Year Changes<SEP>Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-03bb900cab8fd043392cad33c9c60640"
+    ],
+    "count": 1,
+    "create_time": 1772369797,
+    "update_time": 1772369797,
+    "_id": "2025 Tax Year Changes<SEP>Basic Personal Amount"
+  },
+  "2021 Tax Year<SEP>Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369797,
+    "update_time": 1772369797,
+    "_id": "2021 Tax Year<SEP>Basic Personal Amount"
+  },
+  "2023 Tax Year<SEP>Canadian Tax Policy Changes": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369797,
+    "update_time": 1772369797,
+    "_id": "2023 Tax Year<SEP>Canadian Tax Policy Changes"
+  },
+  "2022 Tax Year<SEP>Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369798,
+    "update_time": 1772369798,
+    "_id": "2022 Tax Year<SEP>Basic Personal Amount"
+  },
+  "2021 Tax Year<SEP>COVID-19 Benefits": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369798,
+    "update_time": 1772369798,
+    "_id": "2021 Tax Year<SEP>COVID-19 Benefits"
+  },
+  "2024 Tax Year<SEP>Canadian Tax Policy Changes": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369798,
+    "update_time": 1772369798,
+    "_id": "2024 Tax Year<SEP>Canadian Tax Policy Changes"
+  },
+  "2023 Tax Year<SEP>Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369799,
+    "update_time": 1772369799,
+    "_id": "2023 Tax Year<SEP>Basic Personal Amount"
+  },
+  "2022 Tax Year<SEP>Multigenerational Home Renovation Tax Credit (MHRTC)": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369799,
+    "update_time": 1772369799,
+    "_id": "2022 Tax Year<SEP>Multigenerational Home Renovation Tax Credit (MHRTC)"
+  },
+  "2021 Tax Year<SEP>Home Office Deduction": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369799,
+    "update_time": 1772369799,
+    "_id": "2021 Tax Year<SEP>Home Office Deduction"
+  },
+  "2023 Tax Year<SEP>FHSA Launched": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369800,
+    "update_time": 1772369800,
+    "_id": "2023 Tax Year<SEP>FHSA Launched"
+  },
+  "2022 Tax Year<SEP>Underused Housing Tax (UHT)": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369800,
+    "update_time": 1772369800,
+    "_id": "2022 Tax Year<SEP>Underused Housing Tax (UHT)"
+  },
+  "2024 Tax Year<SEP>Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369800,
+    "update_time": 1772369800,
+    "_id": "2024 Tax Year<SEP>Basic Personal Amount"
+  },
+  "CRA Announcements<SEP>Canadian Tax Policy Changes": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369800,
+    "update_time": 1772369800,
+    "_id": "CRA Announcements<SEP>Canadian Tax Policy Changes"
+  },
+  "2021 Tax Year<SEP>Canada Recovery Benefit (CRB)": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369801,
+    "update_time": 1772369801,
+    "_id": "2021 Tax Year<SEP>Canada Recovery Benefit (CRB)"
+  },
+  "Canadian Tax Policy Changes<SEP>Federal Budgets": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369801,
+    "update_time": 1772369801,
+    "_id": "Canadian Tax Policy Changes<SEP>Federal Budgets"
+  },
+  "Manitoba<SEP>Provincial Reforms": {
+    "chunk_ids": [
+      "chunk-ab4f75162c7c3f14b11acd6de0559574"
+    ],
+    "count": 1,
+    "create_time": 1772369801,
+    "update_time": 1772369801,
+    "_id": "Manitoba<SEP>Provincial Reforms"
+  },
+  "2023 Tax Year<SEP>Anti-Flipping Rule": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369802,
+    "update_time": 1772369802,
+    "_id": "2023 Tax Year<SEP>Anti-Flipping Rule"
+  },
+  "NB<SEP>Provincial Reforms": {
+    "chunk_ids": [
+      "chunk-ab4f75162c7c3f14b11acd6de0559574"
+    ],
+    "count": 1,
+    "create_time": 1772369802,
+    "update_time": 1772369802,
+    "_id": "NB<SEP>Provincial Reforms"
+  },
+  "AMT Modernization<SEP>CPP Enhancement": {
+    "chunk_ids": [
+      "chunk-ab4f75162c7c3f14b11acd6de0559574"
+    ],
+    "count": 1,
+    "create_time": 1772369802,
+    "update_time": 1772369802,
+    "_id": "AMT Modernization<SEP>CPP Enhancement"
+  },
+  "Canadian Tax Policy Changes<SEP>Fall Economic Statements": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369803,
+    "update_time": 1772369803,
+    "_id": "Canadian Tax Policy Changes<SEP>Fall Economic Statements"
+  },
+  "2023 Tax Year<SEP>Employee Stock Option Deduction": {
+    "chunk_ids": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c"
+    ],
+    "count": 1,
+    "create_time": 1772369804,
+    "update_time": 1772369804,
+    "_id": "2023 Tax Year<SEP>Employee Stock Option Deduction"
+  },
+  "Provincial Reforms<SEP>QC": {
+    "chunk_ids": [
+      "chunk-ab4f75162c7c3f14b11acd6de0559574"
+    ],
+    "count": 1,
+    "create_time": 1772369804,
+    "update_time": 1772369804,
+    "_id": "Provincial Reforms<SEP>QC"
+  },
+  "NL<SEP>Provincial Reforms": {
+    "chunk_ids": [
+      "chunk-ab4f75162c7c3f14b11acd6de0559574"
+    ],
+    "count": 1,
+    "create_time": 1772369805,
+    "update_time": 1772369805,
+    "_id": "NL<SEP>Provincial Reforms"
+  },
+  "Alberta Provincial Income Tax<SEP>Alberta Tax Brackets": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369906,
+    "update_time": 1772369906,
+    "_id": "Alberta Provincial Income Tax<SEP>Alberta Tax Brackets"
+  },
+  "Alberta Basic Personal Amount<SEP>Combined Alberta Marginal Rates": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369906,
+    "update_time": 1772369906,
+    "_id": "Alberta Basic Personal Amount<SEP>Combined Alberta Marginal Rates"
+  },
+  "Alberta Climate Leadership Adjustment Rebate<SEP>Canada Carbon Rebate": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369906,
+    "update_time": 1772369906,
+    "_id": "Alberta Climate Leadership Adjustment Rebate<SEP>Canada Carbon Rebate"
+  },
+  "Alberta<SEP>BPA": {
+    "chunk_ids": [
+      "chunk-613f1fae239716a1ed056696bcae297d"
+    ],
+    "count": 1,
+    "create_time": 1772369907,
+    "update_time": 1772369907,
+    "_id": "Alberta<SEP>BPA"
+  },
+  "2025 Tax Year<SEP>Alberta Tax Brackets": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369907,
+    "update_time": 1772369907,
+    "_id": "2025 Tax Year<SEP>Alberta Tax Brackets"
+  },
+  "Alberta Child and Family Benefit<SEP>Alberta Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369907,
+    "update_time": 1772369907,
+    "_id": "Alberta Child and Family Benefit<SEP>Alberta Provincial Income Tax"
+  },
+  "ACFB<SEP>Alberta": {
+    "chunk_ids": [
+      "chunk-613f1fae239716a1ed056696bcae297d"
+    ],
+    "count": 1,
+    "create_time": 1772369908,
+    "update_time": 1772369908,
+    "_id": "ACFB<SEP>Alberta"
+  },
+  "2024 Tax Year<SEP>Alberta Tax Brackets": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369908,
+    "update_time": 1772369908,
+    "_id": "2024 Tax Year<SEP>Alberta Tax Brackets"
+  },
+  "Alberta Provincial Income Tax<SEP>Alberta Seniors Benefit": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369908,
+    "update_time": 1772369908,
+    "_id": "Alberta Provincial Income Tax<SEP>Alberta Seniors Benefit"
+  },
+  "Alberta<SEP>Canada Carbon Rebate": {
+    "chunk_ids": [
+      "chunk-613f1fae239716a1ed056696bcae297d"
+    ],
+    "count": 1,
+    "create_time": 1772369909,
+    "update_time": 1772369909,
+    "_id": "Alberta<SEP>Canada Carbon Rebate"
+  },
+  "Alberta Provincial Income Tax<SEP>Alberta Tax Guide": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369909,
+    "update_time": 1772369909,
+    "_id": "Alberta Provincial Income Tax<SEP>Alberta Tax Guide"
+  },
+  "Alberta Credits<SEP>Alberta Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37"
+    ],
+    "count": 1,
+    "create_time": 1772369909,
+    "update_time": 1772369909,
+    "_id": "Alberta Credits<SEP>Alberta Provincial Income Tax"
+  },
+  "New Brunswick<SEP>Tax Brackets": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370007,
+    "update_time": 1772370007,
+    "_id": "New Brunswick<SEP>Tax Brackets"
+  },
+  "Atlantic Provinces Income Tax<SEP>Prince Edward Island": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370007,
+    "update_time": 1772370007,
+    "_id": "Atlantic Provinces Income Tax<SEP>Prince Edward Island"
+  },
+  "Atlantic Provinces Income Tax<SEP>Newfoundland and Labrador": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370008,
+    "update_time": 1772370008,
+    "_id": "Atlantic Provinces Income Tax<SEP>Newfoundland and Labrador"
+  },
+  "Nova Scotia<SEP>Tax Brackets": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370008,
+    "update_time": 1772370008,
+    "_id": "Nova Scotia<SEP>Tax Brackets"
+  },
+  "Basic Personal Amount<SEP>New Brunswick": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370008,
+    "update_time": 1772370008,
+    "_id": "Basic Personal Amount<SEP>New Brunswick"
+  },
+  "NS Affordable Living Tax Credit<SEP>Nova Scotia Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370008,
+    "update_time": 1772370008,
+    "_id": "NS Affordable Living Tax Credit<SEP>Nova Scotia Basic Personal Amount"
+  },
+  "New Brunswick Provincial Income Tax<SEP>Tax Brackets": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370009,
+    "update_time": 1772370009,
+    "_id": "New Brunswick Provincial Income Tax<SEP>Tax Brackets"
+  },
+  "NS Poverty Reduction Credit<SEP>Nova Scotia Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370009,
+    "update_time": 1772370009,
+    "_id": "NS Poverty Reduction Credit<SEP>Nova Scotia Basic Personal Amount"
+  },
+  "NB Low-Income Tax Reduction<SEP>New Brunswick": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a",
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 2,
+    "update_time": 1772370174,
+    "_id": "NB Low-Income Tax Reduction<SEP>New Brunswick"
+  },
+  "PEI Basic Personal Amount<SEP>Prince Edward Island Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370009,
+    "update_time": 1772370009,
+    "_id": "PEI Basic Personal Amount<SEP>Prince Edward Island Provincial Income Tax"
+  },
+  "Nova Scotia Provincial Income Tax<SEP>Tax Brackets": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370010,
+    "update_time": 1772370010,
+    "_id": "Nova Scotia Provincial Income Tax<SEP>Tax Brackets"
+  },
+  "NS Volunteer Firefighter/SAR Tax Credit<SEP>Nova Scotia Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370010,
+    "update_time": 1772370010,
+    "_id": "NS Volunteer Firefighter/SAR Tax Credit<SEP>Nova Scotia Basic Personal Amount"
+  },
+  "PEI Sales Tax Credit<SEP>Prince Edward Island Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370010,
+    "update_time": 1772370010,
+    "_id": "PEI Sales Tax Credit<SEP>Prince Edward Island Provincial Income Tax"
+  },
+  "NB Child Tax Benefit<SEP>New Brunswick": {
+    "chunk_ids": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a"
+    ],
+    "count": 1,
+    "create_time": 1772370010,
+    "update_time": 1772370010,
+    "_id": "NB Child Tax Benefit<SEP>New Brunswick"
+  },
+  "PEI Basic Personal Amount<SEP>PEI Tax Rate Table": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370010,
+    "update_time": 1772370010,
+    "_id": "PEI Basic Personal Amount<SEP>PEI Tax Rate Table"
+  },
+  "Newfoundland and Labrador Provincial Income Tax<SEP>Nova Scotia Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370011,
+    "update_time": 1772370011,
+    "_id": "Newfoundland and Labrador Provincial Income Tax<SEP>Nova Scotia Basic Personal Amount"
+  },
+  "2024 Tax Year<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370011,
+    "update_time": 1772370011,
+    "_id": "2024 Tax Year<SEP>Newfoundland"
+  },
+  "PEI Volunteer Firefighter Tax Credit<SEP>Prince Edward Island Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370012,
+    "update_time": 1772370012,
+    "_id": "PEI Volunteer Firefighter Tax Credit<SEP>Prince Edward Island Provincial Income Tax"
+  },
+  "NL Basic Personal Amount<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370012,
+    "update_time": 1772370012,
+    "_id": "NL Basic Personal Amount<SEP>Newfoundland"
+  },
+  "2024 Tax Year<SEP>NL Low-Income Tax Reduction": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370012,
+    "update_time": 1772370012,
+    "_id": "2024 Tax Year<SEP>NL Low-Income Tax Reduction"
+  },
+  "Nova Scotia Basic Personal Amount<SEP>Nova Scotia Tax Rate Table": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370012,
+    "update_time": 1772370012,
+    "_id": "Nova Scotia Basic Personal Amount<SEP>Nova Scotia Tax Rate Table"
+  },
+  "NL Tax Brackets<SEP>Newfoundland and Labrador Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-d21a44166a9353305cd81b62bee19bd3"
+    ],
+    "count": 1,
+    "create_time": 1772370012,
+    "update_time": 1772370012,
+    "_id": "NL Tax Brackets<SEP>Newfoundland and Labrador Provincial Income Tax"
+  },
+  "Highest Top Combined Marginal Rate<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370013,
+    "update_time": 1772370013,
+    "_id": "Highest Top Combined Marginal Rate<SEP>Newfoundland"
+  },
+  "2024 Tax Year<SEP>NL Seniors' Benefit": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370013,
+    "update_time": 1772370013,
+    "_id": "2024 Tax Year<SEP>NL Seniors' Benefit"
+  },
+  "$215,943.01 – $275,870<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370014,
+    "update_time": 1772370014,
+    "_id": "$215,943.01 – $275,870<SEP>Newfoundland"
+  },
+  "$275,870.01 – $551,739<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370014,
+    "update_time": 1772370014,
+    "_id": "$275,870.01 – $551,739<SEP>Newfoundland"
+  },
+  "Newfoundland<SEP>Over $551,739": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370015,
+    "update_time": 1772370015,
+    "_id": "Newfoundland<SEP>Over $551,739"
+  },
+  "$0 – $43,198<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370015,
+    "update_time": 1772370015,
+    "_id": "$0 – $43,198<SEP>Newfoundland"
+  },
+  "$43,198.01 – $86,395<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370016,
+    "update_time": 1772370016,
+    "_id": "$43,198.01 – $86,395<SEP>Newfoundland"
+  },
+  "$86,395.01 – $154,244<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370016,
+    "update_time": 1772370016,
+    "_id": "$86,395.01 – $154,244<SEP>Newfoundland"
+  },
+  "$154,244.01 – $215,943<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370017,
+    "update_time": 1772370017,
+    "_id": "$154,244.01 – $215,943<SEP>Newfoundland"
+  },
+  "$0 – $41,457<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370017,
+    "update_time": 1772370017,
+    "_id": "$0 – $41,457<SEP>Newfoundland"
+  },
+  "$41,457.01 – $82,913<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370018,
+    "update_time": 1772370018,
+    "_id": "$41,457.01 – $82,913<SEP>Newfoundland"
+  },
+  "$82,913.01 – $148,027<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370018,
+    "update_time": 1772370018,
+    "_id": "$82,913.01 – $148,027<SEP>Newfoundland"
+  },
+  "$148,027.01 – $207,239<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370019,
+    "update_time": 1772370019,
+    "_id": "$148,027.01 – $207,239<SEP>Newfoundland"
+  },
+  "$207,239.01 – $264,750<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370019,
+    "update_time": 1772370019,
+    "_id": "$207,239.01 – $264,750<SEP>Newfoundland"
+  },
+  "$264,750.01 – $529,500<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370019,
+    "update_time": 1772370019,
+    "_id": "$264,750.01 – $529,500<SEP>Newfoundland"
+  },
+  "Newfoundland<SEP>Over $529,500": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370020,
+    "update_time": 1772370020,
+    "_id": "Newfoundland<SEP>Over $529,500"
+  },
+  "$0 – $39,147<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370020,
+    "update_time": 1772370020,
+    "_id": "$0 – $39,147<SEP>Newfoundland"
+  },
+  "$39,147.01 – $78,294<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370021,
+    "update_time": 1772370021,
+    "_id": "$39,147.01 – $78,294<SEP>Newfoundland"
+  },
+  "$78,294.01 – $139,780<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370021,
+    "update_time": 1772370021,
+    "_id": "$78,294.01 – $139,780<SEP>Newfoundland"
+  },
+  "$139,780.01 – $195,693<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370022,
+    "update_time": 1772370022,
+    "_id": "$139,780.01 – $195,693<SEP>Newfoundland"
+  },
+  "$195,693.01 – $250,000<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370023,
+    "update_time": 1772370023,
+    "_id": "$195,693.01 – $250,000<SEP>Newfoundland"
+  },
+  "$250,000.01 – $500,000<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370023,
+    "update_time": 1772370023,
+    "_id": "$250,000.01 – $500,000<SEP>Newfoundland"
+  },
+  "Newfoundland<SEP>Over $500,000": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370024,
+    "update_time": 1772370024,
+    "_id": "Newfoundland<SEP>Over $500,000"
+  },
+  "$0 – $38,081<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370024,
+    "update_time": 1772370024,
+    "_id": "$0 – $38,081<SEP>Newfoundland"
+  },
+  "$38,081.01 – $76,161<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370024,
+    "update_time": 1772370024,
+    "_id": "$38,081.01 – $76,161<SEP>Newfoundland"
+  },
+  "$76,161.01 – $135,973<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370025,
+    "update_time": 1772370025,
+    "_id": "$76,161.01 – $135,973<SEP>Newfoundland"
+  },
+  "$135,973.01 – $190,363<SEP>Newfoundland": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370025,
+    "update_time": 1772370025,
+    "_id": "$135,973.01 – $190,363<SEP>Newfoundland"
+  },
+  "Newfoundland<SEP>Over $190,363": {
+    "chunk_ids": [
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "count": 1,
+    "create_time": 1772370026,
+    "update_time": 1772370026,
+    "_id": "Newfoundland<SEP>Over $190,363"
+  },
+  "BC Sales Tax Credit<SEP>Climate Action Tax Credit": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370080,
+    "update_time": 1772370080,
+    "_id": "BC Sales Tax Credit<SEP>Climate Action Tax Credit"
+  },
+  "BC Renter's Tax Credit<SEP>income eligibility": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370080,
+    "update_time": 1772370080,
+    "_id": "BC Renter's Tax Credit<SEP>income eligibility"
+  },
+  "BC Training Tax Credit<SEP>technical training": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370080,
+    "update_time": 1772370080,
+    "_id": "BC Training Tax Credit<SEP>technical training"
+  },
+  "BC Home Owner Grant<SEP>property tax reduction": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370080,
+    "update_time": 1772370080,
+    "_id": "BC Home Owner Grant<SEP>property tax reduction"
+  },
+  "BC Medical Services Plan<SEP>healthcare premium elimination": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370080,
+    "update_time": 1772370080,
+    "_id": "BC Medical Services Plan<SEP>healthcare premium elimination"
+  },
+  "$1,000<SEP>BC Training Tax Credit": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370083,
+    "update_time": 1772370083,
+    "_id": "$1,000<SEP>BC Training Tax Credit"
+  },
+  "$400<SEP>BC Renter's Tax Credit": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370083,
+    "update_time": 1772370083,
+    "_id": "$400<SEP>BC Renter's Tax Credit"
+  },
+  "$770<SEP>BC Home Owner Grant": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370083,
+    "update_time": 1772370083,
+    "_id": "$770<SEP>BC Home Owner Grant"
+  },
+  "$60,000<SEP>BC Renter's Tax Credit": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370084,
+    "update_time": 1772370084,
+    "_id": "$60,000<SEP>BC Renter's Tax Credit"
+  },
+  "BC Tax Brackets<SEP>British Columbia Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370084,
+    "update_time": 1772370084,
+    "_id": "BC Tax Brackets<SEP>British Columbia Provincial Income Tax"
+  },
+  "$1,045<SEP>BC Home Owner Grant": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370084,
+    "update_time": 1772370084,
+    "_id": "$1,045<SEP>BC Home Owner Grant"
+  },
+  "$2,500<SEP>BC Training Tax Credit": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370084,
+    "update_time": 1772370084,
+    "_id": "$2,500<SEP>BC Training Tax Credit"
+  },
+  "$80,000<SEP>BC Renter's Tax Credit": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370085,
+    "update_time": 1772370085,
+    "_id": "$80,000<SEP>BC Renter's Tax Credit"
+  },
+  "BC Basic Personal Amount<SEP>BC Tax Brackets": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370085,
+    "update_time": 1772370085,
+    "_id": "BC Basic Personal Amount<SEP>BC Tax Brackets"
+  },
+  "BC Climate Action Tax Credit<SEP>BC Sales Tax Credit": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370085,
+    "update_time": 1772370085,
+    "_id": "BC Climate Action Tax Credit<SEP>BC Sales Tax Credit"
+  },
+  "$35,000<SEP>BC Home Owner Grant": {
+    "chunk_ids": [
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "count": 1,
+    "create_time": 1772370085,
+    "update_time": 1772370085,
+    "_id": "$35,000<SEP>BC Home Owner Grant"
+  },
+  "BC Tax Guide<SEP>British Columbia Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370085,
+    "update_time": 1772370085,
+    "_id": "BC Tax Guide<SEP>British Columbia Provincial Income Tax"
+  },
+  "BC Renter's Tax Credit<SEP>BC Tax Credits and Benefits": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370086,
+    "update_time": 1772370086,
+    "_id": "BC Renter's Tax Credit<SEP>BC Tax Credits and Benefits"
+  },
+  "BC Tax Brackets<SEP>Combined BC Marginal Rates": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370086,
+    "update_time": 1772370086,
+    "_id": "BC Tax Brackets<SEP>Combined BC Marginal Rates"
+  },
+  "BC BPA Credit<SEP>BC Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-deb12f259747bd99535c1890ffca3b60"
+    ],
+    "count": 1,
+    "create_time": 1772370086,
+    "update_time": 1772370086,
+    "_id": "BC BPA Credit<SEP>BC Basic Personal Amount"
+  },
+  "CRA Provincial Tax Guides<SEP>Provincial Government Websites": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370172,
+    "update_time": 1772370172,
+    "_id": "CRA Provincial Tax Guides<SEP>Provincial Government Websites"
+  },
+  "Ontario<SEP>Ontario Trillium Benefit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370172,
+    "update_time": 1772370172,
+    "_id": "Ontario<SEP>Ontario Trillium Benefit"
+  },
+  "BC Climate Action Tax Credit<SEP>British Columbia": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370172,
+    "update_time": 1772370172,
+    "_id": "BC Climate Action Tax Credit<SEP>British Columbia"
+  },
+  "Alberta<SEP>Alberta Child and Family Benefit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370172,
+    "update_time": 1772370172,
+    "_id": "Alberta<SEP>Alberta Child and Family Benefit"
+  },
+  "Saskatchewan<SEP>Saskatchewan Low-Income Tax Credit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370172,
+    "update_time": 1772370172,
+    "_id": "Saskatchewan<SEP>Saskatchewan Low-Income Tax Credit"
+  },
+  "Manitoba<SEP>Manitoba Education Property Tax Credit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370172,
+    "update_time": 1772370172,
+    "_id": "Manitoba<SEP>Manitoba Education Property Tax Credit"
+  },
+  "Quebec<SEP>Quebec Solidarity Credit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962",
+      "chunk-936dddac80917fe456d3727287e9f980",
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 3,
+    "update_time": 1772370226,
+    "_id": "Quebec<SEP>Quebec Solidarity Credit"
+  },
+  "Ontario<SEP>Ontario LIFT Credit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370174,
+    "update_time": 1772370174,
+    "_id": "Ontario<SEP>Ontario LIFT Credit"
+  },
+  "NS Affordable Living Tax Credit<SEP>Nova Scotia": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370174,
+    "update_time": 1772370174,
+    "_id": "NS Affordable Living Tax Credit<SEP>Nova Scotia"
+  },
+  "BC Training Tax Credit<SEP>British Columbia": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370174,
+    "update_time": 1772370174,
+    "_id": "BC Training Tax Credit<SEP>British Columbia"
+  },
+  "Alberta<SEP>Canada Carbon Rebate - Alberta": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370174,
+    "update_time": 1772370174,
+    "_id": "Alberta<SEP>Canada Carbon Rebate - Alberta"
+  },
+  "Canada Carbon Rebate - Saskatchewan<SEP>Saskatchewan": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370174,
+    "update_time": 1772370174,
+    "_id": "Canada Carbon Rebate - Saskatchewan<SEP>Saskatchewan"
+  },
+  "Canada Carbon Rebate - Manitoba<SEP>Manitoba": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370174,
+    "update_time": 1772370174,
+    "_id": "Canada Carbon Rebate - Manitoba<SEP>Manitoba"
+  },
+  "Ontario<SEP>Ontario Seniors' Public Transit Tax Credit": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370175,
+    "update_time": 1772370175,
+    "_id": "Ontario<SEP>Ontario Seniors' Public Transit Tax Credit"
+  },
+  "Canada Carbon Rebate - New Brunswick<SEP>New Brunswick": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962"
+    ],
+    "count": 1,
+    "create_time": 1772370175,
+    "update_time": 1772370175,
+    "_id": "Canada Carbon Rebate - New Brunswick<SEP>New Brunswick"
+  },
+  "Canada Carbon Rebate - Nova Scotia<SEP>Nova Scotia": {
+    "chunk_ids": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962",
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 2,
+    "create_time": 1772370175,
+    "update_time": 1772370175,
+    "_id": "Canada Carbon Rebate - Nova Scotia<SEP>Nova Scotia"
+  },
+  "PEI Sales Tax Credit<SEP>Prince Edward Island": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370176,
+    "update_time": 1772370176,
+    "_id": "PEI Sales Tax Credit<SEP>Prince Edward Island"
+  },
+  "NL Low-Income Tax Reduction<SEP>Newfoundland and Labrador": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370176,
+    "update_time": 1772370176,
+    "_id": "NL Low-Income Tax Reduction<SEP>Newfoundland and Labrador"
+  },
+  "Canada Carbon Rebate - PEI<SEP>Prince Edward Island": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370177,
+    "update_time": 1772370177,
+    "_id": "Canada Carbon Rebate - PEI<SEP>Prince Edward Island"
+  },
+  "NL Seniors' Benefit<SEP>Newfoundland and Labrador": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370177,
+    "update_time": 1772370177,
+    "_id": "NL Seniors' Benefit<SEP>Newfoundland and Labrador"
+  },
+  "Canada<SEP>Cross-Provincial Comparison": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370178,
+    "update_time": 1772370178,
+    "_id": "Canada<SEP>Cross-Provincial Comparison"
+  },
+  "NS Poverty Reduction Credit<SEP>Nova Scotia": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370178,
+    "update_time": 1772370178,
+    "_id": "NS Poverty Reduction Credit<SEP>Nova Scotia"
+  },
+  "NL Income Supplement<SEP>Newfoundland and Labrador": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370178,
+    "update_time": 1772370178,
+    "_id": "NL Income Supplement<SEP>Newfoundland and Labrador"
+  },
+  "NS Graduate Scholarship<SEP>Nova Scotia": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370179,
+    "update_time": 1772370179,
+    "_id": "NS Graduate Scholarship<SEP>Nova Scotia"
+  },
+  "Canada Carbon Rebate<SEP>NS Poverty Reduction Credit": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370179,
+    "update_time": 1772370179,
+    "_id": "Canada Carbon Rebate<SEP>NS Poverty Reduction Credit"
+  },
+  "NL Home Heating Rebate<SEP>Newfoundland and Labrador": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370179,
+    "update_time": 1772370179,
+    "_id": "NL Home Heating Rebate<SEP>Newfoundland and Labrador"
+  },
+  "Canada Carbon Rebate - NL<SEP>Newfoundland and Labrador": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370180,
+    "update_time": 1772370180,
+    "_id": "Canada Carbon Rebate - NL<SEP>Newfoundland and Labrador"
+  },
+  "Canada Carbon Rebate<SEP>PEI Sales Tax Credit": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370180,
+    "update_time": 1772370180,
+    "_id": "Canada Carbon Rebate<SEP>PEI Sales Tax Credit"
+  },
+  "Canada Carbon Rebate<SEP>NL Low-Income Tax Reduction": {
+    "chunk_ids": [
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "count": 1,
+    "create_time": 1772370180,
+    "update_time": 1772370180,
+    "_id": "Canada Carbon Rebate<SEP>NL Low-Income Tax Reduction"
+  },
+  "Quebec<SEP>Revenu Québec": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370223,
+    "update_time": 1772370223,
+    "_id": "Quebec<SEP>Revenu Québec"
+  },
+  "2025 Tax Year<SEP>Quebec Tax Brackets": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370223,
+    "update_time": 1772370223,
+    "_id": "2025 Tax Year<SEP>Quebec Tax Brackets"
+  },
+  "Quebec Basic Personal Amount<SEP>Quebec Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370223,
+    "update_time": 1772370223,
+    "_id": "Quebec Basic Personal Amount<SEP>Quebec Provincial Income Tax"
+  },
+  "Quebec<SEP>Quebec Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370224,
+    "update_time": 1772370224,
+    "_id": "Quebec<SEP>Quebec Provincial Income Tax"
+  },
+  "Revenu Québec<SEP>TP-1": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370224,
+    "update_time": 1772370224,
+    "_id": "Revenu Québec<SEP>TP-1"
+  },
+  "Combined Quebec Marginal Rates<SEP>Quebec": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370225,
+    "update_time": 1772370225,
+    "_id": "Combined Quebec Marginal Rates<SEP>Quebec"
+  },
+  "Canada Pension Plan<SEP>Quebec Pension Plan": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370225,
+    "update_time": 1772370225,
+    "_id": "Canada Pension Plan<SEP>Quebec Pension Plan"
+  },
+  "Quebec Pension Plan<SEP>Quebec Residents": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370225,
+    "update_time": 1772370225,
+    "_id": "Quebec Pension Plan<SEP>Quebec Residents"
+  },
+  "Quebec<SEP>Quebec Work Premium": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370226,
+    "update_time": 1772370226,
+    "_id": "Quebec<SEP>Quebec Work Premium"
+  },
+  "Quebec Parental Insurance Plan<SEP>Quebec Residents": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370227,
+    "update_time": 1772370227,
+    "_id": "Quebec Parental Insurance Plan<SEP>Quebec Residents"
+  },
+  "Quebec<SEP>Quebec Childcare": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370227,
+    "update_time": 1772370227,
+    "_id": "Quebec<SEP>Quebec Childcare"
+  },
+  "Quebec Residents<SEP>T1 Return": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370228,
+    "update_time": 1772370228,
+    "_id": "Quebec Residents<SEP>T1 Return"
+  },
+  "Childcare Credit<SEP>Income Growth": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370228,
+    "update_time": 1772370228,
+    "_id": "Childcare Credit<SEP>Income Growth"
+  },
+  "Quebec<SEP>Quebec Shield Tax Credit": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370228,
+    "update_time": 1772370228,
+    "_id": "Quebec<SEP>Quebec Shield Tax Credit"
+  },
+  "Quebec<SEP>Quebec Pension Plan": {
+    "chunk_ids": [
+      "chunk-936dddac80917fe456d3727287e9f980"
+    ],
+    "count": 1,
+    "create_time": 1772370229,
+    "update_time": 1772370229,
+    "_id": "Quebec<SEP>Quebec Pension Plan"
+  },
+  "Quebec Residents<SEP>TP-1 Return": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370229,
+    "update_time": 1772370229,
+    "_id": "Quebec Residents<SEP>TP-1 Return"
+  },
+  "Daycare Subsidy<SEP>Quebec Residents": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370229,
+    "update_time": 1772370229,
+    "_id": "Daycare Subsidy<SEP>Quebec Residents"
+  },
+  "2023 Tax Rate Reduction<SEP>Quebec Residents": {
+    "chunk_ids": [
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "count": 1,
+    "create_time": 1772370230,
+    "update_time": 1772370230,
+    "_id": "2023 Tax Rate Reduction<SEP>Quebec Residents"
+  },
+  "2021 Tax Year<SEP>2024 Tax Year": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370276,
+    "update_time": 1772370276,
+    "_id": "2021 Tax Year<SEP>2024 Tax Year"
+  },
+  "Basic Personal Amount (BPA)<SEP>Manitoba": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370276,
+    "update_time": 1772370276,
+    "_id": "Basic Personal Amount (BPA)<SEP>Manitoba"
+  },
+  "Canada Carbon Rebate<SEP>Manitoba Child Benefit": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370276,
+    "update_time": 1772370276,
+    "_id": "Canada Carbon Rebate<SEP>Manitoba Child Benefit"
+  },
+  "2024 Tax Year<SEP>Manitoba Personal Tax Credit": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370276,
+    "update_time": 1772370276,
+    "_id": "2024 Tax Year<SEP>Manitoba Personal Tax Credit"
+  },
+  "Combined Manitoba Marginal Rates<SEP>Income Range": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370276,
+    "update_time": 1772370276,
+    "_id": "Combined Manitoba Marginal Rates<SEP>Income Range"
+  },
+  "Manitoba<SEP>Retail Sales Tax (RST)": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370277,
+    "update_time": 1772370277,
+    "_id": "Manitoba<SEP>Retail Sales Tax (RST)"
+  },
+  "Saskatchewan Provincial Income Tax<SEP>Saskatchewan Tax Brackets": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370277,
+    "update_time": 1772370277,
+    "_id": "Saskatchewan Provincial Income Tax<SEP>Saskatchewan Tax Brackets"
+  },
+  "Manitoba Provincial Income Tax<SEP>Manitoba Tax Brackets": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370277,
+    "update_time": 1772370277,
+    "_id": "Manitoba Provincial Income Tax<SEP>Manitoba Tax Brackets"
+  },
+  "2024 Tax Year<SEP>Manitoba Primary Caregiver Tax Credit": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370278,
+    "update_time": 1772370278,
+    "_id": "2024 Tax Year<SEP>Manitoba Primary Caregiver Tax Credit"
+  },
+  "Saskatchewan Basic Personal Amount<SEP>Saskatchewan Tax Brackets": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370278,
+    "update_time": 1772370278,
+    "_id": "Saskatchewan Basic Personal Amount<SEP>Saskatchewan Tax Brackets"
+  },
+  "Saskatchewan Low-Income Tax Credit<SEP>Saskatchewan Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370278,
+    "update_time": 1772370278,
+    "_id": "Saskatchewan Low-Income Tax Credit<SEP>Saskatchewan Provincial Income Tax"
+  },
+  "Saskatchewan Graduate Retention Program<SEP>Saskatchewan Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370279,
+    "update_time": 1772370279,
+    "_id": "Saskatchewan Graduate Retention Program<SEP>Saskatchewan Provincial Income Tax"
+  },
+  "2024 Tax Year<SEP>Manitoba Education Property Tax Credit": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370279,
+    "update_time": 1772370279,
+    "_id": "2024 Tax Year<SEP>Manitoba Education Property Tax Credit"
+  },
+  "2021 Tax Year<SEP>Saskatchewan Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370279,
+    "update_time": 1772370279,
+    "_id": "2021 Tax Year<SEP>Saskatchewan Basic Personal Amount"
+  },
+  "2022 Tax Year<SEP>Saskatchewan Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370280,
+    "update_time": 1772370280,
+    "_id": "2022 Tax Year<SEP>Saskatchewan Basic Personal Amount"
+  },
+  "Canada Carbon Rebate - Saskatchewan<SEP>Saskatchewan Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370280,
+    "update_time": 1772370280,
+    "_id": "Canada Carbon Rebate - Saskatchewan<SEP>Saskatchewan Provincial Income Tax"
+  },
+  "2024 Tax Year<SEP>Combined Manitoba Marginal Rates": {
+    "chunk_ids": [
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "count": 1,
+    "create_time": 1772370280,
+    "update_time": 1772370280,
+    "_id": "2024 Tax Year<SEP>Combined Manitoba Marginal Rates"
+  },
+  "2024 Tax Year for Manitoba<SEP>Manitoba Tax Brackets": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370280,
+    "update_time": 1772370280,
+    "_id": "2024 Tax Year for Manitoba<SEP>Manitoba Tax Brackets"
+  },
+  "2023 Tax Year<SEP>Saskatchewan Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370281,
+    "update_time": 1772370281,
+    "_id": "2023 Tax Year<SEP>Saskatchewan Basic Personal Amount"
+  },
+  "2025 Tax Year for Manitoba<SEP>Manitoba Tax Brackets": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370281,
+    "update_time": 1772370281,
+    "_id": "2025 Tax Year for Manitoba<SEP>Manitoba Tax Brackets"
+  },
+  "Combined Saskatchewan Marginal Rates<SEP>Saskatchewan Provincial Income Tax": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370281,
+    "update_time": 1772370281,
+    "_id": "Combined Saskatchewan Marginal Rates<SEP>Saskatchewan Provincial Income Tax"
+  },
+  "2025 Tax Year<SEP>Saskatchewan Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370282,
+    "update_time": 1772370282,
+    "_id": "2025 Tax Year<SEP>Saskatchewan Basic Personal Amount"
+  },
+  "2024 Tax Year<SEP>Saskatchewan Basic Personal Amount": {
+    "chunk_ids": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b"
+    ],
+    "count": 1,
+    "create_time": 1772370282,
+    "update_time": 1772370282,
+    "_id": "2024 Tax Year<SEP>Saskatchewan Basic Personal Amount"
   }
 }

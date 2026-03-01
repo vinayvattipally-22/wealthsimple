@@ -130,7 +130,7 @@ export default function Analysis() {
             >
               {profiles.map((p) => (
                 <option key={p.profile_id} value={p.profile_id}>
-                  {p.tax_year || 'N/A'} · {p.province || 'N/A'}{p.file_name ? ` — ${p.file_name}` : ''}
+                  {p.tax_year || 'N/A'}{p.doc_type ? ` — ${p.doc_type}` : ''}
                 </option>
               ))}
             </select>
@@ -157,15 +157,15 @@ export default function Analysis() {
 
       {step === 'done' && (
         <div className="animate-fade-in-up" style={{ display: 'flex', gap: 'var(--space-3)', justifyContent: 'center', marginTop: 'var(--space-6)' }}>
-          <Link to={`/insights?profile_id=${selectedId}`} className="btn btn-success">
+          <Link to={`/tax/insights?profile_id=${selectedId}`} className="btn btn-success">
             <Lightbulb size={16} />
             View Insights
           </Link>
-          <Link to={`/actions`} className="btn btn-primary">
+          <Link to={`/tax/actions`} className="btn btn-primary">
             <ListChecks size={16} />
             Action Items
           </Link>
-          <Link to={`/dashboard`} className="btn btn-secondary">
+          <Link to={`/tax/dashboard`} className="btn btn-secondary">
             <LayoutDashboard size={16} />
             Dashboard
           </Link>

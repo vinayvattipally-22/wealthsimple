@@ -37,7 +37,7 @@ export default function Upload() {
         document_id: extracted.document_id,
       })
       setMessage({ type: 'success', text: `Profile #${profileRes.profile_id} created. Redirecting to analysis...` })
-      navigate(`/analysis?profile_id=${profileRes.profile_id}`)
+      navigate(`/tax/analysis?profile_id=${profileRes.profile_id}`)
     } catch (e) {
       setMessage({ type: 'error', text: e.message || 'Upload failed' })
     } finally {

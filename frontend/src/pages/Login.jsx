@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { LogIn, AlertTriangle } from 'lucide-react'
+import { LogIn, AlertTriangle, Eye, EyeOff } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { LoadingSpinner } from '../components/LoadingState'
 
@@ -11,6 +11,7 @@ export default function Login() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -58,15 +59,26 @@ export default function Login() {
             </div>
             <div className="form-group">
               <label className="form-label">Password</label>
-              <input
-                type="password"
-                className="form-input"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                placeholder="Enter your password"
-                required
-                minLength={6}
-              />
+              <div className="password-input-wrap">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  className="form-input"
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+                  placeholder="Enter your password"
+                  required
+                  minLength={6}
+                />
+                <button
+                  type="button"
+                  className="password-toggle"
+                  onClick={() => setShowPassword(p => !p)}
+                  tabIndex={-1}
+                  title={showPassword ? 'Hide password' : 'Show password'}
+                >
+                  {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                </button>
+              </div>
             </div>
             <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: 'var(--space-3)' }} disabled={loading}>
               {loading ? <LoadingSpinner size={16} /> : <><LogIn size={16} /> Sign In</>}

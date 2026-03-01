@@ -45,10 +45,10 @@ async def get_trends(
         liability = estimated_liability(income, province, year) if income > 0 else 0
         eff_rate = (liability / income) if income > 0 else 0
 
-        # Get savings from insights
-        ins_result = await db.execute(
-            select(Insight).where(Insight.profile_id == profile.id)
-        )
+        # Get savings from advisor-approved insights only
+        from database.queries import approved_insights_query
+
+        ins_result = await db.execute(approved_insights_query(profile_id=profile.id))
         insights = ins_result.scalars().all()
         total_savings = sum(i.estimated_value or 0 for i in insights)
 

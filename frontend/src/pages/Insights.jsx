@@ -3,9 +3,11 @@ import { useSearchParams } from 'react-router-dom'
 import { Download, Lightbulb, AlertTriangle, ChevronDown } from 'lucide-react'
 import InsightCard from '../components/InsightCard'
 import SavingsSummary from '../components/SavingsSummary'
+import ReviewPendingBanner from '../components/ReviewPendingBanner'
 import { LoadingSpinner, PageLoading } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 import { getAnalysisResults, downloadReport, getUserDocuments } from '../services/api'
+import { usePageData } from '../context/PageDataContext'
 import '../styles/dashboard.css'
 
 export default function Insights() {
@@ -18,6 +20,7 @@ export default function Insights() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [downloading, setDownloading] = useState(false)
+  const { setPageData } = usePageData()
 
   // Load profiles on mount
   useEffect(() => {
@@ -44,10 +47,13 @@ export default function Insights() {
     setError(null)
     setData(null)
     getAnalysisResults(selectedId)
-      .then(setData)
+      .then((res) => {
+        setData(res)
+        setPageData({ page: 'insights', data: res })
+      })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false))
-  }, [selectedId])
+  }, [selectedId, setPageData])
 
   const handleDownloadPDF = async () => {
     if (!selectedId) return
@@ -99,7 +105,7 @@ export default function Insights() {
               >
                 {profiles.map((p) => (
                   <option key={p.profile_id} value={p.profile_id}>
-                    {p.tax_year || 'N/A'} · {p.province || 'N/A'}{p.file_name ? ` — ${p.file_name}` : ''}
+                    {p.tax_year || 'N/A'}{p.doc_type ? ` — ${p.doc_type}` : ''}
                   </option>
                 ))}
               </select>
@@ -117,6 +123,7 @@ export default function Insights() {
 
   const insights = data?.insights ?? []
   const summary = data?.summary ?? {}
+  const reviewPending = data?.review_pending === true
   const totalSavings = insights.reduce((s, i) => s + (i.estimated_value || 0), 0)
   const currentProfile = profiles.find(p => p.profile_id === selectedId)
 
@@ -127,8 +134,8 @@ export default function Insights() {
           <h1 className="page-title">Insights</h1>
           <p className="page-subtitle">
             {insights.length > 0
-              ? `${insights.length} insights found${currentProfile ? ` · ${currentProfile.tax_year || ''} ${currentProfile.province || ''}` : ''}`
-              : currentProfile ? `${currentProfile.tax_year || ''} · ${currentProfile.province || ''}` : ''
+              ? `${insights.length} insights found${currentProfile ? ` · ${currentProfile.tax_year || ''}` : ''}`
+              : currentProfile ? `${currentProfile.tax_year || ''}` : ''
             }
           </p>
         </div>
@@ -142,7 +149,7 @@ export default function Insights() {
               >
                 {profiles.map((p) => (
                   <option key={p.profile_id} value={p.profile_id}>
-                    {p.tax_year || 'N/A'} · {p.province || 'N/A'}{p.file_name ? ` — ${p.file_name}` : ''}
+                    {p.tax_year || 'N/A'}{p.doc_type ? ` — ${p.doc_type}` : ''}
                   </option>
                 ))}
               </select>
@@ -167,7 +174,9 @@ export default function Insights() {
 
       <SavingsSummary summary={{ total_identified_savings: totalSavings, act_now_count: summary.act_now_count, this_year_count: summary.this_year_count, long_term_count: summary.long_term_count }} />
 
-      {insights.length === 0 ? (
+      {insights.length === 0 && reviewPending ? (
+        <ReviewPendingBanner message="Your tax insights are being reviewed by a financial advisor. Once approved, they will appear here with estimated savings." />
+      ) : insights.length === 0 ? (
         <EmptyState
           icon={Lightbulb}
           title="No insights yet"
@@ -175,6 +184,7 @@ export default function Insights() {
         />
       ) : (
         <div>
+          {reviewPending && <ReviewPendingBanner message="Some insights may still be under advisor review. Only approved insights are shown below." />}
           {insights.map((ins, i) => <InsightCard key={i} insight={ins} />)}
         </div>
       )}

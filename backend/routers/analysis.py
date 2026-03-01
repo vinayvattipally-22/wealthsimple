@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from database.session import get_db
-from sqlalchemy import select, and_
+from sqlalchemy import select, and_, delete
 from database.models import FinancialProfile, Insight, ReviewCase, ActionItem, User
 
 from services.tax_engine import (
@@ -158,6 +158,10 @@ async def trigger_analysis(
     # Benefit engine: prioritize and format
     full_profile = {**data, "derived": derived, "rag_context": rag_context}
     insights_result = generate_insights(full_profile, llm_result, current_year=current_year)
+    # Remove old insights and action items for this profile before inserting new ones
+    await db.execute(delete(ActionItem).where(ActionItem.profile_id == profile_id))
+    await db.execute(delete(Insight).where(Insight.profile_id == profile_id))
+
     # Persist insights and create review case
     case = ReviewCase(
         profile_id=profile_id,
@@ -206,15 +210,17 @@ async def analysis_status(profile_id: int, db: AsyncSession = Depends(get_db)):
 @router.get("/analysis/{profile_id}/results")
 async def analysis_results(profile_id: int, db: AsyncSession = Depends(get_db)):
     """Return approved insights and summary for profile."""
+    from database.queries import approved_insights_query, has_pending_insights
+
     profile = await db.get(FinancialProfile, profile_id)
     if not profile:
         raise HTTPException(404, "Profile not found")
-    result = await db.execute(
-        select(Insight).where(Insight.profile_id == profile_id)
-    )
+    review_pending = await has_pending_insights(db, profile_id)
+    result = await db.execute(approved_insights_query(profile_id=profile_id))
     insights = result.scalars().all()
     return {
         "profile_id": profile_id,
+        "review_pending": review_pending,
         "insights": [
             {
                 "id": i.insight_type,
@@ -246,10 +252,14 @@ async def dashboard_data(request: Request, profile_id: int, db: AsyncSession = D
     income = employment.get("total_employment_income") or 0
     province = profile.province_code or "ON"
 
-    result = await db.execute(select(Insight).where(Insight.profile_id == profile_id))
+    from database.queries import approved_insights_query, has_pending_insights
+
+    review_pending = await has_pending_insights(db, profile_id)
+    result = await db.execute(approved_insights_query(profile_id=profile_id))
     insights = result.scalars().all()
 
     # Group insights by category
+    from services.benefit_engine import get_insight_display_name
     by_category = {"ACT_NOW": [], "THIS_YEAR": [], "LONG_TERM": []}
     chart_data = []
     for i in insights:
@@ -261,7 +271,7 @@ async def dashboard_data(request: Request, profile_id: int, db: AsyncSession = D
             "priority": i.priority,
         }
         by_category.setdefault(cat, []).append(entry)
-        chart_data.append({"name": i.insight_type, "value": i.estimated_value or 0, "category": cat})
+        chart_data.append({"name": get_insight_display_name(i.insight_type), "value": i.estimated_value or 0, "category": cat})
 
     total_savings = sum(i.estimated_value or 0 for i in insights)
     confidences = [i.confidence for i in insights if i.confidence]
@@ -269,6 +279,7 @@ async def dashboard_data(request: Request, profile_id: int, db: AsyncSession = D
 
     return {
         "profile_id": profile_id,
+        "review_pending": review_pending,
         "income": income,
         "province": province,
         "tax_year": profile.tax_year,
@@ -435,6 +446,10 @@ async def stream_analysis(
         )
         yield _sse_stage("action_planner", "complete", f"{len(action_items_data)} action items created")
 
+        # Remove old insights and action items before persisting new ones
+        await db.execute(delete(ActionItem).where(ActionItem.profile_id == profile_id))
+        await db.execute(delete(Insight).where(Insight.profile_id == profile_id))
+
         # Persist results
         case = ReviewCase(
             profile_id=profile_id, status="PENDING",
@@ -495,6 +510,7 @@ async def stream_analysis(
             "case_id": case.id,
             "action_items_count": len(action_items_data),
             "compliance_flags": len(compliance_flags),
+            "review_pending": True,
         })
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")

@@ -13,6 +13,8 @@ from sqlalchemy import (
     Text,
     ForeignKey,
     JSON,
+    LargeBinary,
+    UniqueConstraint,
 )
 from sqlalchemy.orm import declarative_base, relationship
 
@@ -40,6 +42,8 @@ class Document(Base):
     doc_type = Column(String(32), nullable=False)  # T4, RRSP, etc.
     file_name = Column(String(255), nullable=True)
     extracted_data = Column(JSON, nullable=True)  # Redacted structured data only
+    redacted_file_path = Column(String(512), nullable=True)  # Legacy: path to redacted PDF
+    redacted_file_data = Column(LargeBinary, nullable=True)  # Redacted PDF binary stored in DB
     created_at = Column(DateTime, default=datetime.utcnow)
 
 
@@ -75,6 +79,9 @@ class Insight(Base):
     confidence = Column(Float, nullable=True)
     requires_additional_info = Column(JSON, nullable=True)  # list of strings
     review_status = Column(String(32), default="PENDING")
+    advisor_comment = Column(Text, nullable=True)  # Advisor feedback on this insight
+    advisor_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    reviewed_at = Column(DateTime, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
     profile = relationship("FinancialProfile", back_populates="insights")
 
@@ -106,6 +113,72 @@ class ActionItem(Base):
     estimated_value = Column(Float, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
+class StockResearch(Base):
+    __tablename__ = "stock_research"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    ticker = Column(String(16), nullable=False, index=True)
+    company_name = Column(String(255), nullable=True)
+    signal = Column(String(8), nullable=True)  # BUY, HOLD, SELL
+    confidence = Column(Float, nullable=True)
+    price_at_research = Column(Float, nullable=True)
+    market_data = Column(JSON, nullable=True)
+    technical_indicators = Column(JSON, nullable=True)
+    news_sentiment = Column(JSON, nullable=True)
+    geo_policy = Column(JSON, nullable=True)
+    volatility_risk = Column(JSON, nullable=True)
+    aggregated_signal = Column(JSON, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class StockNews(Base):
+    __tablename__ = "stock_news"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ticker = Column(String(16), nullable=False, index=True)
+    title = Column(String(1024), nullable=False)
+    url = Column(String(2048), nullable=True)
+    publisher = Column(String(255), nullable=True)
+    published_at = Column(DateTime, nullable=True)
+    fetched_at = Column(DateTime, default=datetime.utcnow)
+    source = Column(String(32), nullable=False)  # yfinance or alpha_vantage
+    sentiment_score = Column(Float, nullable=True)  # -1.0 to 1.0
+    sentiment_label = Column(String(32), nullable=True)  # bullish/neutral/bearish
+    summary = Column(String(1024), nullable=True)  # 1-sentence LLM summary
+    is_analyzed = Column(Boolean, default=False)
+
+    __table_args__ = (
+        UniqueConstraint("ticker", "title", "published_at", name="uq_stock_news_dedup"),
+    )
+
+
+class StockInsight(Base):
+    __tablename__ = "stock_insights"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ticker = Column(String(16), nullable=False, index=True)
+    company_name = Column(String(255), nullable=True)
+    timeframe = Column(String(16), nullable=False)  # short, mid, long
+    direction = Column(String(16), nullable=False)  # bullish, neutral, bearish
+    confidence = Column(Float, nullable=True)  # 0.0 to 0.85
+    reasoning = Column(Text, nullable=True)
+    news_article_ids = Column(JSON, nullable=True)  # [1, 5, 12] StockNews IDs
+    review_status = Column(String(32), default="PENDING")  # PENDING, APPROVED, REJECTED
+    advisor_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    advisor_comment = Column(Text, nullable=True)
+    reviewed_at = Column(DateTime, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class TrackedStock(Base):
+    __tablename__ = "tracked_stocks"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ticker = Column(String(16), unique=True, nullable=False, index=True)
+    company_name = Column(String(255), nullable=True)
+    last_news_fetch = Column(DateTime, nullable=True)
+    news_fetch_interval_hours = Column(Integer, default=4)
+    is_active = Column(Boolean, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
 
 
 class AuditLog(Base):
