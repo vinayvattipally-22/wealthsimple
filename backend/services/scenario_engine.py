@@ -431,3 +431,212 @@ def _province_scenario(current, income, old_province, tax_year, new_province):
         },
         "explanation": "\n".join(explanation_parts),
     }
+
+
+# ---------------------------------------------------------------------------
+# Feature 1: Smart Scenario Suggestions
+# ---------------------------------------------------------------------------
+
+def generate_smart_suggestions(profile_data: dict) -> list[dict]:
+    """Analyze profile and return top scenario suggestions ranked by potential impact."""
+    employment = profile_data.get("employment", {})
+    registered = profile_data.get("registered_accounts", {})
+    province = profile_data.get("province_code") or employment.get("province_of_employment", "ON")
+    tax_year = profile_data.get("tax_year", 2024)
+    income = employment.get("total_employment_income") or 0
+
+    if income <= 0:
+        return []
+
+    current = _build_snapshot(income, province, tax_year)
+    suggestions = []
+
+    # 1. RRSP contribution savings
+    rrsp_room = registered.get("rrsp_room_remaining") or 0
+    if rrsp_room > 0:
+        rrsp_savings = round(rrsp_room * current["marginal_rate"], 2)
+        suggestions.append({
+            "scenario_type": "rrsp_contribution",
+            "title": "Maximize RRSP Contribution",
+            "description": (
+                f"Contributing your full ${rrsp_room:,.0f} RRSP room "
+                f"could save ${rrsp_savings:,.0f} in taxes"
+            ),
+            "potential_savings": rrsp_savings,
+            "suggested_value": rrsp_room,
+            "priority": "HIGH" if rrsp_savings > 2000 else "MEDIUM",
+        })
+
+    # 2. FHSA contribution
+    fhsa_savings = round(min(FHSA_ANNUAL_MAX, max(0, income)) * current["marginal_rate"], 2)
+    if fhsa_savings > 0:
+        suggestions.append({
+            "scenario_type": "fhsa_contribution",
+            "title": "FHSA Contribution",
+            "description": (
+                f"First-time home buyers: contribute ${FHSA_ANNUAL_MAX:,.0f} "
+                f"to save ${fhsa_savings:,.0f} in taxes"
+            ),
+            "potential_savings": fhsa_savings,
+            "suggested_value": FHSA_ANNUAL_MAX,
+            "priority": "MEDIUM",
+        })
+
+    # 3. Best province move
+    best_province = None
+    best_savings = 0
+    for prov in PROVINCE_NAMES:
+        if prov == province:
+            continue
+        proj = _build_snapshot(income, prov, tax_year)
+        savings = current["tax_liability"] - proj["tax_liability"]
+        if savings > best_savings:
+            best_savings = savings
+            best_province = prov
+
+    if best_province and best_savings > 500:
+        suggestions.append({
+            "scenario_type": "province_change",
+            "title": f"Move to {PROVINCE_NAMES[best_province]}",
+            "description": (
+                f"Moving to {PROVINCE_NAMES[best_province]} could save "
+                f"${best_savings:,.0f}/year in provincial taxes"
+            ),
+            "potential_savings": round(best_savings, 2),
+            "suggested_value": best_province,
+            "priority": "LOW",
+        })
+
+    # 4. TFSA tax-free growth
+    tfsa_room = registered.get("tfsa_room_remaining") or 7000
+    tfsa_20yr_growth = tfsa_room * ((1 + TFSA_GROWTH_RATE) ** 20 - 1)
+    tfsa_tax_saved = round(tfsa_20yr_growth * current["marginal_rate"], 2)
+    suggestions.append({
+        "scenario_type": "tfsa_contribution",
+        "title": "TFSA Tax-Free Growth",
+        "description": (
+            f"${tfsa_room:,.0f} in TFSA could generate "
+            f"${tfsa_20yr_growth:,.0f} in tax-free growth over 20 years"
+        ),
+        "potential_savings": tfsa_tax_saved,
+        "suggested_value": tfsa_room,
+        "priority": "MEDIUM",
+    })
+
+    suggestions.sort(key=lambda x: x["potential_savings"], reverse=True)
+    return suggestions[:4]
+
+
+# ---------------------------------------------------------------------------
+# Feature 2: Natural Language Scenario Parsing
+# ---------------------------------------------------------------------------
+
+def parse_natural_language_scenario(query: str, profile_data: dict) -> dict:
+    """Use LLM to parse a natural language scenario query into structured params."""
+    import json
+    import os
+    from services.llm_service import _client
+
+    employment = profile_data.get("employment", {})
+    income = employment.get("total_employment_income") or 0
+    province = profile_data.get("province_code") or "ON"
+
+    system_msg = (
+        "You are a Canadian tax scenario parser. Given a user's natural language question "
+        "about a tax scenario, extract the structured parameters.\n\n"
+        "Return JSON with:\n"
+        '- "scenarios": array of {"type": <string>, "value": <number_or_string>}\n'
+        '- "explanation": brief description of what you parsed\n\n'
+        "Valid types: rrsp_contribution, tfsa_contribution, fhsa_contribution, "
+        "income_change, province_change\n"
+        "Province codes: ON, BC, AB, QC, MB, SK, NS, NB, NL, PE, NT, NU, YT\n\n"
+        "Examples:\n"
+        '- "What if I contribute $5000 to RRSP?" -> [{"type":"rrsp_contribution","value":5000}]\n'
+        '- "What if I earn $120K and move to Alberta?" -> '
+        '[{"type":"income_change","value":120000},{"type":"province_change","value":"AB"}]\n'
+        '- "Max out my TFSA and FHSA" -> '
+        '[{"type":"tfsa_contribution","value":7000},{"type":"fhsa_contribution","value":8000}]\n'
+    )
+
+    user_msg = (
+        f"User profile: Income ${income:,.0f}, Province: {province}\n\n"
+        f"User question: {query}\n\n"
+        "Parse this into scenario parameters. Return JSON only."
+    )
+
+    model = os.getenv("LLM_MODEL", "gpt-4o")
+    client = _client()
+    resp = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_msg},
+            {"role": "user", "content": user_msg},
+        ],
+        temperature=0,
+        max_tokens=500,
+        response_format={"type": "json_object"},
+    )
+    result = json.loads(resp.choices[0].message.content or "{}")
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Feature 3: Multi-Year Tax Planning Projection
+# ---------------------------------------------------------------------------
+
+def multi_year_projection(
+    profile_data: dict,
+    years: int = 10,
+    annual_rrsp: float = 0,
+    annual_tfsa: float = 0,
+    annual_fhsa: float = 0,
+) -> dict:
+    """Project RRSP tax savings, TFSA compound growth, and FHSA savings over multiple years."""
+    employment = profile_data.get("employment", {})
+    province = profile_data.get("province_code") or employment.get("province_of_employment", "ON")
+    tax_year = profile_data.get("tax_year", 2024)
+    income = employment.get("total_employment_income") or 0
+
+    current = _build_snapshot(income, province, tax_year) if income > 0 else {"marginal_rate": 0.3}
+    marginal = current["marginal_rate"]
+
+    projections = []
+    cum_rrsp_savings = 0.0
+    cum_fhsa_savings = 0.0
+    tfsa_balance = 0.0
+
+    for yr in range(1, years + 1):
+        rrsp_savings = round(annual_rrsp * marginal, 2)
+        cum_rrsp_savings += rrsp_savings
+
+        tfsa_balance = (tfsa_balance + annual_tfsa) * (1 + TFSA_GROWTH_RATE)
+        tfsa_growth = round(tfsa_balance - (annual_tfsa * yr), 2)
+
+        fhsa_this_year = annual_fhsa if yr <= 5 else 0
+        cum_fhsa_savings += round(fhsa_this_year * marginal, 2)
+
+        total = round(cum_rrsp_savings + max(0, tfsa_growth) + cum_fhsa_savings, 2)
+
+        projections.append({
+            "year": yr,
+            "rrsp_savings": round(cum_rrsp_savings, 2),
+            "tfsa_growth": max(0, tfsa_growth),
+            "tfsa_balance": round(tfsa_balance, 2),
+            "fhsa_savings": round(cum_fhsa_savings, 2),
+            "total_benefit": total,
+        })
+
+    return {
+        "scenario_type": "multi_year",
+        "years": years,
+        "annual_contributions": {"rrsp": annual_rrsp, "tfsa": annual_tfsa, "fhsa": annual_fhsa},
+        "marginal_rate": marginal,
+        "projections": projections,
+        "summary": {
+            "total_rrsp_savings": round(cum_rrsp_savings, 2),
+            "total_tfsa_growth": max(0, round(tfsa_balance - (annual_tfsa * years), 2)),
+            "total_tfsa_balance": round(tfsa_balance, 2),
+            "total_fhsa_savings": round(cum_fhsa_savings, 2),
+            "total_benefit": projections[-1]["total_benefit"] if projections else 0,
+        },
+    }

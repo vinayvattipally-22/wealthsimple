@@ -73,6 +73,10 @@ async def list_action_items(
         elif item.status == "completed":
             completed_count += 1
 
+    # Apply AI prioritization scoring
+    from services.action_planner import prioritize_actions
+    items_out = prioritize_actions(items_out)
+
     return {
         "action_items": items_out,
         "summary": {

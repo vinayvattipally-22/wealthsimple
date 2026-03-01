@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ListChecks, ChevronDown, CheckCircle2, Clock, AlertTriangle, SkipForward, ChevronRight } from 'lucide-react'
+import { ListChecks, ChevronDown, CheckCircle2, Clock, AlertTriangle, SkipForward, ChevronRight, Zap } from 'lucide-react'
 import { PageLoading } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 import ReviewPendingBanner from '../components/ReviewPendingBanner'
@@ -69,6 +69,25 @@ function ActionItemCard({ item, onUpdate }) {
             {item.title}
           </div>
           <div className="action-item-meta">
+            {item.ai_score != null && (
+              <span
+                className="ai-score-badge"
+                style={{
+                  background: item.ai_score >= 70 ? 'var(--ws-red)' : item.ai_score >= 40 ? 'var(--ws-amber)' : 'var(--ws-grey-400)',
+                  color: '#fff',
+                  padding: '1px 7px',
+                  borderRadius: '10px',
+                  fontSize: '0.72rem',
+                  fontWeight: 700,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '3px',
+                }}
+                title="AI Priority Score"
+              >
+                <Zap size={10} /> {item.ai_score}
+              </span>
+            )}
             {item.deadline && (
               <span className={`action-item-deadline ${overdue && !done ? 'text-red' : ''}`}>
                 <Clock size={12} />
@@ -89,6 +108,12 @@ function ActionItemCard({ item, onUpdate }) {
               </span>
             )}
           </div>
+          {item.ai_reasoning && !done && (
+            <div style={{ fontSize: '0.75rem', color: 'var(--ws-grey-500)', marginTop: 2 }}>
+              <Zap size={10} style={{ verticalAlign: 'middle', marginRight: 3 }} />
+              {item.ai_reasoning}
+            </div>
+          )}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
           {!done && item.status !== 'skipped' && (

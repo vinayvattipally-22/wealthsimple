@@ -73,3 +73,70 @@ def generate_action_items(
     ))
 
     return items
+
+
+def prioritize_actions(action_items: list[dict]) -> list[dict]:
+    """AI-powered action prioritization: score each item and add reasoning.
+
+    Returns the same list with added ``ai_score`` (0-100) and ``ai_reasoning`` fields,
+    sorted by score descending.
+    """
+    now = datetime.utcnow()
+
+    for item in action_items:
+        score = 0
+        reasons = []
+
+        # Value factor (0-40 points)
+        value = item.get("estimated_value") or 0
+        if value > 5000:
+            score += 40
+            reasons.append("High dollar impact")
+        elif value > 1000:
+            score += 25
+            reasons.append("Moderate savings potential")
+        elif value > 0:
+            score += 10
+            reasons.append("Some savings potential")
+
+        # Urgency factor (0-30 points)
+        deadline = item.get("deadline")
+        if deadline:
+            try:
+                dl = datetime.fromisoformat(str(deadline).replace("Z", "+00:00")) if isinstance(deadline, str) else deadline
+                days_left = (dl - now).days
+                if days_left < 0:
+                    score += 30
+                    reasons.append("OVERDUE")
+                elif days_left <= 7:
+                    score += 25
+                    reasons.append("Due this week")
+                elif days_left <= 30:
+                    score += 15
+                    reasons.append("Due this month")
+                else:
+                    score += 5
+            except (ValueError, TypeError):
+                pass
+
+        # Priority factor (0-20 points)
+        priority = item.get("priority", "MEDIUM")
+        if priority == "HIGH":
+            score += 20
+            reasons.append("High priority")
+        elif priority == "MEDIUM":
+            score += 10
+
+        # Ease factor (0-10 points)
+        title_lower = (item.get("title") or "").lower()
+        if any(kw in title_lower for kw in ["contribute", "open", "transfer", "deposit"]):
+            score += 10
+            reasons.append("Easy to implement")
+        elif any(kw in title_lower for kw in ["review", "check", "verify"]):
+            score += 7
+
+        item["ai_score"] = min(score, 100)
+        item["ai_reasoning"] = " | ".join(reasons[:3])
+
+    action_items.sort(key=lambda x: x.get("ai_score", 0), reverse=True)
+    return action_items

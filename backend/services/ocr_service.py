@@ -441,6 +441,146 @@ def extract_t5(file_path: str) -> dict:
     return redact_pii(fields)
 
 
+def extract_t2202(file_path: str) -> dict:
+    """Extract T2202 (Tuition and Education Amounts Certificate) fields."""
+    try:
+        import fitz
+    except ImportError:
+        return {"error": "PyMuPDF not installed", "doc_type": "T2202"}
+
+    doc = fitz.open(file_path)
+    if len(doc) == 0:
+        doc.close()
+        return {"error": "Empty document", "doc_type": "T2202"}
+
+    page = doc[0]
+    blocks = page.get_text("blocks")
+    doc.close()
+
+    fields: dict = {"doc_type": "T2202"}
+    tax_year = None
+
+    # T2202 key boxes:
+    # Box A: Eligible tuition fees
+    # Box B: Part-time months (or months in full-time)
+    # Box C: Full-time months
+    t2202_boxes = {"A", "B", "C"}
+
+    for block in blocks:
+        if block[6] != 0:
+            continue
+        text = block[4].strip()
+        lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
+        if not lines:
+            continue
+
+        first = lines[0]
+
+        # Year detection
+        if re.match(r"^20\d{2}$", first):
+            tax_year = int(first)
+            continue
+
+        # Look for tuition amount patterns
+        if "tuition" in first.lower() and "eligible" in first.lower():
+            for ln in lines[1:]:
+                val = _parse_value_from_lines([ln])
+                if val is not None and val > 0:
+                    fields["eligible_tuition_fees"] = val
+                    break
+            continue
+
+        # Box-based extraction
+        if first.upper() in t2202_boxes and len(lines) >= 2:
+            value = _parse_value_from_lines(lines[1:])
+            if value is not None:
+                if first.upper() == "A":
+                    fields["eligible_tuition_fees"] = value
+                elif first.upper() == "B":
+                    fields["part_time_months"] = value
+                elif first.upper() == "C":
+                    fields["full_time_months"] = value
+
+        # Institution name
+        if "institution" in first.lower() or "university" in first.lower() or "college" in first.lower():
+            for ln in lines:
+                if not any(kw in ln.lower() for kw in ["institution", "box", "name"]):
+                    fields["institution_name"] = ln
+                    break
+
+    if tax_year:
+        fields["tax_year"] = tax_year
+
+    # If we didn't get tuition fees from structured extraction, try vision
+    if "eligible_tuition_fees" not in fields:
+        img_b64 = _pdf_to_base64_image(file_path, redact_pii=True)
+        if img_b64:
+            from services.llm_service import extract_via_vision
+            vision_result = extract_via_vision(img_b64, "image/png")
+            if vision_result.get("eligible_tuition_fees"):
+                fields["eligible_tuition_fees"] = vision_result["eligible_tuition_fees"]
+            if vision_result.get("institution_name"):
+                fields.setdefault("institution_name", vision_result["institution_name"])
+            if vision_result.get("tax_year"):
+                fields.setdefault("tax_year", vision_result["tax_year"])
+
+    from services.redaction_service import redact_pii
+    return redact_pii(fields)
+
+
+def extract_noa(file_path: str) -> dict:
+    """Extract Notice of Assessment / Reassessment fields."""
+    try:
+        import fitz
+    except ImportError:
+        return {"error": "PyMuPDF not installed", "doc_type": "NOA"}
+
+    doc = fitz.open(file_path)
+    if len(doc) == 0:
+        doc.close()
+        return {"error": "Empty document", "doc_type": "NOA"}
+
+    text = ""
+    for page in doc:
+        text += page.get_text()
+    doc.close()
+
+    fields: dict = {"doc_type": "NOA"}
+
+    # Year detection
+    year_match = re.search(r"tax year\s*(20\d{2})", text, re.IGNORECASE)
+    if year_match:
+        fields["tax_year"] = int(year_match.group(1))
+    else:
+        year_match = re.search(r"20\d{2}", text[:200])
+        if year_match:
+            fields["tax_year"] = int(year_match.group())
+
+    # Key NOA fields
+    patterns = [
+        (r"total\s+income[:\s]*\$?([\d,]+\.?\d*)", "total_income"),
+        (r"net\s+income[:\s]*\$?([\d,]+\.?\d*)", "net_income"),
+        (r"taxable\s+income[:\s]*\$?([\d,]+\.?\d*)", "taxable_income"),
+        (r"total\s+(?:payable|tax)[:\s]*\$?([\d,]+\.?\d*)", "total_tax_payable"),
+        (r"total\s+credits[:\s]*\$?([\d,]+\.?\d*)", "total_credits"),
+        (r"refund[:\s]*\$?([\d,]+\.?\d*)", "refund"),
+        (r"balance\s+owing[:\s]*\$?([\d,]+\.?\d*)", "balance_owing"),
+        (r"RRSP\s+(?:deduction\s+)?limit[:\s]*\$?([\d,]+\.?\d*)", "rrsp_deduction_limit"),
+        (r"TFSA\s+(?:contribution\s+)?room[:\s]*\$?([\d,]+\.?\d*)", "tfsa_contribution_room"),
+    ]
+
+    for pattern, field_name in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            try:
+                fields[field_name] = float(match.group(1).replace(",", ""))
+            except ValueError:
+                pass
+
+    from services.redaction_service import redact_pii
+    return redact_pii(fields)
+
+
 def extract_generic(file_path: str) -> dict:
     """Fallback extraction using GPT-4o Vision for unknown document types."""
     img_b64 = _pdf_to_base64_image(file_path, redact_pii=True)
@@ -468,12 +608,15 @@ def extract_document(file_path: str, **kwargs) -> dict:
     doc_type = detect_document_type(file_path)
     if doc_type == "T5":
         return extract_t5(file_path)
+    elif doc_type == "T2202":
+        return extract_t2202(file_path)
+    elif doc_type == "NOA":
+        return extract_noa(file_path)
     elif doc_type == "T4":
         result = extract_t4(file_path, **kwargs)
         result["doc_type"] = "T4"
         return result
     else:
-        # For T2202, NOA, and unknown — try generic extraction
         result = extract_generic(file_path)
         result["doc_type"] = doc_type if doc_type != "UNKNOWN" else "GENERIC"
         return result

@@ -190,6 +190,47 @@ export async function runScenario(profileId, scenarioType, value) {
   return res.json()
 }
 
+export async function getScenarioSuggestions(profileId) {
+  const res = await fetch(`${BASE}/simulator/suggestions/${profileId}`, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function runNaturalLanguageScenario(profileId, query) {
+  const res = await fetch(`${BASE}/simulator/natural-language`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ profile_id: profileId, query }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function runMultiYearProjection(profileId, years, annualRrsp, annualTfsa, annualFhsa) {
+  const res = await fetch(`${BASE}/simulator/multi-year`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({
+      profile_id: profileId,
+      years,
+      annual_rrsp: annualRrsp,
+      annual_tfsa: annualTfsa,
+      annual_fhsa: annualFhsa,
+    }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function getAnomalies(profileId) {
+  const url = profileId
+    ? `${BASE}/user/anomalies?profile_id=${profileId}`
+    : `${BASE}/user/anomalies`
+  const res = await fetch(url, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
 export async function getAdvisorData(profileId) {
   const url = profileId
     ? `${BASE}/user/advisor?profile_id=${profileId}`

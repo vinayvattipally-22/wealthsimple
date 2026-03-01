@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
-import { DollarSign, Receipt, TrendingUp, Percent, LayoutDashboard, AlertTriangle, ChevronDown } from 'lucide-react'
-import { getUserDashboard } from '../services/api'
+import { DollarSign, Receipt, TrendingUp, Percent, LayoutDashboard, AlertTriangle, ChevronDown, AlertCircle, Info, ShieldAlert } from 'lucide-react'
+import { getUserDashboard, getAnomalies } from '../services/api'
 import { PageLoading } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 import ReviewPendingBanner from '../components/ReviewPendingBanner'
@@ -48,6 +48,7 @@ export default function Dashboard() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [anomalies, setAnomalies] = useState([])
   const { setPageData } = usePageData()
 
   useEffect(() => {
@@ -61,6 +62,12 @@ export default function Dashboard() {
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false))
   }, [selectedId, setPageData])
+
+  useEffect(() => {
+    getAnomalies(selectedId)
+      .then((res) => setAnomalies(res.anomalies || []))
+      .catch(() => setAnomalies([]))
+  }, [selectedId])
 
   if (loading) return <PageLoading />
 
@@ -136,6 +143,50 @@ export default function Dashboard() {
 
       {data.review_pending && (
         <ReviewPendingBanner message="Your AI-generated insights are under advisor review. Savings and chart data will update once insights are approved." />
+      )}
+
+      {anomalies.length > 0 && (
+        <div className="anomaly-section" style={{ marginBottom: 'var(--space-6)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
+            <ShieldAlert size={18} style={{ color: 'var(--ws-amber)' }} />
+            <h3 style={{ margin: 0, fontSize: '0.95rem' }}>AI Anomaly Detection</h3>
+          </div>
+          {anomalies.map((a, i) => {
+            const sevConfig = {
+              critical: { color: 'var(--ws-red)', bg: '#fef2f2', icon: AlertCircle },
+              warning: { color: 'var(--ws-amber)', bg: '#fffbeb', icon: AlertTriangle },
+              info: { color: 'var(--ws-blue)', bg: '#eff6ff', icon: Info },
+            }
+            const cfg = sevConfig[a.severity] || sevConfig.info
+            const SevIcon = cfg.icon
+            return (
+              <div
+                key={i}
+                className="anomaly-card"
+                style={{
+                  background: cfg.bg,
+                  borderLeft: `3px solid ${cfg.color}`,
+                  padding: 'var(--space-3) var(--space-4)',
+                  borderRadius: 'var(--radius-md)',
+                  marginBottom: 'var(--space-2)',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 'var(--space-3)' }}>
+                  <SevIcon size={16} style={{ color: cfg.color, marginTop: 2, flexShrink: 0 }} />
+                  <div>
+                    <div style={{ fontWeight: 600, fontSize: '0.85rem', color: cfg.color, textTransform: 'uppercase', marginBottom: 2 }}>
+                      {a.severity}
+                    </div>
+                    <div style={{ fontSize: '0.9rem', fontWeight: 500 }}>{a.message}</div>
+                    {a.suggestion && (
+                      <div style={{ fontSize: '0.82rem', color: 'var(--ws-grey-500)', marginTop: 4 }}>{a.suggestion}</div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       )}
 
       <div className="summary-cards">

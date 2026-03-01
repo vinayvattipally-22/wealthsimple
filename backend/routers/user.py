@@ -339,3 +339,42 @@ async def user_advisor(
     advisor_data["review_pending"] = review_pending
 
     return advisor_data
+
+
+@router.get("/anomalies")
+@limiter.limit(READ_LIMIT)
+async def user_anomalies(
+    request: Request,
+    profile_id: int = Query(default=None),
+    user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """Detect anomalies and potential issues across user's tax profiles."""
+    from services.anomaly_detector import detect_anomalies
+
+    if profile_id:
+        profiles = [await db.get(FinancialProfile, profile_id)]
+        profiles = [p for p in profiles if p and p.user_id == user.id]
+    else:
+        result = await db.execute(
+            select(FinancialProfile)
+            .where(FinancialProfile.user_id == user.id)
+            .order_by(FinancialProfile.tax_year.desc())
+        )
+        profiles = result.scalars().all()
+
+    all_anomalies = []
+    for p in profiles:
+        if not p or not p.profile_data:
+            continue
+        anomalies = detect_anomalies(p.profile_data)
+        for a in anomalies:
+            a["profile_id"] = p.id
+            a["tax_year"] = p.tax_year
+        all_anomalies.extend(anomalies)
+
+    # Sort by severity across all profiles
+    severity_order = {"critical": 0, "warning": 1, "info": 2}
+    all_anomalies.sort(key=lambda x: severity_order.get(x["severity"], 2))
+
+    return {"anomalies": all_anomalies}
