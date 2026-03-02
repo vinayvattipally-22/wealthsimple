@@ -1,5 +1,5 @@
 """
-SQLAlchemy ORM models for Wealthsimple AI Tax Analyzer.
+SQLAlchemy ORM models for TaxFolio AI Tax Analyzer.
 SQLite local file DB — auto-create tables on app startup.
 """
 from datetime import datetime
@@ -24,7 +24,7 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    external_id = Column(String(255), unique=True, nullable=True)  # Wealthsimple user id
+    external_id = Column(String(255), unique=True, nullable=True)  # External platform user id
     email = Column(String(255), unique=True, index=True, nullable=True)
     password_hash = Column(String(255), nullable=True)
     name = Column(String(255), nullable=True)

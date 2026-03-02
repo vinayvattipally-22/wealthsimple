@@ -25,7 +25,7 @@ def generate_pdf_report(profile_data: dict, insights: list[dict], summary: dict)
     elements = []
 
     # Header
-    elements.append(Paragraph("Wealthsimple AI Tax Analyzer", title_style))
+    elements.append(Paragraph("TaxFolio AI Tax Analyzer", title_style))
     elements.append(Paragraph("Personalized Tax Insights Report", styles["Heading3"]))
     elements.append(Spacer(1, 6))
     elements.append(HRFlowable(width="100%", thickness=2, color=colors.HexColor("#0d3b66")))
@@ -98,7 +98,7 @@ def generate_pdf_report(profile_data: dict, insights: list[dict], summary: dict)
 
     # Disclaimer
     elements.append(Paragraph(
-        f"Generated on {datetime.now().strftime('%B %d, %Y')} by Wealthsimple AI Tax Analyzer. "
+        f"Generated on {datetime.now().strftime('%B %d, %Y')} by TaxFolio AI Tax Analyzer. "
         "This report is for informational purposes only and does not constitute tax advice. "
         "Please consult a qualified tax professional for personalized guidance.",
         small_style,

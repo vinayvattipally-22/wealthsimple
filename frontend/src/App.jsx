@@ -37,8 +37,8 @@ function AppContent() {
       <nav className="nav">
         <div className="nav-inner">
           <Link to="/" className="nav-brand">
-            <span className="nav-logo">W</span>
-            <span className="nav-brand-text">Wealthsimple</span>
+            <span className="nav-logo">T</span>
+            <span className="nav-brand-text">TaxFolio</span>
           </Link>
           {isAuthenticated && (
             <div className="nav-user">

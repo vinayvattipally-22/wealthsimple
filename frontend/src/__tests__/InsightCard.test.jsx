@@ -9,7 +9,7 @@ describe('InsightCard', () => {
     estimated_value: 3120.0,
     category: 'THIS_YEAR',
     action_required: 'Contribute before March 1 deadline',
-    product_link: 'wealthsimple://rrsp',
+    product_link: 'taxfolio://rrsp',
   }
 
   it('renders headline', () => {
@@ -38,7 +38,7 @@ describe('InsightCard', () => {
 
   it('does not render product link', () => {
     render(<InsightCard insight={baseInsight} />)
-    expect(screen.queryByText(/Open in Wealthsimple/)).not.toBeInTheDocument()
+    expect(screen.queryByText(/Open in TaxFolio/)).not.toBeInTheDocument()
   })
 
   it('returns null for null insight', () => {

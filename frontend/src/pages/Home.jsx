@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="page-container animate-fade-in">
       <div className="home-header">
-        <h1 className="page-title">Welcome to Wealthsimple</h1>
+        <h1 className="page-title">Welcome to TaxFolio</h1>
         <p className="page-subtitle">
           {isAdvisor ? 'Advisor Portal — Review and approve AI-generated insights' : 'Choose a section to get started'}
         </p>

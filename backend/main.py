@@ -1,5 +1,5 @@
 """
-Wealthsimple AI Tax Analyzer — FastAPI entry point.
+TaxFolio AI — FastAPI entry point.
 CORS, router registration, DB init on startup, rate limiting, API key auth.
 """
 import os
@@ -30,7 +30,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Wealthsimple AI Tax Analyzer",
+    title="TaxFolio AI",
     description="AI-native tax document analysis and financial optimization",
     version="0.1.0",
     lifespan=lifespan,
