@@ -1616,5 +1616,47 @@
     "create_time": 1772371622,
     "update_time": 1772371622,
     "_id": "hybrid:query:e7c693058d9ac7827200b18f6047cf7c"
+  },
+  "hybrid:keywords:bf99ca6e391abe7bf142b8a896c80fa8": {
+    "return": "{\"high_level_keywords\": [\"Tax planning strategies\", \"Employment income\", \"2023\", \"Ontario\"], \"low_level_keywords\": [\"$50100\", \"Tax deductions\", \"Tax credits\", \"Income tax brackets\", \"Provincial taxes\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "What tax planning strategies apply for $50100 employment income in ON for 2023?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 10,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1772470489,
+    "update_time": 1772470489,
+    "_id": "hybrid:keywords:bf99ca6e391abe7bf142b8a896c80fa8"
+  },
+  "hybrid:query:b00f835ace2049e7fe8e60b105464894": {
+    "return": "To optimize your tax situation for an employment income of $50,100 in Ontario for the 2023 tax year, several key tax planning strategies can be employed:\n\n### Tax Brackets and Rates\nFor 2023, Ontario uses a progressive tax bracket system. Here's how your income fits into the tax brackets:\n\n- **Taxable Income Range**: $0 – $49,231 → **Rate: 5.05%**\n- **Taxable Income Range**: $49,231.01 – $98,463 → **Rate: 9.15%**\n\nSince your income is $50,100, here’s how the tax would be calculated based on these brackets:\n\n1. The first $49,231 is taxed at **5.05%**.\n2. The amount over $49,231, which is about $869 ($50,100 - $49,231), is taxed at **9.15%**.\n\n### Tax Credits\nUtilizing tax credits can significantly reduce your tax liability. The following credits are relevant:\n\n- **Basic Personal Amount**: The Ontario Basic Personal Amount for 2023 is **$11,865**, which reduces your taxable income. The basic personal amount allows you to reduce your taxable income by this amount, leading to tax savings.\n\n### Tax Planning Strategies\n1. **Utilize RRSP Contributions**: Put some of your income into a Registered Retirement Savings Plan (RRSP). Contributions to an RRSP are tax-deductible, which reduces your taxable income, potentially placing you in a lower tax bracket.\n\n2. **Spousal RRSPs**: If applicable, consider contributing to a spousal RRSP. This can be beneficial if your spouse is in a lower tax bracket, allowing for income splitting in retirement.\n\n3. **Tax-Free Savings Account (TFSA)**: While contributions to a TFSA are not tax-deductible, the investment growth and withdrawals are tax-free. It can be used for short-term savings or emergency funds without affecting eligibility for benefits like the Canada Child Benefit (CCB).\n\n4. **Claim Eligible Tax Credits**: Ensure you claim all available refundable and non-refundable tax credits, such as:\n   - **Ontario LIFT Credit**: Up to $875 for low-income workers. This credit is reduced by 10% of income over ~$32,000.\n   - **Other Provincial and Federal Credits**: Such as the Canada Employment Amount, which is applicable to all employed individuals.\n\n5. **Income Splitting**: If you have a spouse and your income is significantly higher than theirs, consider income splitting strategies to lower your combined tax burden.\n\n6. **Keep Track of Employment Expenses**: If you have incurred any work-related expenses (e.g., home office expenses), keep track of these as they may be tax-deductible.\n\n### Conclusion\nCombining your tax credits and implementing these strategies can optimize your tax obligations effectively. Always consult with a tax professional for personalized advice, particularly if your financial situation includes complexities not addressed here.\n\n### References\n* [1] Ontario Provincial Income Tax\n* [2] Ontario Basic Personal Amount\n* [3] RRSP and TFSA Rules",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "What tax planning strategies apply for $50100 employment income in ON for 2023?",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 10,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "Tax planning strategies, Employment income, 2023, Ontario",
+      "ll_keywords": "$50100, Tax deductions, Tax credits, Income tax brackets, Provincial taxes",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1772470538,
+    "update_time": 1772470538,
+    "_id": "hybrid:query:b00f835ace2049e7fe8e60b105464894"
   }
 }

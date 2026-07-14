@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FileText, Upload, AlertTriangle, Lightbulb, X, CheckCircle2, User, Home, Baby, Calendar } from 'lucide-react'
-import { getUserDocuments, uploadDocument, createProfile, updateProfile } from '../services/api'
+import { getUserDocuments, uploadDocument, createProfile, updateProfile, triggerAnalysis } from '../services/api'
 import { PageLoading, LoadingSpinner } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 import DocumentUploader from '../components/DocumentUploader'
@@ -274,6 +274,12 @@ function PersonalDetailsModal({ profileId, onSkip, onSaved }) {
 
   const set = (field, value) => setForm(prev => ({ ...prev, [field]: value }))
 
+  const handleSkip = () => {
+    // Fire analysis in background — don't wait for it
+    triggerAnalysis(profileId).catch(() => {})
+    onSkip()
+  }
+
   const handleSave = async () => {
     setSaving(true)
     setError(null)
@@ -287,23 +293,24 @@ function PersonalDetailsModal({ profileId, onSkip, onSaved }) {
         property_tax_paid: form.property_tax_paid ? parseFloat(form.property_tax_paid) : 0,
       }
       await updateProfile(profileId, { personal_details: personal })
+      // Fire analysis in background — don't wait for it
+      triggerAnalysis(profileId).catch(() => {})
       onSaved()
     } catch (e) {
       setError(e.message || 'Failed to save')
-    } finally {
       setSaving(false)
     }
   }
 
   return (
-    <div className="modal-overlay" onClick={onSkip}>
+    <div className="modal-overlay" onClick={handleSkip}>
       <div className="modal-content personal-details-modal animate-fade-in" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h2 className="modal-title">
             <User size={18} />
             Personal Details
           </h2>
-          <button className="modal-close" onClick={onSkip}>
+          <button className="modal-close" onClick={handleSkip}>
             <X size={20} />
           </button>
         </div>
@@ -419,12 +426,12 @@ function PersonalDetailsModal({ profileId, onSkip, onSaved }) {
           )}
 
           <div className="personal-form-actions">
-            <button className="btn btn-ghost" onClick={onSkip}>
+            <button className="btn btn-ghost" onClick={handleSkip} disabled={saving}>
               Skip for Now
             </button>
             <button className="btn btn-primary" onClick={handleSave} disabled={saving}>
               {saving ? <LoadingSpinner size={14} /> : <CheckCircle2 size={14} />}
-              Save & Continue
+              {saving ? 'Saving...' : 'Save & Continue'}
             </button>
           </div>
         </div>

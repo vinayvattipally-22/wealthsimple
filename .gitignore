@@ -37,6 +37,14 @@ Thumbs.db
 *.log
 logs/
 
-# Sample / test assets (moved from root)
+# Sample / test assets and dev utilities
 sample_docs/
 test_data/
+tools/
+scripts/
+
+# Uploaded user files — never commit
+backend/uploads/
+
+# Claude Code settings
+.claude/

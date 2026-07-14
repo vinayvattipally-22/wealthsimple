@@ -457,13 +457,17 @@ def _apply_form_sections(page, config: FormRedactionConfig) -> None:
     blocks = page.get_text("blocks")
     redact_rects: list = []
 
+    # Filter to text blocks only and sort by Y position (top-to-bottom).
+    # PDF block order follows the content stream, not spatial layout.
+    # Sorting ensures we encounter section headers before their content
+    # and before end markers that are physically below them on the page.
+    text_blocks = [b for b in blocks if b[6] == 0]
+    text_blocks.sort(key=lambda b: (b[1], b[0]))  # sort by y0, then x0
+
     in_pii_section = False
     section_y_start = 0.0
 
-    for block in blocks:
-        if block[6] != 0:
-            continue
-
+    for block in text_blocks:
         text_lower = block[4].strip().lower()
         y0 = block[1]
 
@@ -487,9 +491,7 @@ def _apply_form_sections(page, config: FormRedactionConfig) -> None:
             redact_rects.append(fitz.Rect(block[0], block[1], block[2], block[3]))
 
     # Redact PII label keywords anywhere on the page
-    for block in blocks:
-        if block[6] != 0:
-            continue
+    for block in text_blocks:
         text_lower = block[4].strip().lower()
         if any(kw in text_lower for kw in config.pii_label_keywords):
             redact_rects.append(fitz.Rect(block[0], block[1], block[2], block[3]))

@@ -178,10 +178,11 @@ async def user_dashboard(
         if mode == "individual":
             marginal_rate = derived.get("marginal_rate_combined") or 0
 
-    # Group insights by category + build chart_data
+    # Group insights by category + build chart_data (deduplicated by name)
     from services.benefit_engine import get_insight_display_name
     by_category = {}
-    chart_data = []
+    chart_map: dict[str, dict] = {}  # name -> {value, category}
+    cat_priority = {"ACT_NOW": 0, "THIS_YEAR": 1, "LONG_TERM": 2}
     for i in insights:
         cat = i.category or "THIS_YEAR"
         entry = {
@@ -191,7 +192,15 @@ async def user_dashboard(
             "priority": i.priority,
         }
         by_category.setdefault(cat, []).append(entry)
-        chart_data.append({"name": get_insight_display_name(i.insight_type), "value": i.estimated_value or 0, "category": cat})
+        display_name = get_insight_display_name(i.insight_type)
+        if display_name in chart_map:
+            chart_map[display_name]["value"] += i.estimated_value or 0
+            # Keep the most urgent category
+            if cat_priority.get(cat, 1) < cat_priority.get(chart_map[display_name]["category"], 1):
+                chart_map[display_name]["category"] = cat
+        else:
+            chart_map[display_name] = {"name": display_name, "value": i.estimated_value or 0, "category": cat}
+    chart_data = list(chart_map.values())
 
     total_savings = sum(i.estimated_value or 0 for i in insights)
     confidences = [i.confidence for i in insights if i.confidence]

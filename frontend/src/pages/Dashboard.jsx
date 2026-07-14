@@ -51,6 +51,7 @@ export default function Dashboard() {
   const [anomalies, setAnomalies] = useState([])
   const { setPageData } = usePageData()
 
+  // Auto-select the first profile once data loads (no "All Reports" mode)
   useEffect(() => {
     setLoading(true)
     setError(null)
@@ -58,12 +59,17 @@ export default function Dashboard() {
       .then((res) => {
         setData(res)
         setPageData({ page: 'dashboard', data: res })
+        // If no profile selected yet, default to first available
+        if (!selectedId && res.profiles && res.profiles.length > 0) {
+          setSelectedId(res.profiles[0].id)
+        }
       })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false))
   }, [selectedId, setPageData])
 
   useEffect(() => {
+    if (!selectedId) return
     getAnomalies(selectedId)
       .then((res) => setAnomalies(res.anomalies || []))
       .catch(() => setAnomalies([]))
@@ -94,8 +100,6 @@ export default function Dashboard() {
     )
   }
 
-  const isCumulative = data.mode === 'cumulative'
-
   const pieData = Object.entries(data.insights_by_category || {})
     .filter(([, items]) => items.length > 0)
     .map(([cat, items]) => ({
@@ -117,21 +121,15 @@ export default function Dashboard() {
       <div className="page-header">
         <div className="page-header-text">
           <h1 className="page-title">Dashboard</h1>
-          <p className="page-subtitle">
-            {isCumulative
-              ? `All reports${data.tax_year ? ` · ${data.tax_year}` : ''}`
-              : `${data.tax_year || ''}`
-            }
-          </p>
+          <p className="page-subtitle">{data.tax_year || ''}</p>
         </div>
-        {data.profiles && data.profiles.length > 0 && (
+        {data.profiles && data.profiles.length > 1 && (
           <div className="dashboard-select-wrap">
             <select
               className="dashboard-select"
               value={selectedId || ''}
-              onChange={(e) => setSelectedId(e.target.value ? Number(e.target.value) : null)}
+              onChange={(e) => setSelectedId(Number(e.target.value))}
             >
-              <option value="">All Reports</option>
               {data.profiles.map((p) => (
                 <option key={p.id} value={p.id}>{p.label}</option>
               ))}
@@ -192,12 +190,12 @@ export default function Dashboard() {
       <div className="summary-cards">
         <div className="summary-card">
           <div className="summary-card-icon blue"><DollarSign size={20} /></div>
-          <div className="label">{isCumulative ? 'Total Income' : 'Employment Income'}</div>
+          <div className="label">Employment Income</div>
           <div className="value">${(data.income || 0).toLocaleString('en-CA', { minimumFractionDigits: 2 })}</div>
         </div>
         <div className="summary-card">
           <div className="summary-card-icon red"><Receipt size={20} /></div>
-          <div className="label">{isCumulative ? 'Total Tax Liability' : 'Tax Liability'}</div>
+          <div className="label">Tax Liability</div>
           <div className="value red">${(data.tax_liability || 0).toLocaleString('en-CA', { minimumFractionDigits: 2 })}</div>
         </div>
         <div className="summary-card">

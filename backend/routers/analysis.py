@@ -162,7 +162,14 @@ async def trigger_analysis(
     await db.execute(delete(ActionItem).where(ActionItem.profile_id == profile_id))
     await db.execute(delete(Insight).where(Insight.profile_id == profile_id))
 
-    # Persist insights and create review case
+    # Generate action items from insights
+    action_items_data = generate_action_items(
+        insights_result.get("insights", []),
+        data,
+        tax_year,
+    )
+
+    # Persist insights, action items, and create review case
     case = ReviewCase(
         profile_id=profile_id,
         status="PENDING",
@@ -171,6 +178,8 @@ async def trigger_analysis(
     )
     db.add(case)
     await db.flush()
+
+    insight_db_map = {}
     for ins in insights_result.get("insights", [])[:50]:
         ob = Insight(
             profile_id=profile_id,
@@ -188,6 +197,29 @@ async def trigger_analysis(
             review_status="PENDING",
         )
         db.add(ob)
+        await db.flush()
+        insight_db_map[ins.get("id", "")] = ob.id
+
+    # Persist action items
+    from dateutil.parser import isoparse
+    for ai in action_items_data:
+        deadline = None
+        if ai.get("deadline"):
+            try:
+                deadline = isoparse(ai["deadline"])
+            except Exception:
+                pass
+        db.add(ActionItem(
+            profile_id=profile_id,
+            insight_id=insight_db_map.get(ai.get("insight_type")),
+            title=ai["title"],
+            description=ai.get("description"),
+            deadline=deadline,
+            priority=ai.get("priority"),
+            status="pending",
+            estimated_value=ai.get("estimated_value"),
+        ))
+
     profile.review_status = "PENDING"
     profile.profile_data = {**data, "derived": derived}
     await db.commit()
