@@ -1,5 +1,5 @@
 """
-Wealthsimple AI Tax Analyzer — FastAPI entry point.
+TaxFolio AI — FastAPI entry point.
 CORS, router registration, DB init on startup, rate limiting, API key auth.
 """
 import os
@@ -18,16 +18,19 @@ from middleware.api_key import APIKeyMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Create DB tables and initialize LightRAG on startup."""
+    """Create DB tables, initialize LightRAG, and start scheduler on startup."""
     await init_db()
     from services.lightrag_service import init_rag
     app.state.rag = await init_rag()
+    from services.scheduler import start_scheduler, stop_scheduler
+    start_scheduler()
     yield
+    stop_scheduler()
     await engine.dispose()
 
 
 app = FastAPI(
-    title="Wealthsimple AI Tax Analyzer",
+    title="TaxFolio AI",
     description="AI-native tax document analysis and financial optimization",
     version="0.1.0",
     lifespan=lifespan,
@@ -51,7 +54,7 @@ app.add_middleware(
 app.add_middleware(APIKeyMiddleware)
 
 # Routers
-from routers import upload, cra, analysis, advisor, profiles, knowledge, trends, reports, auth, user, chat, action_items, simulator
+from routers import upload, cra, analysis, advisor, profiles, knowledge, trends, reports, auth, user, chat, action_items, simulator, stocks, stock_news
 
 app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
 app.include_router(upload.router, prefix="/api", tags=["upload"])
@@ -66,6 +69,8 @@ app.include_router(user.router, prefix="/api/user", tags=["user"])
 app.include_router(chat.router, prefix="/api", tags=["chat"])
 app.include_router(action_items.router, prefix="/api", tags=["action_items"])
 app.include_router(simulator.router, prefix="/api", tags=["simulator"])
+app.include_router(stocks.router, prefix="/api/stocks", tags=["stocks"])
+app.include_router(stock_news.router, prefix="/api/stocks", tags=["stock_news"])
 
 
 @app.get("/health")

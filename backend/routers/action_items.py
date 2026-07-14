@@ -41,9 +41,10 @@ async def list_action_items(
     else:
         target_ids = user_profile_ids
 
+    from database.queries import approved_action_items_query
+
     result = await db.execute(
-        select(ActionItem)
-        .where(ActionItem.profile_id.in_(target_ids))
+        approved_action_items_query(target_ids)
         .order_by(ActionItem.deadline.asc().nullslast(), ActionItem.priority.asc())
     )
     items = result.scalars().all()
@@ -71,6 +72,10 @@ async def list_action_items(
             total_savings += item.estimated_value or 0
         elif item.status == "completed":
             completed_count += 1
+
+    # Apply AI prioritization scoring
+    from services.action_planner import prioritize_actions
+    items_out = prioritize_actions(items_out)
 
     return {
         "action_items": items_out,

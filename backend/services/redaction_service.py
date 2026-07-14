@@ -55,6 +55,29 @@ _PII_PATTERNS: list[tuple[re.Pattern, str]] = [
     # Canadian postal code: A1A 1A1 or A1A1A1
     (re.compile(r"\b[A-Z]\d[A-Z]\s?\d[A-Z]\d\b", re.IGNORECASE), "[POSTAL-REDACTED]"),
 
+    # Street address: number + street name + suffix (e.g. 123 Main Street, 45 Oak Ave)
+    (re.compile(
+        r"\b\d{1,5}\s+[\w\s]{1,40}\b(?:Street|St|Avenue|Ave|Road|Rd|Drive|Dr|Boulevard|Blvd|"
+        r"Crescent|Cres|Court|Ct|Way|Lane|Ln|Circle|Cir|Place|Pl|Terrace|Ter|"
+        r"Trail|Trl|Highway|Hwy|Parkway|Pkwy)\b\.?",
+        re.IGNORECASE,
+    ), "[ADDRESS-REDACTED]"),
+
+    # City + Province: Toronto, ON  /  Vancouver, BC  /  Montreal QC  etc.
+    (re.compile(
+        r"\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*[,\s]+(?:ON|QC|BC|AB|MB|SK|NS|NB|PE|NL|YT|NT|NU|"
+        r"Ontario|Quebec|British Columbia|Alberta|Manitoba|Saskatchewan|"
+        r"Nova Scotia|New Brunswick|Prince Edward Island|"
+        r"Newfoundland and Labrador|Yukon|Northwest Territories|Nunavut)\b",
+        re.IGNORECASE,
+    ), "[CITY-PROV-REDACTED]"),
+
+    # Apartment/Unit/Suite prefix: Unit 5, Apt 12B, Suite 300
+    (re.compile(
+        r"\b(?:Unit|Apt|Apartment|Suite|Ste|#)\s*\d+[A-Za-z]?\b",
+        re.IGNORECASE,
+    ), "[UNIT-REDACTED]"),
+
     # DOB: YYYY-MM-DD, YYYY/MM/DD, DD-MM-YYYY, DD/MM/YYYY
     (re.compile(r"\b\d{4}[-/]\d{2}[-/]\d{2}\b"), "[DOB-REDACTED]"),
     (re.compile(r"\b\d{2}[-/]\d{2}[-/]\d{4}\b"), "[DOB-REDACTED]"),
@@ -125,7 +148,9 @@ FORM_CONFIGS: list[FormRedactionConfig] = [
         detect_keywords=["statement of remuneration paid", "état de la rémunération payée", "t4 ("],
         pii_section_headers=[
             "employee's name", "nom et adresse de l'employé",
+            "employee's address", "adresse de l'employé",
             "last name", "nom de famille", "first name", "prénom",
+            "name and address", "nom et adresse",
         ],
         pii_section_end_markers=["other information", "autres renseignements"],
         max_section_depth=120.0,
@@ -432,13 +457,17 @@ def _apply_form_sections(page, config: FormRedactionConfig) -> None:
     blocks = page.get_text("blocks")
     redact_rects: list = []
 
+    # Filter to text blocks only and sort by Y position (top-to-bottom).
+    # PDF block order follows the content stream, not spatial layout.
+    # Sorting ensures we encounter section headers before their content
+    # and before end markers that are physically below them on the page.
+    text_blocks = [b for b in blocks if b[6] == 0]
+    text_blocks.sort(key=lambda b: (b[1], b[0]))  # sort by y0, then x0
+
     in_pii_section = False
     section_y_start = 0.0
 
-    for block in blocks:
-        if block[6] != 0:
-            continue
-
+    for block in text_blocks:
         text_lower = block[4].strip().lower()
         y0 = block[1]
 
@@ -446,6 +475,9 @@ def _apply_form_sections(page, config: FormRedactionConfig) -> None:
         if any(kw in text_lower for kw in config.pii_section_headers):
             in_pii_section = True
             section_y_start = y0
+            # Redact the header block too — it may contain the PII value
+            # (e.g. "Employee's name\nJohn Smith" in one block)
+            redact_rects.append(fitz.Rect(block[0], block[1], block[2], block[3]))
             continue
 
         # If inside a PII section, redact until end marker or max depth
@@ -459,9 +491,7 @@ def _apply_form_sections(page, config: FormRedactionConfig) -> None:
             redact_rects.append(fitz.Rect(block[0], block[1], block[2], block[3]))
 
     # Redact PII label keywords anywhere on the page
-    for block in blocks:
-        if block[6] != 0:
-            continue
+    for block in text_blocks:
         text_lower = block[4].strip().lower()
         if any(kw in text_lower for kw in config.pii_label_keywords):
             redact_rects.append(fitz.Rect(block[0], block[1], block[2], block[3]))
@@ -667,6 +697,10 @@ def redact_image(
             if any(kw in text_lower for kw in config.pii_section_headers):
                 in_pii_section = True
                 section_y_start = y_min
+                # Redact the header line too — may contain the actual PII value
+                for w in line_words:
+                    if w[0] < pii_x_boundary:
+                        redact_rects.append((w[0], w[1], w[2], w[3]))
                 continue
 
             # Check for section end markers

@@ -123,5 +123,239 @@
       "processing_start_time": 1772101371,
       "processing_end_time": 1772101412
     }
+  },
+  "doc-c3432d5247af3c6cc7b4c37bd736c10a": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-64b628c2e9232fe00bd1ee55c3ddc07d",
+      "chunk-b52c763122110f77d0bf6ccf9c8f8507"
+    ],
+    "content_summary": "# Capital Gains Taxation in Canada\nSource: CRA Schedule 3, Income Tax Act sections 38-55, Budget 2024\nLast Updated: 2025 Tax Year\n\n## What is a Capital Gain?\nA capital gain occurs when you sell (dispose of) a capital property for more than its adjust...",
+    "content_length": 6519,
+    "created_at": "2026-03-01T12:44:11.283369+00:00",
+    "updated_at": "2026-03-01T12:45:32.235147+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_181411_97f47cd9",
+    "metadata": {
+      "processing_start_time": 1772369072,
+      "processing_end_time": 1772369132
+    }
+  },
+  "doc-226ec9444959a9b27060e393bc4eb7e0": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-61aebf2ad198d778d2af95f014d9c782",
+      "chunk-cc0b482656c1fbfddee8368d8616fa29"
+    ],
+    "content_summary": "# CRA Key Deadlines and Important Tax Dates\nSource: CRA Website, Income Tax Act\nLast Updated: 2025 Tax Year\n\n## Annual Tax Filing Deadlines\n\n### T1 Individual Tax Return Filing\n- **April 30**: Filing deadline for most individuals. This is the deadlin...",
+    "content_length": 5176,
+    "created_at": "2026-03-01T12:45:32.318178+00:00",
+    "updated_at": "2026-03-01T12:48:30.077852+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_181532_71b5f6d0",
+    "metadata": {
+      "processing_start_time": 1772369278,
+      "processing_end_time": 1772369310
+    }
+  },
+  "doc-763b1c1e1aaf51a4f6b35169530a488f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-763b1c1e1aaf51a4f6b35169530a488f"
+    ],
+    "content_summary": "# T2202 Tuition and Education Credits — Canadian Tax Rules\nSource: CRA Guide P105, T2202 Information\nLast Updated: 2024\n\n## Overview\nThe T2202 slip (Tuition and Enrolment Certificate) is issued by designated educational institutions in Canada. Studen...",
+    "content_length": 2083,
+    "created_at": "2026-03-01T12:46:45.047161+00:00",
+    "updated_at": "2026-03-01T12:47:19.001104+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_181645_68a3a556",
+    "metadata": {
+      "processing_start_time": 1772369205,
+      "processing_end_time": 1772369239
+    }
+  },
+  "doc-1a79b7840654dd171103f6215d90e54b": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-21d66ea5179b3a914a2b6215ce0d8004",
+      "chunk-9b8c864baf455d682e0b304e5f7a954e"
+    ],
+    "content_summary": "# Federal Benefits, Refundable Credits, and Income-Tested Programs\nSource: CRA Publications, Income Tax Act, Canada.ca\nLast Updated: 2025 Tax Year\n\n## GST/HST Credit\n- **Refundable** quarterly tax credit to offset the GST/HST paid by low and modest-i...",
+    "content_length": 8305,
+    "created_at": "2026-03-01T12:48:30.209990+00:00",
+    "updated_at": "2026-03-01T12:49:22.240281+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_181830_22f5df9d",
+    "metadata": {
+      "processing_start_time": 1772369310,
+      "processing_end_time": 1772369362
+    }
+  },
+  "doc-b2a8d147e76a4374e343873554cbd6e1": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-6da06f6e3dca271d80baa141c0aef4d6",
+      "chunk-534ea8e212706659d6a83a6fde877e5d"
+    ],
+    "content_summary": "# First Home Savings Account (FHSA) Rules\nSource: CRA Publication RC725, Income Tax Act, 2023 Federal Budget\nLast Updated: 2025 Tax Year\n\n## What is an FHSA?\nThe First Home Savings Account (FHSA) is a registered plan introduced on April 1, 2023, that...",
+    "content_length": 5922,
+    "created_at": "2026-03-01T12:49:22.366330+00:00",
+    "updated_at": "2026-03-01T12:54:10.560414+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_181922_c4d5bece",
+    "metadata": {
+      "processing_start_time": 1772369633,
+      "processing_end_time": 1772369650
+    }
+  },
+  "doc-2b63e9f386df072fa44d9d07188cfe2b": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2b63e9f386df072fa44d9d07188cfe2b"
+    ],
+    "content_summary": "# T5 Statement of Investment Income — Canadian Tax Rules\nSource: CRA Guide T4015, RC4169\nLast Updated: 2024\n\n## Overview\nThe T5 slip reports investment income from Canadian sources including interest, dividends, capital gains dividends, and royalties...",
+    "content_length": 2038,
+    "created_at": "2026-03-01T12:50:29.292833+00:00",
+    "updated_at": "2026-03-01T12:51:24.992656+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_182029_915ae73a",
+    "metadata": {
+      "processing_start_time": 1772369429,
+      "processing_end_time": 1772369484
+    }
+  },
+  "doc-a231233644c2d23abb0d05035f6627e1": {
+    "status": "processed",
+    "chunks_count": 3,
+    "chunks_list": [
+      "chunk-11a41d513daa1b6c57ef311273744d0c",
+      "chunk-03bb900cab8fd043392cad33c9c60640",
+      "chunk-ab4f75162c7c3f14b11acd6de0559574"
+    ],
+    "content_summary": "# Canadian Tax Policy Changes: 2021–2025\nSource: Federal Budgets, Fall Economic Statements, CRA Announcements\nLast Updated: 2025 Tax Year\n\nThis document summarizes significant Canadian tax policy changes from 2021 to 2025, organized chronologically.\n...",
+    "content_length": 9319,
+    "created_at": "2026-03-01T12:53:53.567346+00:00",
+    "updated_at": "2026-03-01T12:56:46.313775+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_182353_2064f633",
+    "metadata": {
+      "processing_start_time": 1772369728,
+      "processing_end_time": 1772369806
+    }
+  },
+  "doc-59dd1ab2e92259b216c4f87314232a37": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-59dd1ab2e92259b216c4f87314232a37",
+      "chunk-613f1fae239716a1ed056696bcae297d"
+    ],
+    "content_summary": "# Alberta Provincial Income Tax\nSource: Alberta Tax (AB428), Alberta Credits, Alberta Tax Guide\nLast Updated: 2025 Tax Year\n\n## Alberta Tax Brackets\n\n### 2025 Tax Year\n| Taxable Income Range | Rate |\n|---------------------|------|\n| $0 – $148,269 | 1...",
+    "content_length": 3597,
+    "created_at": "2026-03-01T12:57:41.647595+00:00",
+    "updated_at": "2026-03-01T12:58:30.454376+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_182741_53e4c96c",
+    "metadata": {
+      "processing_start_time": 1772369861,
+      "processing_end_time": 1772369910
+    }
+  },
+  "doc-638bbfe3e48c8504b7828ea157b78e26": {
+    "status": "processed",
+    "chunks_count": 3,
+    "chunks_list": [
+      "chunk-fe8637be3ac5b554a9bb36bec631101a",
+      "chunk-d21a44166a9353305cd81b62bee19bd3",
+      "chunk-bcc35deaf2234a3f8713639ffa324b31"
+    ],
+    "content_summary": "# Atlantic Provinces Income Tax (NB, NS, PE, NL)\nSource: Provincial Tax Forms (NB428, NS428, PE428, NL428)\nLast Updated: 2025 Tax Year\n\n---\n\n# New Brunswick Provincial Income Tax\n\n## New Brunswick Tax Brackets\n\n### 2025 Tax Year\n| Taxable Income Rang...",
+    "content_length": 8392,
+    "created_at": "2026-03-01T12:58:35.624619+00:00",
+    "updated_at": "2026-03-01T13:00:26.885470+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_182835_6d4f29c5",
+    "metadata": {
+      "processing_start_time": 1772369915,
+      "processing_end_time": 1772370026
+    }
+  },
+  "doc-27a32621620d728dbab62a17b4cc388f": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-deb12f259747bd99535c1890ffca3b60",
+      "chunk-ac4a966efafa608e325e5ad271e6360c"
+    ],
+    "content_summary": "# British Columbia Provincial Income Tax\nSource: BC Tax (BC428), BC Credits (BC479), BC Tax Guide\nLast Updated: 2025 Tax Year\n\n## BC Tax Brackets\n\n### 2025 Tax Year\n| Taxable Income Range | Rate |\n|---------------------|------|\n| $0 – $47,937 | 5.06%...",
+    "content_length": 4220,
+    "created_at": "2026-03-01T13:00:32.163003+00:00",
+    "updated_at": "2026-03-01T13:01:27.680776+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_183032_7d9ca987",
+    "metadata": {
+      "processing_start_time": 1772370032,
+      "processing_end_time": 1772370087
+    }
+  },
+  "doc-bd9529dd008d6d7420d991488086a78b": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-6e6767fe1983997e5594e2d1e81f3962",
+      "chunk-11c553d9c05dddfa3309447cb2baa12c"
+    ],
+    "content_summary": "# Provincial Tax Credits and Benefits — All Provinces Summary\nSource: CRA Provincial Tax Guides, Provincial Government Websites\nLast Updated: 2025 Tax Year\n\nThis document provides a comprehensive summary of key provincial tax credits and benefits ava...",
+    "content_length": 6159,
+    "created_at": "2026-03-01T13:01:32.870927+00:00",
+    "updated_at": "2026-03-01T13:03:01.303025+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_183132_897b50e6",
+    "metadata": {
+      "processing_start_time": 1772370092,
+      "processing_end_time": 1772370181
+    }
+  },
+  "doc-3a2ccc925ef86904ca6e8db3ae0b00b4": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-936dddac80917fe456d3727287e9f980",
+      "chunk-9d33a716738be034afb001ad0bfbefeb"
+    ],
+    "content_summary": "# Quebec Provincial Income Tax\nSource: Revenu Québec TP-1 Return, Quebec Tax Tables\nLast Updated: 2025 Tax Year\n\n## Important Note: Quebec Tax System\nQuebec has its own provincial tax administration (Revenu Québec) separate from the CRA. Quebec resid...",
+    "content_length": 4679,
+    "created_at": "2026-03-01T13:03:06.515530+00:00",
+    "updated_at": "2026-03-01T13:03:50.867617+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_183306_a0c0a2ab",
+    "metadata": {
+      "processing_start_time": 1772370186,
+      "processing_end_time": 1772370230
+    }
+  },
+  "doc-1f1f54708a7fb1c97e042b87005a6276": {
+    "status": "processed",
+    "chunks_count": 2,
+    "chunks_list": [
+      "chunk-a71d4ab43b2c554a485b5c3822440d6b",
+      "chunk-641c0fe12d176236fe97fad76cedd6ee"
+    ],
+    "content_summary": "# Saskatchewan and Manitoba Provincial Income Tax\nSource: SK Tax (SK428), MB Tax (MB428), Provincial Tax Guides\nLast Updated: 2025 Tax Year\n\n---\n\n# Saskatchewan Provincial Income Tax\n\n## Saskatchewan Tax Brackets\n\n### 2025 Tax Year\n| Taxable Income R...",
+    "content_length": 5627,
+    "created_at": "2026-03-01T13:03:56.095064+00:00",
+    "updated_at": "2026-03-01T13:04:43.162382+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260301_183356_5eca9f4e",
+    "metadata": {
+      "processing_start_time": 1772370236,
+      "processing_end_time": 1772370283
+    }
   }
 }

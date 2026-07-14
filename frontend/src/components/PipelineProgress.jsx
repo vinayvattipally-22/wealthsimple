@@ -1,4 +1,4 @@
-import { CheckCircle2, Loader2, FileSearch, Calculator, Brain, BookOpen, Lightbulb, ShieldCheck, ListChecks } from 'lucide-react'
+import { CheckCircle2, Loader2, FileSearch, Calculator, Brain, BookOpen, Lightbulb, ShieldCheck, ListChecks, Clock } from 'lucide-react'
 import '../styles/dashboard.css'
 
 const AGENTS = [
@@ -120,6 +120,12 @@ export default function PipelineProgress({ stages, insights, complianceFlags, co
               <> &middot; {complete.action_items_count} action items created</>
             )}
           </div>
+          {complete.review_pending && (
+            <div className="complete-review-note">
+              <Clock size={14} />
+              Your insights are now under advisor review. They will be available on the Insights page once approved.
+            </div>
+          )}
         </div>
       )}
     </div>

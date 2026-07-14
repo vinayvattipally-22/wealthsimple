@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts'
-import { TrendingUp, TrendingDown, DollarSign, Percent, AlertTriangle } from 'lucide-react'
+import { TrendingUp, TrendingDown, DollarSign, Percent, AlertTriangle, ChevronDown } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { getTrends } from '../services/api'
 import { PageLoading } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
+import { usePageData } from '../context/PageDataContext'
 import '../styles/dashboard.css'
 
 function CustomTooltip({ active, payload, label }) {
@@ -27,15 +28,21 @@ export default function Trends() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [yearFrom, setYearFrom] = useState(null)
+  const [yearTo, setYearTo] = useState(null)
+  const { setPageData } = usePageData()
 
   useEffect(() => {
     if (!user?.id) { setLoading(false); return }
     setLoading(true)
     getTrends(user.id)
-      .then(setData)
+      .then((res) => {
+        setData(res)
+        setPageData({ page: 'trends', data: res })
+      })
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false))
-  }, [user])
+  }, [user, setPageData])
 
   if (loading) return <PageLoading />
 
@@ -62,7 +69,7 @@ export default function Trends() {
     )
   }
 
-  const chartData = data.years.map((year, i) => ({
+  const allChartData = data.years.map((year, i) => ({
     year,
     income: data.income[i],
     tax: data.tax_paid[i],
@@ -70,6 +77,11 @@ export default function Trends() {
     savings: data.savings[i],
     growth: data.yoy_growth[i],
   }))
+
+  const allYears = data.years
+  const fromYear = yearFrom || allYears[0]
+  const toYear = yearTo || allYears[allYears.length - 1]
+  const chartData = allChartData.filter(d => d.year >= fromYear && d.year <= toYear)
 
   const latest = chartData[chartData.length - 1]
   const previous = chartData.length > 1 ? chartData[chartData.length - 2] : null
@@ -80,8 +92,41 @@ export default function Trends() {
       <div className="page-header">
         <div className="page-header-text">
           <h1 className="page-title">Multi-Year Trends</h1>
-          <p className="page-subtitle">{data.years[0]} &ndash; {data.years[data.years.length - 1]}</p>
+          <p className="page-subtitle">{fromYear} &ndash; {toYear}</p>
         </div>
+        {allYears.length > 1 && (
+          <div className="trends-year-range">
+            <div className="dashboard-select-wrap">
+              <select
+                className="dashboard-select"
+                value={fromYear}
+                onChange={(e) => {
+                  const v = Number(e.target.value)
+                  setYearFrom(v)
+                  if (v > toYear) setYearTo(v)
+                }}
+              >
+                {allYears.map(y => <option key={y} value={y}>{y}</option>)}
+              </select>
+              <ChevronDown size={16} className="dashboard-select-icon" />
+            </div>
+            <span className="trends-year-range-sep">to</span>
+            <div className="dashboard-select-wrap">
+              <select
+                className="dashboard-select"
+                value={toYear}
+                onChange={(e) => {
+                  const v = Number(e.target.value)
+                  setYearTo(v)
+                  if (v < fromYear) setYearFrom(v)
+                }}
+              >
+                {allYears.filter(y => y >= fromYear).map(y => <option key={y} value={y}>{y}</option>)}
+              </select>
+              <ChevronDown size={16} className="dashboard-select-icon" />
+            </div>
+          </div>
+        )}
       </div>
 
       {previous && (

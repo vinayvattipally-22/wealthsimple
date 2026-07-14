@@ -124,25 +124,25 @@ async def user_dashboard(
             "chart_data": [],
         }
 
-    # Build dropdown list — join with Document for file_name
+    # Build dropdown list — join with Document for doc_type
     doc_result = await db.execute(
         select(Document).where(Document.user_id == user.id)
     )
     docs_by_profile = {}
     for doc in doc_result.scalars().all():
         if doc.profile_id:
-            docs_by_profile[doc.profile_id] = doc.file_name
+            docs_by_profile[doc.profile_id] = doc.doc_type
 
     dropdown = []
     for p in all_profiles:
-        fname = docs_by_profile.get(p.id, "")
-        label = f"{p.tax_year} · {p.province_code or 'N/A'}"
-        if fname:
-            label += f" — {fname}"
+        doc_type = docs_by_profile.get(p.id, "")
+        label = f"{p.tax_year}"
+        if doc_type:
+            label += f" — {doc_type}"
         dropdown.append({
             "id": p.id,
             "tax_year": p.tax_year,
-            "province": p.province_code,
+            "doc_type": doc_type or None,
             "label": label,
         })
 
@@ -158,10 +158,11 @@ async def user_dashboard(
     target_ids = [p.id for p in target_profiles]
     mode = "individual" if profile_id else "cumulative"
 
-    # Fetch all insights for target profiles
-    ins_result = await db.execute(
-        select(Insight).where(Insight.profile_id.in_(target_ids))
-    )
+    # Fetch only advisor-approved insights for target profiles
+    from database.queries import approved_insights_query, has_pending_insights_bulk
+
+    review_pending = await has_pending_insights_bulk(db, target_ids)
+    ins_result = await db.execute(approved_insights_query(profile_ids=target_ids))
     insights = ins_result.scalars().all()
 
     # Aggregate income & tax liability from profile data
@@ -177,9 +178,11 @@ async def user_dashboard(
         if mode == "individual":
             marginal_rate = derived.get("marginal_rate_combined") or 0
 
-    # Group insights by category + build chart_data
+    # Group insights by category + build chart_data (deduplicated by name)
+    from services.benefit_engine import get_insight_display_name
     by_category = {}
-    chart_data = []
+    chart_map: dict[str, dict] = {}  # name -> {value, category}
+    cat_priority = {"ACT_NOW": 0, "THIS_YEAR": 1, "LONG_TERM": 2}
     for i in insights:
         cat = i.category or "THIS_YEAR"
         entry = {
@@ -189,7 +192,15 @@ async def user_dashboard(
             "priority": i.priority,
         }
         by_category.setdefault(cat, []).append(entry)
-        chart_data.append({"name": i.insight_type, "value": i.estimated_value or 0, "category": cat})
+        display_name = get_insight_display_name(i.insight_type)
+        if display_name in chart_map:
+            chart_map[display_name]["value"] += i.estimated_value or 0
+            # Keep the most urgent category
+            if cat_priority.get(cat, 1) < cat_priority.get(chart_map[display_name]["category"], 1):
+                chart_map[display_name]["category"] = cat
+        else:
+            chart_map[display_name] = {"name": display_name, "value": i.estimated_value or 0, "category": cat}
+    chart_data = list(chart_map.values())
 
     total_savings = sum(i.estimated_value or 0 for i in insights)
     confidences = [i.confidence for i in insights if i.confidence]
@@ -209,6 +220,7 @@ async def user_dashboard(
         "mode": mode,
         "profiles": dropdown,
         "selected_profile_id": profile_id,
+        "review_pending": review_pending,
         "income": round(total_income, 2),
         "tax_liability": round(total_tax_liability, 2),
         "total_savings": round(total_savings, 2),
@@ -272,25 +284,26 @@ async def user_advisor(
     docs_by_profile = {}
     for doc in doc_result.scalars().all():
         if doc.profile_id:
-            docs_by_profile[doc.profile_id] = doc.file_name
+            docs_by_profile[doc.profile_id] = doc.doc_type
 
     dropdown = []
     for p in all_profiles:
-        fname = docs_by_profile.get(p.id, "")
-        label = f"{p.tax_year} · {p.province_code or 'N/A'}"
-        if fname:
-            label += f" — {fname}"
+        doc_type = docs_by_profile.get(p.id, "")
+        label = f"{p.tax_year}"
+        if doc_type:
+            label += f" — {doc_type}"
         dropdown.append({
             "id": p.id,
             "tax_year": p.tax_year,
-            "province": p.province_code,
+            "doc_type": doc_type or None,
             "label": label,
         })
 
-    # Fetch insights
-    ins_result = await db.execute(
-        select(Insight).where(Insight.profile_id == profile.id)
-    )
+    # Fetch only advisor-approved insights
+    from database.queries import approved_insights_query, has_pending_insights, approved_action_items_query
+
+    review_pending = await has_pending_insights(db, profile.id)
+    ins_result = await db.execute(approved_insights_query(profile_id=profile.id))
     insights = [
         {
             "id": i.insight_type,
@@ -305,9 +318,10 @@ async def user_advisor(
         for i in ins_result.scalars().all()
     ]
 
-    # Fetch action items
+    # Fetch action items linked to approved insights only
     ai_result = await db.execute(
-        select(ActionItem).where(ActionItem.profile_id == profile.id)
+        approved_action_items_query([profile.id])
+        .order_by(ActionItem.deadline.asc().nullslast())
     )
     action_items = [
         {
@@ -331,5 +345,45 @@ async def user_advisor(
     )
     advisor_data["profiles"] = dropdown
     advisor_data["selected_profile_id"] = profile.id
+    advisor_data["review_pending"] = review_pending
 
     return advisor_data
+
+
+@router.get("/anomalies")
+@limiter.limit(READ_LIMIT)
+async def user_anomalies(
+    request: Request,
+    profile_id: int = Query(default=None),
+    user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """Detect anomalies and potential issues across user's tax profiles."""
+    from services.anomaly_detector import detect_anomalies
+
+    if profile_id:
+        profiles = [await db.get(FinancialProfile, profile_id)]
+        profiles = [p for p in profiles if p and p.user_id == user.id]
+    else:
+        result = await db.execute(
+            select(FinancialProfile)
+            .where(FinancialProfile.user_id == user.id)
+            .order_by(FinancialProfile.tax_year.desc())
+        )
+        profiles = result.scalars().all()
+
+    all_anomalies = []
+    for p in profiles:
+        if not p or not p.profile_data:
+            continue
+        anomalies = detect_anomalies(p.profile_data)
+        for a in anomalies:
+            a["profile_id"] = p.id
+            a["tax_year"] = p.tax_year
+        all_anomalies.extend(anomalies)
+
+    # Sort by severity across all profiles
+    severity_order = {"critical": 0, "warning": 1, "info": 2}
+    all_anomalies.sort(key=lambda x: severity_order.get(x["severity"], 2))
+
+    return {"anomalies": all_anomalies}

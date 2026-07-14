@@ -1,9 +1,9 @@
 """Create financial profile from upload/extraction result."""
 from fastapi import APIRouter, Depends, HTTPException, Body
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
+from sqlalchemy import select, delete, and_
 from database.session import get_db
-from database.models import FinancialProfile, Document, User
+from database.models import FinancialProfile, Document, Insight, ReviewCase, ActionItem, User
 from middleware.auth import get_current_user_optional
 
 router = APIRouter()
@@ -40,6 +40,16 @@ async def create_profile(
         "total_income_tax_withheld": tax_withheld,
         "province_of_employment": province,
     }
+    # Personal details (marital status, dependents, housing costs, etc.)
+    personal = body.get("personal_details") or {}
+    personal_details = {
+        "date_of_birth": personal.get("date_of_birth"),
+        "marital_status": personal.get("marital_status"),
+        "num_children_under_18": personal.get("num_children_under_18", 0),
+        "spouse_income": personal.get("spouse_income"),
+        "rent_paid": personal.get("rent_paid", 0),
+        "property_tax_paid": personal.get("property_tax_paid", 0),
+    }
     profile_data = {
         "tax_year": tax_year,
         "province_code": province,
@@ -47,17 +57,48 @@ async def create_profile(
         "structured_t4": box_values,
         "registered_accounts": body.get("registered_accounts") or {},
         "carryforwards": body.get("carryforwards") or {},
+        "personal_details": personal_details,
         "derived": {},
     }
-    profile = FinancialProfile(
-        user_id=user.id if user else None,
-        tax_year=tax_year,
-        province_code=province,
-        profile_data=profile_data,
-        review_status="PENDING",
-    )
-    db.add(profile)
-    await db.flush()
+    # Check if user already has a profile for this tax year — replace it
+    existing_profile = None
+    if user:
+        existing_result = await db.execute(
+            select(FinancialProfile).where(
+                and_(
+                    FinancialProfile.user_id == user.id,
+                    FinancialProfile.tax_year == tax_year,
+                )
+            )
+        )
+        existing_profile = existing_result.scalar_one_or_none()
+
+    if existing_profile:
+        # Update existing profile with new data
+        existing_profile.province_code = province
+        existing_profile.profile_data = profile_data
+        existing_profile.review_status = "PENDING"
+        profile = existing_profile
+
+        # Clean up old analysis results — new analysis will regenerate them
+        await db.execute(delete(ActionItem).where(ActionItem.profile_id == profile.id))
+        await db.execute(delete(Insight).where(Insight.profile_id == profile.id))
+        await db.execute(delete(ReviewCase).where(ReviewCase.profile_id == profile.id))
+
+        # Remove old documents linked to this profile — keep only the new upload
+        await db.execute(
+            delete(Document).where(Document.profile_id == profile.id)
+        )
+    else:
+        profile = FinancialProfile(
+            user_id=user.id if user else None,
+            tax_year=tax_year,
+            province_code=province,
+            profile_data=profile_data,
+            review_status="PENDING",
+        )
+        db.add(profile)
+        await db.flush()
 
     # Link document to profile if document_id provided
     document_id = body.get("document_id")
@@ -66,4 +107,44 @@ async def create_profile(
         if doc:
             doc.profile_id = profile.id
 
+    await db.commit()
     return {"profile_id": profile.id, "tax_year": tax_year, "province": province}
+
+
+@router.patch("/profiles/{profile_id}")
+async def update_profile(
+    profile_id: int,
+    body: dict = Body(...),
+    user: User | None = Depends(get_current_user_optional),
+    db: AsyncSession = Depends(get_db),
+):
+    """Update a financial profile — primarily for adding personal details after initial creation."""
+    profile = await db.get(FinancialProfile, profile_id)
+    if not profile:
+        raise HTTPException(404, "Profile not found")
+    if user and profile.user_id and profile.user_id != user.id:
+        raise HTTPException(403, "Not your profile")
+
+    data = profile.profile_data or {}
+
+    # Merge personal_details if provided
+    personal = body.get("personal_details")
+    if personal:
+        existing = data.get("personal_details") or {}
+        existing.update({k: v for k, v in personal.items() if v is not None})
+        data["personal_details"] = existing
+
+    # Allow updating registered_accounts too
+    reg = body.get("registered_accounts")
+    if reg:
+        existing_reg = data.get("registered_accounts") or {}
+        existing_reg.update(reg)
+        data["registered_accounts"] = existing_reg
+
+    profile.profile_data = data
+    # Force SQLAlchemy to detect the JSON change
+    from sqlalchemy.orm.attributes import flag_modified
+    flag_modified(profile, "profile_data")
+    await db.commit()
+
+    return {"ok": True, "profile_id": profile_id}

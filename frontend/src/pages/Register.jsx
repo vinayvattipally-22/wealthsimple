@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { UserPlus, AlertTriangle } from 'lucide-react'
+import { UserPlus, AlertTriangle, Eye, EyeOff } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { LoadingSpinner } from '../components/LoadingState'
 
@@ -26,6 +26,7 @@ export default function Register() {
   const [form, setForm] = useState({ name: '', email: '', password: '', province: '' })
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
 
   const update = (field) => (e) => setForm(prev => ({ ...prev, [field]: e.target.value }))
 
@@ -86,15 +87,26 @@ export default function Register() {
             </div>
             <div className="form-group">
               <label className="form-label">Password</label>
-              <input
-                type="password"
-                className="form-input"
-                value={form.password}
-                onChange={update('password')}
-                placeholder="At least 6 characters"
-                required
-                minLength={6}
-              />
+              <div className="password-input-wrap">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  className="form-input"
+                  value={form.password}
+                  onChange={update('password')}
+                  placeholder="At least 6 characters"
+                  required
+                  minLength={6}
+                />
+                <button
+                  type="button"
+                  className="password-toggle"
+                  onClick={() => setShowPassword(p => !p)}
+                  tabIndex={-1}
+                  title={showPassword ? 'Hide password' : 'Show password'}
+                >
+                  {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                </button>
+              </div>
             </div>
             <div className="form-group">
               <label className="form-label">Province</label>

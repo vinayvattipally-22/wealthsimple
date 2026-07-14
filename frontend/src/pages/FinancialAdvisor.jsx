@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom'
 import {
   BrainCircuit, ChevronDown, Heart, TrendingUp, Shield,
   Calendar, Clock, AlertTriangle, CheckCircle2, ArrowRight,
-  ListChecks, FlaskConical, MessageCircle, DollarSign,
+  ListChecks, FlaskConical, DollarSign, Download, Lightbulb,
   PiggyBank, Target,
 } from 'lucide-react'
-import { getAdvisorData } from '../services/api'
+import { getAdvisorData, getAnalysisResults, downloadReport } from '../services/api'
 import EmptyState from '../components/EmptyState'
+import InsightCard from '../components/InsightCard'
+import SavingsSummary from '../components/SavingsSummary'
+import ReviewPendingBanner from '../components/ReviewPendingBanner'
 import { LoadingSpinner } from '../components/LoadingState'
+import { usePageData } from '../context/PageDataContext'
 import '../styles/dashboard.css'
 
 function HealthGauge({ score }) {
@@ -73,21 +77,45 @@ function YearCompareCard({ title, year, items, accent }) {
 }
 
 function RecommendationCard({ rec }) {
+  const [expanded, setExpanded] = useState(false)
   const urgencyColors = {
     ACT_NOW: 'var(--ws-red)',
     THIS_YEAR: 'var(--ws-blue)',
     LONG_TERM: 'var(--ws-grey-400)',
   }
+  const hasDetail = rec.detail || rec.action_required
   return (
     <div className="recommendation-card animate-fade-in-up">
-      <div className="recommendation-last-year">
-        <Clock size={14} />
-        <span>{rec.last_year}</span>
+      <div
+        className={`recommendation-header-clickable ${hasDetail ? 'clickable' : ''}`}
+        onClick={() => hasDetail && setExpanded(!expanded)}
+      >
+        <div className="recommendation-this-year">
+          <ArrowRight size={16} />
+          <span>{rec.this_year}</span>
+          {hasDetail && (
+            <ChevronDown
+              size={14}
+              className="recommendation-chevron"
+              style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)' }}
+            />
+          )}
+        </div>
       </div>
-      <div className="recommendation-this-year">
-        <ArrowRight size={16} />
-        <span>{rec.this_year}</span>
-      </div>
+      {expanded && hasDetail && (
+        <div className="recommendation-detail">
+          {rec.detail && (
+            <div className="recommendation-detail-text">
+              <strong>Why:</strong> {rec.detail}
+            </div>
+          )}
+          {rec.action_required && (
+            <div className="recommendation-detail-text">
+              <strong>How:</strong> {rec.action_required}
+            </div>
+          )}
+        </div>
+      )}
       <div className="recommendation-footer">
         {rec.deadline && (
           <span className="recommendation-deadline" style={{ borderColor: urgencyColors[rec.urgency] || 'var(--ws-blue)' }}>
@@ -143,14 +171,25 @@ export default function FinancialAdvisor() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [selectedId, setSelectedId] = useState(null)
+  const [insightsData, setInsightsData] = useState(null)
+  const [downloading, setDownloading] = useState(false)
+  const { setPageData } = usePageData()
 
   const load = (profileId) => {
     setLoading(true)
     getAdvisorData(profileId)
       .then((res) => {
         setData(res)
+        setPageData({ page: 'ai_advisor', data: res })
         if (!selectedId && res.selected_profile_id) {
           setSelectedId(res.selected_profile_id)
+        }
+        // Also fetch insights for this profile
+        const pid = profileId || res.selected_profile_id
+        if (pid) {
+          getAnalysisResults(pid)
+            .then(setInsightsData)
+            .catch(() => setInsightsData(null))
         }
       })
       .catch(() => setData(null))
@@ -161,7 +200,28 @@ export default function FinancialAdvisor() {
 
   const handleProfileChange = (newId) => {
     setSelectedId(newId)
+    setInsightsData(null)
     load(newId)
+  }
+
+  const handleDownloadPDF = async () => {
+    if (!selectedId) return
+    setDownloading(true)
+    try {
+      const blob = await downloadReport(selectedId)
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `tax_insights_${selectedId}.pdf`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+    } catch (e) {
+      alert('Failed to download report: ' + e.message)
+    } finally {
+      setDownloading(false)
+    }
   }
 
   if (loading) {
@@ -178,7 +238,7 @@ export default function FinancialAdvisor() {
         <EmptyState
           icon={BrainCircuit}
           title="No financial data yet"
-          description="Upload a document and run analysis first to get your AI Financial Advisor insights."
+          description="Upload a document from My Documents to get started. Your advisor will analyze it and provide insights."
         />
       </div>
     )
@@ -194,7 +254,7 @@ export default function FinancialAdvisor() {
         <div className="page-header-text">
           <h1 className="page-title" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
             <BrainCircuit size={24} />
-            AI Financial Advisor
+            Advisor
           </h1>
           <p className="page-subtitle">Your personalized financial strategy based on {last_year.tax_year} data</p>
         </div>
@@ -272,40 +332,74 @@ export default function FinancialAdvisor() {
       )}
 
       {/* Top Recommendations */}
-      {recommendations && recommendations.length > 0 && (
+      {data.review_pending && (!recommendations || recommendations.length === 0) ? (
         <div className="advisor-section">
           <h2 className="heading-3" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
             <TrendingUp size={18} />
             Top Recommendations
           </h2>
+          <ReviewPendingBanner message="Your personalized recommendations are under advisor review. They will appear here once approved." />
+        </div>
+      ) : recommendations && recommendations.length > 0 ? (
+        <div className="advisor-section">
+          <h2 className="heading-3" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+            <TrendingUp size={18} />
+            Top Recommendations
+          </h2>
+          {data.review_pending && <ReviewPendingBanner message="Some recommendations may still be under review. Only approved insights are shown." />}
           <div className="recommendations-list">
             {recommendations.map((rec, i) => (
               <RecommendationCard key={i} rec={rec} />
             ))}
           </div>
         </div>
-      )}
+      ) : null}
+
+      {/* Tax Insights */}
+      {(() => {
+        const insights = insightsData?.insights ?? []
+        const summary = insightsData?.summary ?? {}
+        const reviewPending = insightsData?.review_pending === true
+        const totalSavings = insights.reduce((s, i) => s + (i.estimated_value || 0), 0)
+
+        if (insights.length === 0 && !reviewPending) return null
+
+        return (
+          <div className="advisor-section">
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'var(--space-3)' }}>
+              <h2 className="heading-3" style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', margin: 0 }}>
+                <Lightbulb size={18} />
+                Tax Insights
+              </h2>
+              {insights.length > 0 && (
+                <button onClick={handleDownloadPDF} disabled={downloading} className="btn btn-primary btn-sm">
+                  {downloading ? <><LoadingSpinner size={14} /> Generating...</> : <><Download size={16} /> Download PDF</>}
+                </button>
+              )}
+            </div>
+            <SavingsSummary summary={{ total_identified_savings: totalSavings, act_now_count: summary.act_now_count, this_year_count: summary.this_year_count, long_term_count: summary.long_term_count }} />
+            {insights.length === 0 && reviewPending ? (
+              <ReviewPendingBanner message="Your tax insights are being reviewed by a financial advisor. Once approved, they will appear here with estimated savings." />
+            ) : (
+              <>
+                {reviewPending && <ReviewPendingBanner message="Some insights may still be under advisor review. Only approved insights are shown below." />}
+                {insights.map((ins, i) => <InsightCard key={i} insight={ins} />)}
+              </>
+            )}
+          </div>
+        )
+      })()}
 
       {/* Quick Actions */}
       <div className="advisor-quick-actions">
-        <Link to="/simulator" className="btn btn-primary">
+        <Link to="/tax/simulator" className="btn btn-primary">
           <FlaskConical size={16} />
           Run Simulator
         </Link>
-        <Link to="/actions" className="btn btn-success">
+        <Link to="/tax/actions" className="btn btn-success">
           <ListChecks size={16} />
           View Action Items
         </Link>
-        <button
-          className="btn btn-secondary"
-          onClick={() => {
-            const chatBtn = document.querySelector('.chat-widget-toggle')
-            if (chatBtn) chatBtn.click()
-          }}
-        >
-          <MessageCircle size={16} />
-          Ask Copilot
-        </button>
       </div>
     </div>
   )

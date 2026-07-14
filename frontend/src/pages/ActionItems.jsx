@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
-import { ListChecks, ChevronDown, CheckCircle2, Clock, AlertTriangle, SkipForward, ChevronRight } from 'lucide-react'
+import { ListChecks, ChevronDown, CheckCircle2, Clock, AlertTriangle, SkipForward, ChevronRight, Zap } from 'lucide-react'
 import { PageLoading } from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
+import ReviewPendingBanner from '../components/ReviewPendingBanner'
 import FormattedText from '../components/FormattedText'
 import { getActionItems, updateActionItem, getUserDocuments } from '../services/api'
+import { usePageData } from '../context/PageDataContext'
 import '../styles/dashboard.css'
 
 function isOverdue(deadline) {
@@ -67,6 +69,25 @@ function ActionItemCard({ item, onUpdate }) {
             {item.title}
           </div>
           <div className="action-item-meta">
+            {item.ai_score != null && (
+              <span
+                className="ai-score-badge"
+                style={{
+                  background: item.ai_score >= 70 ? 'var(--ws-red)' : item.ai_score >= 40 ? 'var(--ws-amber)' : 'var(--ws-grey-400)',
+                  color: '#fff',
+                  padding: '1px 7px',
+                  borderRadius: '10px',
+                  fontSize: '0.72rem',
+                  fontWeight: 700,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '3px',
+                }}
+                title="AI Priority Score"
+              >
+                <Zap size={10} /> {item.ai_score}
+              </span>
+            )}
             {item.deadline && (
               <span className={`action-item-deadline ${overdue && !done ? 'text-red' : ''}`}>
                 <Clock size={12} />
@@ -87,6 +108,12 @@ function ActionItemCard({ item, onUpdate }) {
               </span>
             )}
           </div>
+          {item.ai_reasoning && !done && (
+            <div style={{ fontSize: '0.75rem', color: 'var(--ws-grey-500)', marginTop: 2 }}>
+              <Zap size={10} style={{ verticalAlign: 'middle', marginRight: 3 }} />
+              {item.ai_reasoning}
+            </div>
+          )}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
           {!done && item.status !== 'skipped' && (
@@ -131,6 +158,7 @@ export default function ActionItems() {
   const [selectedId, setSelectedId] = useState(null)
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
+  const { setPageData } = usePageData()
 
   // Load profiles
   useEffect(() => {
@@ -149,10 +177,13 @@ export default function ActionItems() {
     if (!selectedId) return
     setLoading(true)
     getActionItems(selectedId)
-      .then(setData)
+      .then((res) => {
+        setData(res)
+        setPageData({ page: 'action_items', data: res })
+      })
       .catch(() => setData(null))
       .finally(() => setLoading(false))
-  }, [selectedId])
+  }, [selectedId, setPageData])
 
   const handleUpdate = async (itemId, newStatus) => {
     try {
@@ -208,7 +239,7 @@ export default function ActionItems() {
             >
               {profiles.map((p) => (
                 <option key={p.profile_id} value={p.profile_id}>
-                  {p.tax_year || 'N/A'} · {p.province || 'N/A'}{p.file_name ? ` — ${p.file_name}` : ''}
+                  {p.tax_year || 'N/A'}{p.doc_type ? ` — ${p.doc_type}` : ''}
                 </option>
               ))}
             </select>
@@ -235,7 +266,9 @@ export default function ActionItems() {
         </div>
       </div>
 
-      {items.length === 0 ? (
+      {items.length === 0 && data?.review_pending ? (
+        <ReviewPendingBanner message="Your action items are linked to AI-generated insights that are currently under advisor review. They will appear here once approved." />
+      ) : items.length === 0 ? (
         <EmptyState
           icon={ListChecks}
           title="No action items yet"

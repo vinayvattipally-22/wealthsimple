@@ -24,6 +24,16 @@ export async function createProfile(data) {
   return res.json()
 }
 
+export async function updateProfile(profileId, data) {
+  const res = await fetch(`${BASE}/profiles/${profileId}`, {
+    method: 'PATCH',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify(data),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
 export async function getAnalysisStatus(profileId) {
   const res = await fetch(`${BASE}/analysis/${profileId}/status`, { headers: authHeaders() })
   if (!res.ok) throw new Error(await res.text())
@@ -54,8 +64,8 @@ export async function getTrends(userId) {
   return res.json()
 }
 
-export async function getAdvisorQueue() {
-  const res = await fetch(`${BASE}/advisor/queue`, { headers: authHeaders() })
+export async function getAdvisorQueue(status = 'PENDING') {
+  const res = await fetch(`${BASE}/advisor/queue?status=${status}`, { headers: authHeaders() })
   if (!res.ok) throw new Error(await res.text())
   return res.json()
 }
@@ -91,6 +101,36 @@ export async function escalateCase(caseId, body = {}) {
     method: 'POST',
     headers: authHeaders({ 'Content-Type': 'application/json' }),
     body: JSON.stringify(body),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function commentInsight(caseId, insightId, comment) {
+  const res = await fetch(`${BASE}/advisor/case/${caseId}/comment`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ insight_id: insightId, comment }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function approveInsight(caseId, insightId, comment = '') {
+  const res = await fetch(`${BASE}/advisor/case/${caseId}/insight/${insightId}/approve`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ comment }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function rejectInsight(caseId, insightId, comment = '') {
+  const res = await fetch(`${BASE}/advisor/case/${caseId}/insight/${insightId}/reject`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ comment }),
   })
   if (!res.ok) throw new Error(await res.text())
   return res.json()
@@ -150,6 +190,47 @@ export async function runScenario(profileId, scenarioType, value) {
   return res.json()
 }
 
+export async function getScenarioSuggestions(profileId) {
+  const res = await fetch(`${BASE}/simulator/suggestions/${profileId}`, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function runNaturalLanguageScenario(profileId, query) {
+  const res = await fetch(`${BASE}/simulator/natural-language`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ profile_id: profileId, query }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function runMultiYearProjection(profileId, years, annualRrsp, annualTfsa, annualFhsa) {
+  const res = await fetch(`${BASE}/simulator/multi-year`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({
+      profile_id: profileId,
+      years,
+      annual_rrsp: annualRrsp,
+      annual_tfsa: annualTfsa,
+      annual_fhsa: annualFhsa,
+    }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function getAnomalies(profileId) {
+  const url = profileId
+    ? `${BASE}/user/anomalies?profile_id=${profileId}`
+    : `${BASE}/user/anomalies`
+  const res = await fetch(url, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
 export async function getAdvisorData(profileId) {
   const url = profileId
     ? `${BASE}/user/advisor?profile_id=${profileId}`
@@ -159,7 +240,101 @@ export async function getAdvisorData(profileId) {
   return res.json()
 }
 
-export async function sendChatMessage({ question, profileId, pageContext, history }) {
+export async function searchStocks(query) {
+  const res = await fetch(`${BASE}/stocks/search?q=${encodeURIComponent(query)}`, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function getResearchHistory(limit = 20) {
+  const res = await fetch(`${BASE}/stocks/history?limit=${limit}`, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function getResearchDetail(researchId) {
+  const res = await fetch(`${BASE}/stocks/research/${researchId}`, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function runBacktest(ticker, signal, lookbackDays = 90) {
+  const res = await fetch(`${BASE}/stocks/backtest`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ ticker, signal, lookback_days: lookbackDays }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export function getAuthToken() {
+  return localStorage.getItem('token')
+}
+
+export async function getStockNews(ticker, limit = 30, offset = 0) {
+  const res = await fetch(
+    `${BASE}/stocks/${encodeURIComponent(ticker)}/news?limit=${limit}&offset=${offset}`,
+    { headers: authHeaders() }
+  )
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function refreshStockNews(ticker) {
+  const res = await fetch(
+    `${BASE}/stocks/${encodeURIComponent(ticker)}/news/refresh`,
+    { method: 'POST', headers: authHeaders() }
+  )
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function getStockInsights(ticker) {
+  const res = await fetch(
+    `${BASE}/stocks/${encodeURIComponent(ticker)}/insights`,
+    { headers: authHeaders() }
+  )
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function generateStockInsights(ticker) {
+  const res = await fetch(
+    `${BASE}/stocks/${encodeURIComponent(ticker)}/insights/generate`,
+    { method: 'POST', headers: authHeaders() }
+  )
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function getStockAdvisorQueue(status = 'PENDING') {
+  const res = await fetch(`${BASE}/advisor/stock-queue?status=${status}`, { headers: authHeaders() })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function approveStockInsight(insightId, comment = '') {
+  const res = await fetch(`${BASE}/advisor/stock-insight/${insightId}/approve`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ comment }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function rejectStockInsight(insightId, comment = '') {
+  const res = await fetch(`${BASE}/advisor/stock-insight/${insightId}/reject`, {
+    method: 'POST',
+    headers: authHeaders({ 'Content-Type': 'application/json' }),
+    body: JSON.stringify({ comment }),
+  })
+  if (!res.ok) throw new Error(await res.text())
+  return res.json()
+}
+
+export async function sendChatMessage({ question, profileId, pageContext, pageDataSummary, userId, history }) {
   const res = await fetch(`${BASE}/chat`, {
     method: 'POST',
     headers: authHeaders({ 'Content-Type': 'application/json' }),
@@ -167,6 +342,8 @@ export async function sendChatMessage({ question, profileId, pageContext, histor
       question,
       profile_id: profileId || null,
       page_context: pageContext || '',
+      page_data_summary: pageDataSummary || '',
+      user_id: userId || null,
       history: history || [],
     }),
   })
